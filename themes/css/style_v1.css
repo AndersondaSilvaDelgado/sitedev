@@ -1,0 +1,817 @@
+@media screen and (min-width: 0px) and (max-width: 320px){
+
+    .content{
+        float: left;
+        width: 92%;
+        margin: 0 4%;
+        padding: 0;
+    }
+
+    .cabecalho{
+        background: #EEEEEE;
+        position: relative;
+        background-color: rgba(250, 250, 250, 0.95);
+        z-index: 98;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .area_logo img{
+        height: 62px;
+        cursor: pointer;
+    }
+
+    .botao_menu{
+        width: 35px;
+        height: 35px;
+        float: right;
+        margin-top: 23px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #ffffff;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        cursor: pointer;
+    }
+
+    .botao_menu:before{
+        content: "";
+        display: block;
+        margin: 9px auto;
+        width: 70%;
+        height: 0.3em;
+        background: #00759B;
+        box-shadow: 0 .5em 0 0 #00759B, 0 1em 0 0 #00759B;
+    }
+
+    .botao_menu.active{
+        background: #00759B;
+    }
+
+    .botao_menu.active:before {
+        background: #FFFFFF;
+        box-shadow: 0 .5em 0 0 #FFFFFF, 0 1em 0 0 #FFFFFF;
+    }
+
+    .limite_menu{
+        clear: both;
+    }
+
+    .menu{
+        position: static;
+        top: 100px;
+        display: none;
+        margin-left: -4%;
+        margin-right: -4%;
+    }
+
+    .menu li, .menu a{
+        float: left; 
+        width: 100%;
+    }
+
+    .menu li a{
+        background: #EEEEEE;
+        padding: 8px 0 8px 5px;
+    }
+
+    .menu .menu_item a:hover{
+        background: #59D6FF;
+        color: #FFFFFF;
+    }
+
+    .sub_item_menu{
+        display: none;
+        position: relative;
+        background: #FFFFFF;
+    }
+
+    .sub_item_menu li, .sub_item_menu a{
+        float: left; 
+        width: 100%;
+    }
+
+    .sub_item_menu li{
+        font-size: 0.9em;
+    }
+
+    .sub_item_menu li a{
+        padding: 8px 0 8px 15px;
+    }
+
+    .slide{
+        background: #000;
+        position: relative;
+        display: block;
+    }
+
+    .slide_controll{
+        position: absolute;
+        top: 37%;
+        width: 90%;
+        font-size: 2em;
+        margin: 0 5%;
+    }
+
+    .slide_nav{
+        position: absolute;
+        padding: 5px 15px;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        z-index: 89;
+        border-radius: 50%; 
+        -moz-border-radius: 50%; 
+        -webkit-border-radius: 50%;
+    }
+
+    .slide_nav:hover{
+        background: #59D6FF;
+        color: #FFFFFF;
+    }
+
+    .slide_nav.back{
+        left: 0;
+        margin-left: 3px;
+    }
+
+    .slide_nav.go{
+        right: 0;
+        margin-right: 3px;
+    }
+
+    .slide_item img{
+        min-height: 300px;
+        width: 100%;
+    }
+
+    .secao_titulo{
+        padding: 20px 0;
+        text-align: center;
+        background: #EEEEEE;
+    }
+
+    .secao_titulo h1{
+        font-size: 2.2em;
+        font-weight: bold;
+        color: #402570;
+        margin-bottom: 5px;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 1.8em;
+    }
+
+    .principios{
+        padding: 20px 0;
+        background: #59D6FF;
+        color: #FFFFFF;
+    }
+
+    .item_principios{
+        float: left;
+        padding: 10px 30px 10px 15px;
+    }
+
+    .item_principios h1{
+        font-size: 2em; 
+        font-weight: 300;
+    }
+
+    .item_principios .tagline{
+        font-size: 1em; 
+        font-weight: 400;
+    }
+
+    .interno{
+        margin: 20px 0;
+        color: #0089B7;
+    }
+
+    .item_interno{
+        float: left;
+        width: 94%;
+        margin: 10px 3%;
+        padding: 25px;
+        background: #EEEEEE; 
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        border-radius: 5px;
+    }
+
+    .item_interno:hover{
+        background: #00759B;
+        color: #FFFFFF;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    }
+
+    .item_interno h1{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.5em; 
+        font-weight: 400;
+    }
+
+    .item_interno:hover h1{
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    }
+
+    .item_interno .tagline{
+        text-align: justify;
+    }
+
+    .rodape{
+        padding: 25px 0;
+        background: #888888;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .faixa_rodape{
+        padding: 29px 0;
+        background: #000000;
+    }
+
+    .rodape_direito{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    .rodape li{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .facebook{
+        padding: 50px 0 50px 30px;
+        background-position: left center; 
+        background-repeat: no-repeat;
+        background-image: url(../img/facebook.png);
+        background-size: 25px 25px;
+        color: #FFFFFF;
+    }
+
+    .linkedin{
+        padding: 50px 0 50px 30px;
+        background-position: left center; 
+        background-repeat: no-repeat;
+        background-image: url(../img/linkedin.png);
+        background-size: 25px 25px;
+        color: #FFFFFF;
+    }
+
+    .rede_social{
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        width: 100%;
+        padding-top: 5px;
+        background-color: rgba(250, 250, 250, 0.9);
+    }
+
+    .rede_social ul{
+        margin-left: 25%;
+    }
+
+    .rede_social li{
+        display: inline-block;
+    }
+
+    .social{
+        width: 50px;
+        height: 50px;
+        background-position: center center; 
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+    }
+
+    .rede_facebook{
+        background-color: #3B5999;
+        background-image: url(../img/facebook.png);
+    }
+
+    .rede_linkedin{
+        background-color: #1E3A72;
+        background-image: url(../img/linkedin.png);
+    }
+
+    .rede_email{
+        background-color: #F78C12;
+        background-image: url(../img/email.png);
+    }
+
+    .rede_social_rodape{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 320px){
+
+    .slide_item img{
+        min-height: 350px;
+        width: 100%;
+    }
+
+    .rede_social ul{
+        margin-left: 30%;
+    }
+
+}
+
+@media screen and (min-width: 400px){
+
+    .area_logo img{
+        height: 75px;
+    }
+
+    .slide_item img{
+        min-height: 400px;
+        width: 100%;
+    }
+
+    .slide_controll{
+        position: absolute;
+        top: 42%;
+        width: 86%;
+        font-size: 2.5em;
+        margin: 0 7%;
+    }
+
+    .botao_menu{
+        width: 45px;
+        height: 45px;
+        margin-top: 22px;
+    }
+
+    .botao_menu:before{
+        margin: 9px auto;
+        width: 70%;
+        height: 0.4em;
+        box-shadow: 0 .7em 0 0 #00759B, 0 1.4em 0 0 #00759B;
+    }
+
+    .botao_menu.active:before {
+        box-shadow: 0 .7em 0 0 #FFFFFF, 0 1.4em 0 0 #FFFFFF;
+    }
+
+}
+
+@media screen and (min-width: 460px){
+
+    .menu li a{
+        padding-left: 15px;
+    }
+
+    .sub_item_menu li a{
+        padding-left: 25px;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+
+    .slide_controll{
+        position: absolute;
+        top: 38%;
+        width: 86%;
+        font-size: 3em;
+        margin: 0 7%;
+    }
+
+    .secao_titulo{
+        padding: 25px 0;
+    }
+
+    .rede_social ul{
+        margin-left: 40%;
+    }
+
+}
+
+@media screen and (min-width: 720px){
+
+    .princ_missao {
+        max-width: 320px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .princ_visao{
+        max-width: 320px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .item_mp{
+        width: 45%;
+        margin: 10px 2%;
+        min-height: 200px;
+    }
+
+    .item_mail{
+        width: 45%;
+        margin: 10px 2%;
+        min-height: 200px;
+    }
+
+}
+
+@media screen and (min-width: 880px){
+
+    .slide_item img{
+        min-height: 500px;
+        width: 100%;
+    }
+
+    .secao_titulo{
+        padding: 28px 0;
+    }
+
+    .princ_missao {
+        max-width: 360px;
+        padding: 10px 15px;
+    }
+
+    .princ_visao{
+        max-width: 360px;
+        padding: 10px 15px;
+    }
+
+    .item_mp{
+        width: 45%;
+        margin: 10px 2%;
+        min-height: 200px;
+    }
+
+    .item_mail{
+        width: 45%;
+        margin: 10px 2%;
+        min-height: 200px;
+    }
+
+}
+
+
+@media only screen and (min-width: 960px){
+
+    .content{
+        float: left;
+        width: 88%;
+        margin: 0 6%;
+        padding: 5px 0;
+    }
+
+    .rede_social{
+        position: fixed;
+        z-index: 99;
+        top: 32%;
+        left: 0;
+        padding-top: 0;
+        width: 0;
+    }
+
+    .rede_social li{
+        display: inline;
+    }
+
+    .social:hover{
+        width: 60px;
+    }
+
+    .rede_social_rodape{
+        display: inline;
+    }
+
+    .faixa_rodape{
+        padding: 0;
+    }
+
+    .rede_social ul{
+        margin-left: 0;
+    }
+
+    .cabecalho{
+        background: #EEEEEE;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(250, 250, 250, 0.95);
+        z-index: 98;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .area_logo img{
+        height: 75px;
+    }
+
+    .botao_menu{
+        display: none;
+    }
+
+    .slide_item img{
+        max-height: 600px;
+        width: 100%;
+    }
+
+    .slide_controll{
+        position: absolute;
+        top: 45%;
+        width: 82%;
+        font-size: 3.5em;
+        margin: 0 9%;
+    }
+
+    .slide_nav{
+        position: absolute;
+        padding: 5px 15px;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        z-index: 89;
+        border-radius: 50%; 
+        -moz-border-radius: 50%; 
+        -webkit-border-radius: 50%;
+    }
+
+    .secao_titulo{
+        padding: 30px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 2.7em;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.2em;
+    }
+
+    .item_principios{
+        float: left;
+    }
+
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        float: left;
+        padding: 25px;
+    }
+
+    .limite_menu{
+        clear: none;
+    }
+
+    .menu{
+        display: inline;
+        margin-top: 30px;
+        float: right;
+        font-size: 1.1em;
+        height: auto;
+        overflow-y: visible;
+    }
+
+    .menu li, .menu a{
+        display: inline-block;
+        float: none; 
+        width: auto;
+    }
+
+    .menu li a{
+        background-color: rgba(250, 250, 250, 0);
+        padding: 10px 10px;
+    }
+
+    .menu .menu_item a:hover{
+        background: #59D6FF;
+        color: #FFFFFF;
+    }
+
+    .sub_item_menu{
+        position: absolute; 
+        display: none; 
+        top: 70px;
+        padding: 5px;
+        z-index: 99;
+    }
+
+    .sub_item_menu li, .sub_item_menu a{
+        text-align: center;
+        float: left; 
+        width: 100%;
+    }
+
+    .sub_item_menu_somos{
+        width: 125px; 
+    }
+
+    .sub_item_menu_sustenta{
+        width: 155px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 100px; 
+    }
+
+    .sub_item_menu_restrita{
+        width: 138px;
+    }
+
+    .menu li:hover .sub_item_menu
+    {
+        display: block;
+    }
+
+    .sub_item_menu li{
+        font-size: 0.9em;
+    }
+
+    .sub_item_menu li a{
+        padding: 8px 0;
+    }
+
+    .principios{
+        padding-left: 20px;
+    }
+
+    .princ_missao {
+        width: 460px;
+        height: 130px;
+        padding: 10px 10px;
+    }
+
+    .princ_visao{
+        width: 460px;
+        height: 130px;
+        padding: 10px 10px;
+    }
+
+    .princ_valores{
+        padding: 10px 10px;
+    }
+
+    .item_mp{
+        width: 45%;
+        margin: 10px 2% 20px 2%;
+        min-height: 200px;
+    }
+
+    .item_mail{
+        width: 45%;
+        margin: 10px 2% 20px 2%;
+        min-height: 200px;
+    }
+
+    .item_cotacao{
+        width: 95%;
+        margin: 10px;
+        min-height: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+
+    .content{
+        float: left;
+        width: 82%;
+        margin: 0 9%;
+        padding: 5px 0;
+    }
+
+    .slide_controll{
+        top: 45%;
+        width: 80%;
+        font-size: 4.5em;
+        margin: 0 10%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1360px){
+
+    .item_principios{
+        float: left;
+        width: 360px;
+        height: 200px;
+        padding: 10px 15px 10px 0;
+    }
+
+    .item_interno{
+        margin: 20px 10px;
+        width: 340px;
+        height: 200px;
+        padding: 25px;
+    }
+
+    .menu{
+        font-size: 1.2em;
+    }
+
+    .sub_item_menu{
+        top: 75px;
+    }
+
+    .sub_item_menu_somos{
+        width: 138px; 
+    }
+
+    .sub_item_menu_sustenta{
+        width: 170px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 100px; 
+    }
+
+    .sub_item_menu_restrita{
+        width: 138px;
+    }
+
+}
+
+@media only screen and (min-width: 1600px){
+
+    .content{
+        float: left;
+        width: 80%;
+        margin: 0 10%;
+        padding: 5px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 3em;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.5em;
+    }
+
+    .item_principios{
+        float: left;
+        width: 420px;
+        height: 200px;
+        padding: 10px 30px 10px 0;
+    }
+
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        margin: 20px 30px;
+        width: 350px;
+        height: 200px;
+        padding: 25px;
+    }
+
+    .menu{
+        margin-top: 25px;
+        font-size: 1.3em;
+    }
+
+    .sub_item_menu_somos{
+        width: 145px; 
+    }
+
+    .sub_item_menu_sustenta{
+        width: 173px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 105px; 
+    }
+
+    .sub_item_menu_restrita{
+        width: 143px;
+    }
+
+
+    .sub_item_menu{
+        top: 70px;
+    }
+
+    .princ_missao {
+        max-width: none;
+    }
+
+    .princ_visao{
+        max-width: none;
+    }
+
+    .principios{
+        padding-left: 0;
+    }
+
+}

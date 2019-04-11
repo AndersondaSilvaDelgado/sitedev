@@ -1,0 +1,320 @@
+    /*----------------------------DEFAULT-------------------------------------*/
+    
+    .main{
+        width: 85%;
+    }
+    
+    .form_create{
+        margin-bottom: 30px;
+    }
+    
+    .title_crud{
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 10px;
+    }
+    
+    .content{
+        margin-left: 30px;
+    }
+    
+    .paginator{
+        padding: 5px;
+    }
+
+    .paginator a, .paginator span{
+        margin: 0 5px; 
+        padding: 3px 8px; 
+        font-size: 14px; 
+    }
+    
+    /*------------------------------------------------------------------------*/   
+    
+    /*---------------------INDEX PRINCIPAL - PAINEL---------------------------*/
+    
+    .main_header{
+        width: 15%;
+        height: 100%;
+    }
+    
+    .area_logo{
+        padding: 30px 10px;
+    }
+
+    .area_logo img{
+        height: 55px;
+    }
+
+    .area_logo h1{
+        font-size: 1.2em;
+    }
+    
+    .menu li a{
+        padding: 3px 0 3px 20px;
+    }
+    
+    .sub_menu_item li a{
+        padding: 3px 0 3px 35px;
+    }
+    
+    /*------------------------------------------------------------------------*/   
+    
+    /*---------------------------------DASHBOARD------------------------------*/
+    
+    .grafico_princ{
+        width: 70%; 
+    }
+    
+    /*------------------------------------------------------------------------*/
+    
+    /*--------------------------INDEX FORMADO BOLA---------------------------*/
+        
+    .box_item{
+        width: 15%;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        min-width: 210px;
+        min-height: 190px;
+    }
+
+    .box_item .thumb_small{
+        margin: 10px 0 0 30px;
+    }
+
+    .box_item h1{
+        margin: 9px 0 0 20px;
+        font-size: 1.2em;
+    }
+
+    .box_item p{
+        margin: 0 20px;
+    }
+    
+    .inserir{
+        font-size: 9.7em;
+    }
+    
+    .post_actions{
+        margin-right: 5px;
+        font-size: 1.8em;
+    }
+    
+    /*------------------------------------------------------------------------*/
+
+    /*-------------------------INDEX FORMADO TABELA---------------------------*/
+    
+    .user_cad{
+        width: 120px;
+        padding: 8px 10px;
+        font-size: 1em;
+    }
+    
+    .ultable{
+        width: 820px;
+        margin-top: 20px; 
+    }
+
+    .ultable .t_title{
+        width: 820px;
+    }
+
+    .ultable li{
+        width: 820px; 
+        font-size: 14px;
+    }
+
+    .ultable li span{
+        padding: 15px; 
+        min-height: 22px;
+    }
+
+    /*-----------------USUARIO------------------*/
+    
+    .ultable li .cod_usuario{
+        width: 70px;
+    }
+
+    .ultable li .nome_usuario{
+        width: 180px;
+    }
+
+    .ultable li .nome_compl_usuario{
+        width: 325px;
+    }
+
+    .ultable li .nivel_usuario{
+        width: 130px;
+    }
+    
+    /*------------------------------------------*/
+    
+    /*-----------------USUARIO------------------*/
+    
+    .ultable li .cod_documento{
+        width: 70px;
+    }
+
+    .ultable li .descricao_documento{
+        width: 350px;
+    }
+
+    .ultable li .categoria_documento{
+        width: 205px;
+    }
+    
+    .ultable li .posicao_documento{
+        width: 80px;
+    }
+    
+    /*------------------------------------------*/
+
+    .ultable li .ed{
+        width: 106px;
+        font-size: 1.7em;
+        padding: 9px;
+    }
+    
+    /*------------------------------------------------------------------------*/
+    
+    /*---------------------------CADASTRO DEFAULT-----------------------------*/
+    
+    .label{
+        margin-bottom: 15px;
+    }
+
+    .field{
+        margin-bottom: 5px; 
+    }
+    
+    .label_line{
+        width: 1000px;  
+        margin-bottom: 15px;
+    }
+
+    .label_larger input,
+    .label_larger select{
+        width: 950px;
+    }
+    
+    .label_medium{
+        width: 500px;
+    }
+
+    .label_medium input,
+    .label_medium select{
+        width: 445px;
+    }
+    
+    .label_small{
+        width: 330px;
+    }
+
+    .label_small input,
+    .label_small select{
+        width: 290px;
+    }
+
+    .lista_dados{ 
+        width: 430px;
+    }
+
+    .lista_dados select,
+    .lista_dados input{
+        width: 400px;
+    }
+    
+    .botoes_lista{ 
+        width: 100px;
+    }
+
+    .botoes_lista input{
+        width: 70px;
+        height: 45px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+    
+    .botoes{
+        margin-top: 15px;
+    }
+    
+    .area{
+        margin-bottom: 20px;
+    }
+    
+    table.mceLayout, textarea.richEditor {
+        width: 950px !important;
+    }
+
+    .mceEditor td.mceIframeContainer iframe {
+        min-height: 220px !important;
+    }
+
+    .mceEditor table {
+        height: auto !important;
+    }
+    
+    .gbform{
+        margin-bottom: 60px;
+    }
+
+    .gbform .gallery{
+        width: 1000px;
+    }
+
+    .gbform .gallery li{
+        margin: 0 20px 20px 0; 
+    }
+
+    .gbform .gallery li .del{
+        right: 0px; 
+        bottom: 0px; 
+        width: 20px; 
+        height: 20px;
+    }
+    
+    .thumb_small{
+        width: 150px; 
+        height: 100px; 
+        background-size: 70%
+    }
+
+    .btn{
+        padding: 7px 22px;
+        font-size: 0.8em; 
+    }
+
+    .lista_detalhe{
+        width: 180px;
+    }
+    
+    .label_botao_inserir{
+        float: left; 
+        width: 140px;
+    }
+    
+    .label_campo_pesquisa{
+        float: left; 
+        width: 530px;
+    }
+    
+    .label_campo_pesquisa input{
+        margin-top: 10px;
+        width: 500px;
+    }
+    
+    .label_botao_pesq{
+        float: left; 
+        width: 140px;
+    }
+    
+    /*------------------------------------------------------------------------*/
+
+    /*---------------------------RELATORIO DEFAULT----------------------------*/
+    
+    .relatorio_princ{
+        width: 1100px;
+        height: 750px;
+    }
+    
+    /*------------------------------------------------------------------------*/

@@ -1,0 +1,1574 @@
+@media screen and (min-width: 0px) and (max-width: 1023px){
+
+    .area_logo{
+        padding: 30px 10px;
+    }
+
+    .area_logo img{
+        height: 40px;
+    }
+
+    .area_logo h1{
+        font-size: 1em;
+    }
+
+    .thumb_small{
+        width: 150px; 
+        height: 100px; 
+        background-size: 70%
+    }
+
+    .thumb_icon{
+        width: 25px; 
+        height: 25px;
+    }
+
+    .thumb_big{
+        width: 160px; 
+        height: 160px;
+    }
+
+    .box_item{
+        width: 22%;
+        min-height: 160px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .box_item .thumb_small{
+        margin: 10px 0 0 30px;
+    }
+
+    .box_item h1{
+        margin: 9px 0 0 20px;
+        font-size: 1em;
+    }
+
+    .box_item p{
+        margin: 0 20px;
+        font-size: 0.9em;
+    }
+
+    .post_actions{
+        margin-right: 5px;
+        font-size: 1.3em;
+    }
+
+    .main_header{
+        width: 150px;
+        height: 850px;
+        margin-right: 20px;
+    }
+
+    .menu li a{
+        padding: 3px 0 3px 20px;
+    }
+
+    .sub_menu_item li a{
+        padding: 3px 0 3px 35px;
+    }
+
+    .main_footer{
+        margin-bottom: -19px;
+        padding: 30px 0; 
+    }
+
+    .main_footer a{
+        font-size: 14px; 
+    }
+
+    .title_crud{
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 10px;
+    }
+
+    .act_new{
+        margin: 25px 0 0 25px;
+    }
+
+    .form_create{
+        margin-bottom: 30px;
+    }
+
+    .label{
+        margin-bottom: 15px;
+    }
+
+    .field{
+        margin-bottom: 5px; 
+    }
+
+    .btn{
+        padding: 7px 22px;
+        font-size: 0.8em; 
+    }
+
+    .gbform{
+        margin-bottom: 60px;
+    }
+
+    .gbform .gallery{
+        width: 550px;
+    }
+
+    .gbform .gallery li{
+        margin: 0 20px 20px 0; 
+    }
+
+    .gbform .gallery li .del{
+        right: 0px; 
+        bottom: 0px; 
+        width: 20px; 
+        height: 20px;
+    }
+
+    .secao{
+        width: 1000px;
+    }
+
+    .lista_detalhe{
+        width: 180px;
+    }
+
+    .lista_secao{
+        width: 700px;
+    }
+
+    .form_acesso_relatorio{
+        width: 480px;
+        margin: 12% 33%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 700;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 15px 0;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .form_acesso_relatorio input, 
+    .form_acesso_relatorio select, 
+    .form_acesso_relatorio textarea{
+        padding: 10px; 
+    }
+
+    .inserir{
+        font-size: 8em;
+    }
+
+    .ultable{
+        width: 1100px;
+        margin-top: 20px; 
+    }
+
+    .ultable .t_title{
+        width: 1100px;
+    }
+
+    .ultable li{
+        width: 1100px; 
+        font-size: 14px;
+    }
+
+    .ultable li span{
+        padding: 15px; 
+        min-height: 22px;
+    }
+
+    .ultable li .ui{
+        width: 70px;
+    }
+
+    .ultable li .uu{
+        width: 180px;
+    }
+
+    .ultable li .un{
+        width: 325px;
+    }
+
+    .ultable li .ue{
+        width: 355px;
+    }
+
+    .ultable li .ul{
+        width: 60px;
+    }
+
+    .ultable li .ed{
+        width: 106px;
+        font-size: 1.7em;
+        padding: 9px;
+    }
+
+    .user_cad{
+        width: 200px;
+        padding: 8px 20px;
+        margin-bottom: 15px;
+        margin-right: 700px;
+        font-size: 1em;
+    }
+
+    .label_line{
+        width: 600px;  
+        margin-bottom: 15px;
+    }
+
+    .label_larger input,
+    .label_larger select{
+        width: 550px;
+    }
+
+    .label_small{
+        float: left; 
+        width: 190px;
+    }
+
+    .label_small input,
+    .label_small select{
+        width: 160px;
+    }
+
+    .label_medium{
+        width: 300px;
+    }
+
+    .label_medium input,
+    .label_medium select{
+        width: 250px;
+    }
+
+    .botoes{
+        margin-top: 15px;
+    }
+
+    .botoes_lista{ 
+        width: 100px;
+    }
+
+    .botoes_lista input{
+        width: 70px;
+        height: 45px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    .lista_dados{ 
+        width: 430px;
+    }
+
+    .lista_dados select,
+    .lista_dados input{
+        width: 400px;
+    }
+
+    .paginator{
+        padding: 5px;
+    }
+
+    .paginator a, .paginator span{
+        margin: 0 5px; 
+        padding: 3px 8px; 
+        font-size: 14px; 
+    }
+
+    .grafico_princ{
+        width: 70%; 
+    }
+
+    .area{
+        margin-bottom: 20px;
+    }
+
+    table.mceLayout, textarea.richEditor {
+        width: 550px !important;
+    }
+
+    .mceEditor td.mceIframeContainer iframe {
+        min-height: 200px !important;
+    }
+    .mceEditor table {
+        height: auto !important;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+
+    .area_logo{
+        padding: 30px 20px;
+    }
+
+    .area_logo img{
+        height: 60px;
+    }
+
+    .area_logo h1{
+        font-size: 1.3em;
+    }
+
+    .thumb_small{
+        width: 150px; 
+        height: 100px; 
+        background-size: 70%
+    }
+
+    .thumb_icon{
+        width: 25px; 
+        height: 25px;
+    }
+
+    .thumb_big{
+        width: 160px; 
+        height: 160px;
+    }
+
+    .box_item{
+        width: 22%;
+        min-height: 160px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .box_item .thumb_small{
+        margin: 10px 0 0 30px;
+    }
+
+    .box_item h1{
+        margin: 9px 0 0 20px;
+        font-size: 1em;
+    }
+
+    .box_item p{
+        margin: 0 20px;
+        font-size: 0.9em;
+    }
+
+    .post_actions{
+        margin-right: 5px;
+        font-size: 1.3em;
+    }
+
+    .main_header{
+        width: 200px;
+        height: 850px;
+        margin-right: 20px;
+    }
+
+    .menu li a{
+        padding: 3px 0 3px 20px;
+    }
+
+    .sub_menu_item li a{
+        padding: 3px 0 3px 35px;
+    }
+
+    .main_footer{
+        margin-bottom: -19px;
+        padding: 30px 0; 
+    }
+
+    .main_footer a{
+        font-size: 14px; 
+    }
+
+    .title_crud{
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 10px;
+    }
+
+    .act_new{
+        margin: 25px 0 0 25px;
+    }
+
+    .form_create{
+        margin-bottom: 30px;
+    }
+
+    .label{
+        margin-bottom: 15px;
+    }
+
+    .field{
+        margin-bottom: 5px; 
+    }
+
+    .btn{
+        padding: 7px 22px;
+        font-size: 0.8em; 
+    }
+
+    .gbform{
+        margin-bottom: 60px;
+    }
+
+    .gbform .gallery{
+        width: 550px;
+    }
+
+    .gbform .gallery li{
+        margin: 0 20px 20px 0; 
+    }
+
+    .gbform .gallery li .del{
+        right: 0px; 
+        bottom: 0px; 
+        width: 20px; 
+        height: 20px;
+    }
+
+    .secao{
+        width: 1000px;
+    }
+
+    .lista_detalhe{
+        width: 180px;
+    }
+
+    .lista_secao{
+        width: 700px;
+    }
+
+    .form_acesso_relatorio{
+        width: 480px;
+        margin: 12% 33%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 700;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 15px 0;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .form_acesso_relatorio input, 
+    .form_acesso_relatorio select, 
+    .form_acesso_relatorio textarea{
+        padding: 10px; 
+    }
+
+    .inserir{
+        font-size: 8em;
+    }
+
+    .ultable{
+        width: 760px;
+        margin-top: 20px; 
+    }
+
+    .ultable .t_title{
+        width: 760px;
+    }
+
+    .ultable li{
+        width: 760px; 
+        font-size: 14px;
+    }
+
+    .ultable li span{
+        padding: 15px; 
+        min-height: 22px;
+    }
+
+    .ultable li .ui{
+        width: 70px;
+    }
+
+    .ultable li .uu{
+        width: 160px;
+    }
+
+    .ultable li .un{
+        width: 310px;
+    }
+
+    .ultable li .ue{
+        width: 355px;
+    }
+
+    .ultable li .ul{
+        width: 110px;
+    }
+
+    .ultable li .ed{
+        width: 106px;
+        font-size: 1.7em;
+        padding: 9px;
+    }
+
+    .user_cad{
+        width: 200px;
+        padding: 8px 20px;
+        margin-bottom: 15px;
+        margin-right: 500px;
+        font-size: 1em;
+    }
+
+    .label_line{
+        width: 600px;  
+        margin-bottom: 15px;
+    }
+
+    .label_larger input,
+    .label_larger select{
+        width: 550px;
+    }
+
+    .label_small{
+        float: left; 
+        width: 190px;
+    }
+
+    .label_small input,
+    .label_small select{
+        width: 160px;
+    }
+
+    .label_medium{
+        width: 300px;
+    }
+
+    .label_medium input,
+    .label_medium select{
+        width: 250px;
+    }
+
+    .botoes{
+        margin-top: 15px;
+    }
+
+    .botoes_lista{ 
+        width: 60px;
+    }
+
+    .botoes_lista input{
+        width: 40px;
+        height: 35px;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .lista_dados{ 
+        width: 270px;
+    }
+
+    .lista_dados select,
+    .lista_dados input{
+        width: 250px;
+    }
+
+    .paginator{
+        padding: 5px;
+    }
+
+    .paginator a, .paginator span{
+        margin: 0 5px; 
+        padding: 3px 8px; 
+        font-size: 14px; 
+    }
+
+    .grafico_princ{
+        width: 70%; 
+    }
+
+    .area{
+        margin-bottom: 20px;
+    }
+
+    table.mceLayout, textarea.richEditor {
+        width: 550px !important;
+    }
+
+    .mceEditor td.mceIframeContainer iframe {
+        min-height: 200px !important;
+    }
+    .mceEditor table {
+        height: auto !important;
+    }
+
+    .relatorio_princ{
+        width: 700px;
+        height: 700px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1359px){
+
+    .content{
+        width: 80%; 
+        margin: 0 10%; 
+    }
+
+    .thumb_small{
+        width: 150px; 
+        height: 100px; 
+        background-size: 70%
+    }
+
+    .thumb_icon{
+        width: 25px; 
+        height: 25px;
+    }
+
+    .thumb_big{
+        width: 160px; 
+        height: 160px;
+    }
+
+    .box_item{
+        width: 15%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        min-width: 210px;
+        min-height: 160px;
+    }
+
+    .box_item .thumb_small{
+        margin: 10px 0 0 30px;
+    }
+
+    .box_item h1{
+        margin: 6px 0 0 20px;
+        font-size: 1.2em;
+    }
+
+    .box_item p{
+        margin: 0 20px;
+    }
+
+    .post_actions{
+        margin-right: 5px;
+        font-size: 1.5em;
+    }
+
+    .inserir{
+        font-size: 8.2em;
+    }
+
+    .main_header{
+        width: 280px;
+        height: 775px;
+        margin-right: 20px;
+    }
+
+    .menu li a{
+        padding: 3px 0 3px 20px;
+    }
+
+    .sub_menu_item li a{
+        padding: 3px 0 3px 35px;
+    }
+
+    .area_logo{
+        padding: 30px 10px;
+    }
+
+    .area_logo img{
+        height: 65px;
+    }
+
+    .area_logo h1{
+        font-size: 1.5em;
+    }
+
+    .main_footer{
+        margin-bottom: -19px;
+        padding: 30px 0; 
+    }
+
+    .main_footer a{
+        font-size: 14px; 
+    }
+
+    .title_crud{
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 10px;
+    }
+
+    .act_new{
+        margin: 25px 0 0 25px;
+    }
+
+    .form_create{
+        margin-bottom: 30px;
+    }
+
+    .label{
+        margin-bottom: 15px;
+    }
+
+    .field{
+        margin-bottom: 5px; 
+    }
+
+    .btn{
+        padding: 7px 22px;
+        font-size: 0.8em; 
+    }
+
+    .gbform{
+        margin-bottom: 60px;
+    }
+
+    .gbform .gallery{
+        width: 800px;
+    }
+
+    .gbform .gallery li{
+        margin: 0 20px 20px 0; 
+    }
+
+    .gbform .gallery li .del{
+        right: 0px; 
+        bottom: 0px; 
+        width: 20px; 
+        height: 20px;
+    }
+
+    .secao{
+        width: 1000px;
+    }
+
+    .lista_detalhe{
+        width: 180px;
+    }
+
+    .lista_secao{
+        width: 700px;
+    }
+
+    .form_acesso_relatorio{
+        width: 480px;
+        margin: 12% 33%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 700;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 15px 0;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .form_acesso_relatorio input, 
+    .form_acesso_relatorio select, 
+    .form_acesso_relatorio textarea{
+        padding: 10px; 
+    }
+
+    .ultable{
+        width: 820px;
+        margin-top: 20px; 
+    }
+
+    .ultable .t_title{
+        width: 820px;
+    }
+
+    .ultable li{
+        width: 820px; 
+        font-size: 14px;
+    }
+
+    .ultable li span{
+        padding: 15px; 
+        min-height: 22px;
+    }
+
+    .ultable li .ui{
+        width: 70px;
+    }
+
+    .ultable li .uu{
+        width: 180px;
+    }
+
+    .ultable li .un{
+        width: 325px;
+    }
+
+    .ultable li .ue{
+        width: 355px;
+    }
+
+    .ultable li .ul{
+        width: 130px;
+    }
+
+    .ultable li .ed{
+        width: 106px;
+        font-size: 1.7em;
+        padding: 9px;
+    }
+
+    .user_cad{
+        width: 200px;
+        padding: 8px 20px;
+        margin-bottom: 15px;
+        margin-right: 700px;
+        font-size: 1em;
+    }
+
+    .label_line{
+        width: 810px;  
+        margin-bottom: 15px;
+    }
+
+    .label_larger input,
+    .label_larger select{
+        width: 810px;
+    }
+
+    .label_small{
+        float: left; 
+        width: 270px;
+    }
+
+    .label_small input,
+    .label_small select{
+        width: 230px;
+    }
+
+    .label_medium{
+        width: 400px;
+    }
+
+    .label_medium input,
+    .label_medium select{
+        width: 380px;
+    }
+
+    .botoes{
+        margin-top: 15px;
+    }
+
+    .botoes_lista{ 
+        width: 70px;
+    }
+
+    .botoes_lista input{
+        width: 50px;
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    .lista_dados{ 
+        width: 370px;
+    }
+
+    .lista_dados select,
+    .lista_dados input{
+        width: 340px;
+    }
+
+    .paginator{
+        padding: 5px;
+    }
+
+    .paginator a, .paginator span{
+        margin: 0 5px; 
+        padding: 3px 8px; 
+        font-size: 14px; 
+    }
+
+    .grafico_princ{
+        width: 70%; 
+    }
+
+    .area{
+        margin-bottom: 20px;
+    }
+
+
+    table.mceLayout, textarea.richEditor {
+        width: 810px !important;
+    }
+
+    .mceEditor td.mceIframeContainer iframe {
+        min-height: 200px !important;
+    }
+
+    .mceEditor table {
+        height: auto !important;
+    }
+
+    .relatorio_princ{
+        width: 900px;
+        height: 700px;
+    }
+
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1599px){
+
+    .content{
+        width: 80%; 
+        margin: 0 10%; 
+    }
+
+    .thumb_small{
+        width: 150px; 
+        height: 100px; 
+        background-size: 70%
+    }
+
+    .thumb_icon{
+        width: 25px; 
+        height: 25px;
+    }
+
+    .thumb_big{
+        width: 160px; 
+        height: 160px;
+    }
+
+    .box_item{
+        width: 15%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        min-width: 210px;
+        min-height: 160px;
+    }
+
+    .box_item .thumb_small{
+        margin: 10px 0 0 30px;
+    }
+
+    .box_item h1{
+        margin: 6px 0 0 20px;
+        font-size: 1.2em;
+    }
+
+    .box_item p{
+        margin: 0 20px;
+    }
+
+    .post_actions{
+        margin-right: 5px;
+        font-size: 1.5em;
+    }
+
+    .inserir{
+        font-size: 8.2em;
+    }
+
+    .main_header{
+        width: 280px;
+        height: 775px;
+        margin-right: 20px;
+    }
+
+    .menu li a{
+        padding: 3px 0 3px 20px;
+    }
+
+    .sub_menu_item li a{
+        padding: 3px 0 3px 35px;
+    }
+
+    .area_logo{
+        padding: 30px 10px;
+    }
+
+    .area_logo img{
+        height: 65px;
+    }
+
+    .area_logo h1{
+        font-size: 1.5em;
+    }
+
+    .main_footer{
+        margin-bottom: -19px;
+        padding: 30px 0; 
+    }
+
+    .main_footer a{
+        font-size: 14px; 
+    }
+
+    .title_crud{
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 10px;
+    }
+
+    .act_new{
+        margin: 25px 0 0 25px;
+    }
+
+    .form_create{
+        margin-bottom: 30px;
+    }
+
+    .label{
+        margin-bottom: 15px;
+    }
+
+    .field{
+        margin-bottom: 5px; 
+    }
+
+    .btn{
+        padding: 7px 22px;
+        font-size: 0.8em; 
+    }
+
+    .gbform{
+        margin-bottom: 60px;
+    }
+
+    .gbform .gallery{
+        width: 1000px;
+    }
+
+    .gbform .gallery li{
+        margin: 0 20px 20px 0; 
+    }
+
+    .gbform .gallery li .del{
+        right: 0px; 
+        bottom: 0px; 
+        width: 20px; 
+        height: 20px;
+    }
+
+    .secao{
+        width: 1000px;
+    }
+
+    .lista_detalhe{
+        width: 180px;
+    }
+
+    .lista_secao{
+        width: 700px;
+    }
+
+    .form_acesso_relatorio{
+        width: 480px;
+        margin: 12% 33%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 700;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 15px 0;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .form_acesso_relatorio input, 
+    .form_acesso_relatorio select, 
+    .form_acesso_relatorio textarea{
+        padding: 10px; 
+    }
+
+    .ultable{
+        width: 820px;
+        margin-top: 20px; 
+    }
+
+    .ultable .t_title{
+        width: 820px;
+    }
+
+    .ultable li{
+        width: 820px; 
+        font-size: 14px;
+    }
+
+    .ultable li span{
+        padding: 15px; 
+        min-height: 22px;
+    }
+
+    .ultable li .ui{
+        width: 70px;
+    }
+
+    .ultable li .uu{
+        width: 180px;
+    }
+
+    .ultable li .un{
+        width: 325px;
+    }
+
+    .ultable li .ue{
+        width: 355px;
+    }
+
+    .ultable li .ul{
+        width: 130px;
+    }
+
+    .ultable li .ed{
+        width: 106px;
+        font-size: 1.7em;
+        padding: 9px;
+    }
+
+    .user_cad{
+        width: 200px;
+        padding: 8px 20px;
+        margin-bottom: 15px;
+        margin-right: 700px;
+        font-size: 1em;
+    }
+
+    .label_line{
+        width: 1000px;  
+        margin-bottom: 15px;
+    }
+
+    .label_larger input,
+    .label_larger select{
+        width: 950px;
+    }
+
+    .label_small{
+        float: left; 
+        width: 330px;
+    }
+
+    .label_small input,
+    .label_small select{
+        width: 290px;
+    }
+
+    .label_medium{
+        width: 500px;
+    }
+
+    .label_medium input,
+    .label_medium select{
+        width: 445px;
+    }
+
+    .botoes{
+        margin-top: 15px;
+    }
+
+    .botoes_lista{ 
+        width: 100px;
+    }
+
+    .botoes_lista input{
+        width: 70px;
+        height: 45px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    .lista_dados{ 
+        width: 430px;
+    }
+
+    .lista_dados select,
+    .lista_dados input{
+        width: 400px;
+    }
+
+    .paginator{
+        padding: 5px;
+    }
+
+    .paginator a, .paginator span{
+        margin: 0 5px; 
+        padding: 3px 8px; 
+        font-size: 14px; 
+    }
+
+    .grafico_princ{
+        width: 70%; 
+    }
+
+    .area{
+        margin-bottom: 20px;
+    }
+
+
+    table.mceLayout, textarea.richEditor {
+        width: 950px !important;
+    }
+
+    .mceEditor td.mceIframeContainer iframe {
+        min-height: 200px !important;
+    }
+
+    .mceEditor table {
+        height: auto !important;
+    }
+
+    .relatorio_princ{
+        width: 900px;
+        height: 700px;
+    }
+
+}
+
+@media screen and (min-width: 1600px){
+
+    .thumb_small{
+        width: 150px; 
+        height: 100px; 
+        background-size: 70%
+    }
+
+    .thumb_icon{
+        width: 25px; 
+        height: 25px;
+    }
+
+    .thumb_big{
+        width: 160px; 
+        height: 160px;
+    }
+
+    .box_item{
+        width: 15%;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        min-width: 210px;
+        min-height: 190px;
+    }
+
+    .box_item .thumb_small{
+        margin: 10px 0 0 30px;
+    }
+
+    .box_item h1{
+        margin: 9px 0 0 20px;
+        font-size: 1.2em;
+    }
+
+    .box_item p{
+        margin: 0 20px;
+    }
+
+    .content{
+        width: 80%; 
+        margin: 0 10%; 
+    }
+
+    .main_header{
+        width: 280px;
+        height: 775px;
+        margin-right: 20px;
+    }
+
+    .menu li a{
+        padding: 3px 0 3px 20px;
+    }
+
+    .sub_menu_item li a{
+        padding: 3px 0 3px 35px;
+    }
+
+    .area_logo{
+        padding: 30px 10px;
+    }
+
+    .area_logo img{
+        height: 65px;
+    }
+
+    .area_logo h1{
+        font-size: 1.5em;
+    }
+
+    .main_footer{
+        margin-bottom: -19px;
+        padding: 30px 0; 
+    }
+
+    .main_footer a{
+        font-size: 14px; 
+    }
+
+    .title_crud{
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 10px;
+    }
+
+    .post_actions{
+        margin-right: 5px;
+        font-size: 1.8em;
+    }
+
+    .act_new{
+        margin: 25px 0 0 25px;
+    }
+
+    .form_create{
+        margin-bottom: 30px;
+    }
+
+    .label{
+        margin-bottom: 15px;
+    }
+
+    .field{
+        margin-bottom: 5px; 
+    }
+
+    .btn{
+        padding: 7px 22px;
+        font-size: 0.8em; 
+    }
+
+    .gbform{
+        margin-bottom: 60px;
+    }
+
+    .gbform .gallery{
+        width: 1000px;
+    }
+
+    .gbform .gallery li{
+        margin: 0 20px 20px 0; 
+    }
+
+    .gbform .gallery li .del{
+        right: 0px; 
+        bottom: 0px; 
+        width: 20px; 
+        height: 20px;
+    }
+
+    .secao{
+        width: 1000px;
+    }
+
+    .lista_detalhe{
+        width: 180px;
+    }
+
+    .lista_secao{
+        width: 700px;
+    }
+
+    .form_acesso_relatorio{
+        width: 480px;
+        margin: 12% 33%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 700;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 15px 0;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .form_acesso_relatorio input, 
+    .form_acesso_relatorio select, 
+    .form_acesso_relatorio textarea{
+        padding: 10px; 
+    }
+
+    .inserir{
+        font-size: 9.7em;
+    }
+
+    .ultable{
+        width: 820px;
+        margin-top: 20px; 
+    }
+
+    .ultable .t_title{
+        width: 820px;
+    }
+
+    .ultable li{
+        width: 820px; 
+        font-size: 14px;
+    }
+
+    .ultable li span{
+        padding: 15px; 
+        min-height: 22px;
+    }
+
+    .ultable li .ui{
+        width: 70px;
+    }
+
+    .ultable li .uu{
+        width: 180px;
+    }
+
+    .ultable li .un{
+        width: 325px;
+    }
+
+    .ultable li .ue{
+        width: 355px;
+    }
+
+    .ultable li .ul{
+        width: 130px;
+    }
+
+    .ultable li .ed{
+        width: 106px;
+        font-size: 1.7em;
+        padding: 9px;
+    }
+
+    .user_cad{
+        width: 200px;
+        padding: 8px 20px;
+        margin-bottom: 15px;
+        margin-right: 700px;
+        font-size: 1em;
+    }
+
+    .label_line{
+        width: 1000px;  
+        margin-bottom: 15px;
+    }
+
+    .label_larger input,
+    .label_larger select{
+        width: 950px;
+    }
+
+    .label_small{
+        float: left; 
+        width: 330px;
+    }
+
+    .label_small input,
+    .label_small select{
+        width: 290px;
+    }
+
+    .label_medium{
+        width: 500px;
+    }
+
+    .label_medium input,
+    .label_medium select{
+        width: 445px;
+    }
+
+    .botoes{
+        margin-top: 15px;
+    }
+
+    .botoes_lista{ 
+        width: 100px;
+    }
+
+    .botoes_lista input{
+        width: 70px;
+        height: 45px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    .lista_dados{ 
+        width: 430px;
+    }
+
+    .lista_dados select,
+    .lista_dados input{
+        width: 400px;
+    }
+
+    .paginator{
+        padding: 5px;
+    }
+
+    .paginator a, .paginator span{
+        margin: 0 5px; 
+        padding: 3px 8px; 
+        font-size: 14px; 
+    }
+
+    .grafico_princ{
+        width: 70%; 
+    }
+
+    .area{
+        margin-bottom: 20px;
+    }
+
+    table.mceLayout, textarea.richEditor {
+        width: 950px !important;
+    }
+
+    .mceEditor td.mceIframeContainer iframe {
+        min-height: 220px !important;
+    }
+
+    .mceEditor table {
+        height: auto !important;
+    }
+
+    .relatorio_princ{
+        width: 1100px;
+        height: 750px;
+    }
+
+}

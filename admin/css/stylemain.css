@@ -1,0 +1,329 @@
+/*----------------------------DEFAULT-------------------------------------*/
+
+.main{
+    display: block; 
+    float: left;
+}
+
+.title_crud{
+    font-weight: bold;
+    background-color: #003082;
+    color: white;
+}
+
+.paginator{
+    background: #fff; 
+    text-align: center
+}
+
+.paginator li{
+    display: inline;
+}
+
+.paginator a, .paginator span{
+    color: #000; 
+    font-weight: 600;
+}
+
+.paginator a:hover{
+    background: #09f; 
+    color: #fff;
+}
+
+.paginator .active{
+    background: #000; 
+    color: #fff;
+}
+
+.center{
+    text-align: center;
+}
+
+.direita{
+    text-align: right;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------INDEX PRINCIPAL - PAINEL---------------------------*/
+
+.main_header{
+    display: block; 
+    float: left;
+    background-color: #003082;
+}
+
+.area_logo{
+    text-align: center;
+}
+
+.area_logo h1{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.menu li, .menu a{
+    float: left; 
+    width: 100%;
+}
+
+.menu li a{
+    text-decoration: none;
+    letter-spacing: 0.1px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.menu .menu_item a:hover{
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.sub_menu_item{
+    display: none;
+    position: relative;
+}
+
+.sub_menu_item li,
+.sub_menu_item a{
+    width: 100%;
+    float: left; 
+}
+
+.sub_menu_item li a{
+    font-weight: normal;
+}
+
+/*------------------------------------------------------------------------*/   
+
+/*---------------------------------DASHBOARD------------------------------*/
+
+.grafico_princ{
+    float: left;
+    height: auto; 
+}
+
+/*------------------------------------------------------------------------*/
+
+/*--------------------------INDEX FORMADO BOLA---------------------------*/
+
+.box_item{
+    float: left;
+    background-color: #EEEEEE;
+    color: #000000;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+}
+
+.box_item:hover{
+    background: #00759B;
+    color: #FFFFFF;
+}
+
+.box_item span{
+    font-weight: bold;
+}
+
+.inserir{
+    text-align: center;
+}
+
+.post_actions{
+    text-align: right;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------INDEX FORMADO TABELA---------------------------*/
+
+.user_cad{
+    text-transform: uppercase; 
+    color: #fff;
+    text-align: center;
+    border: 3px solid #1f471a; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ultable{
+    display:block; 
+    overflow: hidden; 
+    background: #eee; 
+    list-style: none; 
+    padding: 0;
+}
+
+.ultable .t_title{
+    background: #333; 
+    color: #fff; 
+    border-color: #333; 
+}
+
+.ultable .t_title span{
+    border-color: #fff;
+}
+
+.ultable li{
+    float: left; 
+    display: block; 
+    border: 1px solid #333; 
+    border-top: none; 
+}
+
+.ultable li span{
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.ultable li .center{
+    text-align: center;
+}
+
+.ultable li .ed{
+    border-right-color: rgba(255,255,255,0);
+}
+
+.label_botao_inicial{
+    float: left; 
+}
+
+.label_pesq_inicial{
+    float: left; 
+}
+
+/*------------------------------INDEX ARVORE------------------------------*/
+
+.secao i{
+    cursor: pointer;
+}
+
+.titulo1{
+    color: #000000;
+    font-weight: bold;
+}
+
+.titulo2{
+    color: #402570;
+    font-weight: bold;
+}
+
+.titulo3{
+    color: #00A8CC;
+    font-weight: bold;
+}
+
+.titulo4{
+    color: #000000;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------CADASTRO DEFAULT-----------------------------*/
+
+.label{
+    display: block; 
+}
+
+.field{
+    display: block; 
+    font-weight: 600;
+}
+
+.label_line{
+    float: left;
+}
+
+.label_small{
+    float: left;
+}
+
+.label_medium{
+    float: left; 
+}
+
+.lista_dados{
+    float: left;
+}
+
+.botoes_lista{
+    float: left;
+}
+
+.botoes_lista input{
+    font-weight: bold;
+}
+
+.area{
+    display: inline-block;
+}
+
+table.mceLayout, textarea.tinyMCE {
+    width: 100% !important;
+    font-size: 1em;
+}
+
+.gbform .gallery{
+    display: block; 
+    float:left;
+}
+
+.gbform .gallery li{
+    float:left; 
+    background: #fff; 
+    position: relative;
+}
+
+.gbform .gallery li .del{
+    position: absolute; 
+    background: #900;
+    text-transform: uppercase; 
+    color: #fff; 
+    font-size: 0; 
+    background: url(../icons/logout.png) center center no-repeat; 
+    background-size: 80%;
+}
+
+.gbform .gallery li .del:hover{
+    background-color: red
+}
+
+.thumb_small{
+    background: #00254A;
+}
+
+.btn{
+    border-style: solid;
+    border-width: 3px;
+    text-transform: uppercase; 
+    font-weight: bold;
+    cursor: pointer; 
+    color: #fff;
+}
+
+.imagem_capa{
+    width: 100%;
+    height: 100%;
+}
+
+.label_botao_inserir{
+    float: left;
+}
+
+.label_campo_pesquisa{
+    float: left; 
+}
+
+.label_botao_pesq{
+    float: left; 
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------RELATORIO DEFAULT----------------------------*/
+
+
+
+/*------------------------------------------------------------------------*/
+
+

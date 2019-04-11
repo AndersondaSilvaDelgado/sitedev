@@ -1,0 +1,3933 @@
+@media screen and (min-width: 0px) and (max-width: 1023px){
+
+    .content{
+        float: left;
+        width: 86%;
+        margin: 0 7%;
+        padding: 5px 0;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 0.5em 0.5em 0.5em 0;
+    }
+
+    .area_logo img{
+        height: 2.3em;
+        cursor: pointer;
+    }
+
+    .area_logo h1{
+        margin-top: 0.5em;
+        font-size: 0.7em;
+    }
+
+    .translate{
+        top: 0.1em;
+        left: 87%;
+    }
+
+    .translate img{
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .menu{
+        top: 6.3em;
+        margin-left: -4%;
+        margin-right: -4%;
+        font-size: 0.9em;
+        margin-top: 1.8em;
+    }
+
+    .menu li a{
+        padding: 0.6em 1em 0.6em 0.6em;
+    }
+
+    .sub_item_menu{
+        top: 65px;
+        padding: 5px;
+    }
+
+    .sub_item_menu_somos{
+        width: 163px;
+    }
+
+    .sub_item_menu_sustenta{
+        width: 190px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 124px;
+    }
+
+    .sub_item_menu_restrita{
+        width: 161px;
+    }
+    
+    .sub_item_menu_noticia{
+        width: 120px;
+    }
+
+    .slide_controll{
+        top: 40%;
+        width: 82%;
+        font-size: 4em;
+        margin: 0 9%;
+    }
+
+    .slide_item img{
+        min-height: 650px;
+    }
+
+    .slide{
+        margin-bottom: 20px;
+    }
+
+    .bullet_controll{
+        top: 87%;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .bullet{
+        width: 40px;
+        height: 40px;
+        margin: 0 3px;
+    }
+
+    .secao_titulo{
+        padding: 30px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 2.7em;
+        margin-bottom: 5px;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.2em;
+    }
+    
+    .politicas{
+        font-size: 1.3em;
+        margin-bottom: 0.3em;
+    }
+
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        margin: 30px 10px;
+        width: 200px;
+        height: 190px;
+        padding: 20px;
+    }
+
+    .item_interno h1{
+        margin-bottom: 10px;
+        font-size: 1em; 
+    }
+
+    .item_interno .tagline{
+        font-size: 5em;
+    }
+
+    .item_aplicativo{
+        margin: 10px 25px 30px 25px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_aplicativo h1{
+        font-size: 1.2em; 
+    }
+
+    .item_aplicativo .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo img{
+        height: 140px;
+        margin: 10px 0 20px 0;
+    }
+
+    .item_noticia{
+        margin: 5px 15px 30px 15px;
+        width: 28%;
+        height: 290px;
+        padding: 20px;
+    }
+
+    .item_noticia h1{
+        font-size: 1.2em;
+    }
+
+    .item_noticia .tagline{
+        font-size: 8em;
+    }
+
+    .item_noticia img{
+        width: 290px;
+        height: 200px;
+        margin: 10px 0 10px 0;
+    }
+
+    .item_informativo{
+        margin: 10px 25px 30px 25px;
+        width: 40%;
+        height: 400px;
+        padding: 20px;
+    }
+    
+    .rodape{
+        margin-bottom: -19px;
+        padding: 10px 0;
+    }
+
+    .rodape_direto{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    .rodape li{
+        margin: 10px;
+    }
+
+    .rodape_facebook{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rodape_linkedin{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rede_social{
+        top: 39%;
+        width: 0;
+    }
+
+    .rede_social ul{
+        margin-left: 45%;
+    }
+
+    .social{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social:hover{
+        width: 60px;
+    }
+
+    .espacamento_cabecalho{
+        padding: 52px 0;
+    }
+
+    .titulo_relatorio_princ{
+        padding: 30px 0 0 0;
+        font-size: 2.2em;
+    }
+
+    .relatorio_secao1{
+        padding-left: 30px;
+    }
+
+    .relatorio_secao2{
+        padding-left: 60px;
+    }
+
+    .relatorio_secao3{
+        padding-left: 90px;
+    }
+
+    .relatorio_secao4{
+        padding-left: 120px;
+    }
+
+    .relacao_pagina h1{
+        font-size: 1.7em;
+        font-weight: 700;
+        padding: 0 0 10px 0;
+    }
+
+    .relacao_pagina h2{
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 0 0 10px 30px;
+    }
+
+    .relacao_pagina h3{
+        font-size: 1.2em;
+        font-weight: 900;
+        padding: 0 0 10px 60px;
+    }
+
+    .relacao_pagina h4{
+        font-size: 1.2em;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0 0 10px 90px;
+    }
+
+    .acesso_relatorio{
+        padding: 28px 0;
+    }
+
+    .form_acesso_relatorio{
+        width: 750px;
+        margin: 3% 20%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 15px 0;
+        width: 640px;
+        font-size: 1.2em;
+        padding: 5px 0;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .botao_relatorio .btn{
+        width: 40%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .titulo_padrao{
+        padding: 30px 0;
+        font-size: 2.3em;
+    }
+
+    .imagem_direita{
+        margin: 0 0 20px 40px;
+    }
+
+    .imagem_esquerda{
+        margin: 0 40px 20px 0;
+    }
+
+    .imagem_centro{
+        margin: 0 0 30px 0;
+    }
+
+    .imagem_menor{
+        width: 38%;
+        padding: 20px;
+    }
+
+    .imagem_padrao{
+        width: 48%;
+        padding: 20px;
+    }
+
+    .imagem_padrao h1{
+        margin-top: 20px;
+    }
+
+    .padrao p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+        font-size: 1em;
+    }
+
+    .padrao ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .padrao ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .espacamento_relacao{
+        padding: 10px 0;
+    }
+
+    .espaco_relacao{
+        padding: 18px 0;
+    }
+
+    .msg_principal{
+        width: 300px;
+        bottom: 0;
+        right: 10%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario{
+        width: 300px;
+        height: 0;
+        bottom: 0;
+        right: 10%;
+    }
+
+    .msg_formulario form label span{
+        margin: 20px 10% 0 10%;
+    }
+
+    .msg_formulario form label input{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label textarea{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label select{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario input{
+        margin: 20px 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_principal img{
+        height: 30px;
+    }
+
+    .localizacao{
+        width: 41%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        height: 23em;
+    }
+
+    .localizacao h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .localizacao p{
+        font-size: 1em;
+        margin: 0 5% 0 5%;
+    }
+
+    .localizacao label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .localizacao label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao table{
+        margin: 10px 5% 10px 5%;
+    }
+
+    .local{
+        margin-left: 7%;
+    }
+
+    .mapa{
+        margin-right: 7%;
+        margin-left: 7%;
+        height: 600px;
+        margin-bottom: 150px;
+    }
+
+    .formulario_contato{
+        width: 41%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .formulario_contato h1{
+        margin-top: 20px;
+    }
+
+    .formulario_contato form label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .formulario_contato form label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label select{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato table{
+        margin: 10px 5% 0 5%;
+    }
+
+    .fale_conosco{
+        margin-left: 7%;
+    }
+
+    .trabalhe_conosco{
+        margin-right: 7%;
+    }
+
+    .logistico{
+        margin-right: 7%;
+    }
+
+    .formulario_contato .btn{
+        width: 80%;
+        margin: 20px 10% 20px 10%;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .item_ambiental{
+        margin: 10px 10px 30px 10px;
+        width: 29%;
+        height: 200px;
+        padding: 20px;
+    }
+
+    .item_ambiental h1{
+        font-size: 2em;
+    }
+
+    .item_ambiental_ar h1{
+        margin-top: 60px;
+    }
+
+    .item_ambiental_agua h1{
+        margin-top: 60px;
+    }
+
+    .item_ambiental_energia h1{
+        margin-top: 40px;
+    }
+
+    .sub_item_ambiental h3{
+        margin-bottom: 5px;
+    }
+
+    .texto_princ{
+        padding-bottom: 30px !important;
+    }
+
+    .texto_seg{
+        padding-bottom: 15px !important;
+    }
+
+    .texto_terc{
+        padding-bottom: 15px !important;
+    }
+
+    .principios h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .principios p{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .principios ul li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .principios ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .principios article{
+        margin-bottom: 30px;
+    }
+    
+    .produto p{
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+    
+    .produto a{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .produto article{
+        margin-bottom: 30px;
+    }
+    
+    .noticia .titulo_padrao{
+        padding-bottom: 0 !important;
+    }
+
+    .noticia p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .noticia ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .noticia ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .galeria h2{
+        padding-bottom: 15px !important;
+    }
+
+    .galeria li{ 
+        margin: 0 20px 20px 0;
+    }
+
+    .galeria .thumb_small{
+        width: 150px; 
+        height: 100px;
+        background-size: 70%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+
+    .content{
+        float: left;
+        width: 88%;
+        margin: 0 6%;
+        padding: 5px 0;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 0.5em 0.5em 0.5em 0;
+    }
+
+    .area_logo img{
+        height: 3em;
+        cursor: pointer;
+    }
+
+    .area_logo h1{
+        margin-top: 0.5em;
+        font-size: 1.05em;
+    }
+
+    .translate{
+        top: 0.1em;
+        left: 87%;
+    }
+
+    .translate img{
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .menu{
+        top: 6.3em;
+        margin-left: -4%;
+        margin-right: -4%;
+        font-size: 1.1em;
+        margin-top: 1.7em;
+    }
+
+    .menu li a{
+        padding: 0.6em 1.3em 0.6em 0.6em;
+    }
+
+    .sub_item_menu{
+        top: 77px;
+        padding: 5px;
+    }
+
+    .sub_item_menu_somos{
+        width: 138px;
+    }
+
+    .sub_item_menu_sustenta{
+        width: 164px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 100px;
+    }
+
+    .sub_item_menu_restrita{
+        width: 136px;
+    }
+    
+    .sub_item_menu_noticia{
+        width: 99px;
+    }
+
+    .slide_controll{
+        top: 40%;
+        width: 82%;
+        font-size: 4em;
+        margin: 0 9%;
+    }
+
+    .slide_item img{
+        min-height: 650px;
+    }
+
+    .slide{
+        margin-bottom: 20px;
+    }
+
+    .stop_controll{
+        top: 82%;
+        width: 80%;
+        margin: 0 10%; 
+    }
+
+    .stop{
+        font-size: 3em;
+    }
+
+    .bullet_controll{
+        top: 87%;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .bullet{
+        width: 40px;
+        height: 40px;
+        margin: 0 3px;
+    }
+
+    .secao_titulo{
+        padding: 30px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 2.7em;
+        margin-bottom: 5px;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.2em;
+    }
+    
+    .politicas{
+        font-size: 1.3em;
+        margin-bottom: 0.3em;
+    }
+
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        margin: 10px 25px 30px 25px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_interno h1{
+        font-size: 1.2em;
+    }
+
+    .item_interno .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo{
+        margin: 10px 22px 30px 22px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_aplicativo h1{
+        font-size: 1.2em; 
+    }
+
+    .item_aplicativo .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo img{
+        height: 140px;
+        margin: 10px 0 20px 0;
+    }
+
+    .item_noticia{
+        margin: 5px 15px 30px 15px;
+        width: 28%;
+        height: 290px;
+        padding: 20px;
+    }
+
+    .item_noticia h1{
+        font-size: 1.2em;
+    }
+
+    .item_noticia .tagline{
+        font-size: 8em;
+    }
+
+    .item_noticia img{
+        width: 290px;
+        height: 200px;
+        margin: 10px 0 10px 0;
+    }
+
+    .item_informativo{
+        margin: 10px 22px 30px 22px;
+        width: 40%;
+        height: 400px;
+        padding: 20px;
+    }
+    
+    .rodape{
+        margin-bottom: -19px;
+        padding: 10px 0;
+    }
+
+    .rodape_direto{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    .rodape li{
+        margin: 10px;
+    }
+
+    .rodape_facebook{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rodape_linkedin{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rede_social{
+        top: 39%;
+        width: 0;
+    }
+
+    .rede_social ul{
+        margin-left: 0;
+    }
+
+    .social{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social:hover{
+        width: 60px;
+    }
+
+    .espacamento_cabecalho{
+        padding: 52px 0;
+    }
+
+    .titulo_relatorio_princ{
+        padding: 30px 0 0 0;
+        font-size: 2.2em;
+    }
+
+    .relatorio_secao1{
+        padding-left: 30px;
+    }
+
+    .relatorio_secao2{
+        padding-left: 60px;
+    }
+
+    .relatorio_secao3{
+        padding-left: 90px;
+    }
+
+    .relatorio_secao4{
+        padding-left: 120px;
+    }
+
+    .relacao_pagina h1{
+        font-size: 1.7em;
+        font-weight: 700;
+        padding: 0 0 10px 0;
+    }
+
+    .relacao_pagina h2{
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 0 0 10px 30px;
+    }
+
+    .relacao_pagina h3{
+        font-size: 1.2em;
+        font-weight: 900;
+        padding: 0 0 10px 60px;
+    }
+
+    .relacao_pagina h4{
+        font-size: 1.2em;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0 0 10px 90px;
+    }
+
+    .acesso_relatorio{
+        padding: 28px 0;
+    }
+
+    .form_acesso_relatorio{
+        width: 550px;
+        margin: 3% 20%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 15px 0;
+        width: 430px;
+        font-size: 1.2em;
+        padding: 5px 0;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .botao_relatorio .btn{
+        width: 40%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .titulo_padrao{
+        padding: 30px 0;
+        font-size: 2.3em;
+    }
+
+    .imagem_direita{
+        margin: 0 0 20px 40px;
+    }
+
+    .imagem_esquerda{
+        margin: 0 40px 20px 0;
+    }
+
+    .imagem_centro{
+        margin: 0 0 30px 0;
+    }
+
+    .imagem_menor{
+        width: 38%;
+        padding: 20px;
+    }
+
+    .imagem_padrao{
+        width: 48%;
+        padding: 20px;
+    }
+
+    .imagem_padrao h1{
+        margin-top: 20px;
+    }
+
+    .padrao p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+        font-size: 1em;
+    }
+
+    .padrao ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .padrao ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .espacamento_relacao{
+        padding: 10px 0;
+    }
+
+    .espaco_relacao{
+        padding: 18px 0;
+    }
+
+    .msg_principal{
+        width: 300px;
+        bottom: 0;
+        right: 10%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario{
+        width: 300px;
+        height: 0;
+        bottom: 0;
+        right: 10%;
+    }
+
+    .msg_formulario form label span{
+        margin: 20px 10% 0 10%;
+    }
+
+    .msg_formulario form label input{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label textarea{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label select{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario input{
+        margin: 20px 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_principal img{
+        height: 30px;
+    }
+
+    .localizacao{
+        width: 42%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        height: 22em;
+    }
+
+    .localizacao h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .localizacao p{
+        font-size: 1em;
+        margin: 0 5% 0 5%;
+    }
+
+    .localizacao label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .localizacao label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao table{
+        margin: 10px 5% 10px 5%;
+    }
+
+    .local{
+        margin-left: 6%;
+    }
+
+    .mapa{
+        margin-right: 6%;
+        margin-left: 6%;
+        height: 600px;
+        margin-bottom: 150px;
+    }
+
+    .formulario_contato{
+        width: 42%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .formulario_contato h1{
+        margin-top: 20px;
+    }
+
+    .formulario_contato form label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .formulario_contato form label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label select{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato table{
+        margin: 10px 5% 0 5%;
+    }
+
+    .fale_conosco{
+        margin-left: 6%;
+    }
+
+    .trabalhe_conosco{
+        margin-right: 6%;
+    }
+
+    .logistico{
+        margin-right: 6%;
+    }
+
+    .formulario_contato .btn{
+        width: 80%;
+        margin: 20px 10% 20px 10%;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .item_ambiental{
+        margin: 10px 20px 30px 20px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_ambiental h1{
+        font-size: 3em;
+    }
+
+    .item_ambiental_ar h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_agua h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_energia h1{
+        margin-top: 50px;
+    }
+
+    .sub_item_ambiental h3{
+        margin-bottom: 5px;
+    }
+
+    .texto_princ{
+        padding-bottom: 30px !important;
+    }
+
+    .texto_seg{
+        padding-bottom: 15px !important;
+    }
+
+    .texto_terc{
+        padding-bottom: 15px !important;
+    }
+
+    .principios h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .principios p{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .principios ul li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .principios ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+    
+    .principios article{
+        margin-bottom: 30px;
+    }
+    
+    .produto p{
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+    
+    .produto a{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .produto article{
+        margin-bottom: 30px;
+    }
+
+    .noticia .titulo_padrao{
+        padding-bottom: 0 !important;
+    }
+
+    .noticia p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .noticia ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .noticia ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .galeria h2{
+        padding-bottom: 15px !important;
+    }
+
+    .galeria li{ 
+        margin: 0 20px 20px 0;
+    }
+
+    .galeria .thumb_small{
+        width: 170px; 
+        height: 130px;
+        background-size: 70%;
+    }
+    
+    .relatorio_secao2:last-of-type{
+        padding-bottom: 15px;
+    }
+    
+    .relatorio_secao3:last-of-type{
+        padding-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1359px){
+
+    .content{
+        float: left;
+        width: 82%;
+        margin: 0 9%;
+        padding: 5px 0;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 10px 10px 10px 0;
+    }
+
+    .area_logo img{
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .area_logo h1{
+        margin-top: 5px;
+        font-size: 1.1em;
+    }
+
+    .translate{
+        top: 2px;
+        left: 87%;
+    }
+
+    .translate img{
+        width: 40px;
+        height: 25px;
+    }
+
+    .menu{
+        margin-left: -4%;
+        margin-right: -4%;
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+
+    .menu li a{
+        padding: 10px 42px 10px 7px;
+    }
+
+    .sub_item_menu{
+        top: 77px;
+        padding: 5px;
+    }
+
+    .sub_item_menu_somos{
+        width: 163px;
+    }
+
+    .sub_item_menu_sustenta{
+        width: 190px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 124px;
+    }
+
+    .sub_item_menu_restrita{
+        width: 161px;
+    }
+    
+    .sub_item_menu_noticia{
+        width: 118px;
+    }
+
+    .slide_controll{
+        top: 48%;
+        width: 80%;
+        font-size: 3.5em;
+        margin: 0 10%;
+    }
+
+    .slide_item img{
+        height: 600px;
+    }
+
+    .slide{
+        margin-bottom: 20px;
+    }
+
+    .stop_controll{
+        top: 86%;
+        width: 80%;
+        margin: 0 10%; 
+    }
+
+    .stop{
+        font-size: 3em;
+    }
+
+    .bullet_controll{
+        top: 92%;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .bullet{
+        width: 25px;
+        height: 25px;
+        margin: 0 3px;
+    }
+
+    .secao_titulo{
+        padding: 30px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 2.7em;
+        margin-bottom: 5px;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.2em;
+    }
+    
+    .politicas{
+        font-size: 1.3em;
+        margin-bottom: 0.3em;
+    }
+
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        margin: 30px 10px;
+        width: 320px;
+        height: 220px;
+        padding: 20px;
+    }
+
+    .item_interno h1{
+        font-size: 1.5em;
+    }
+
+    .item_interno .tagline{
+        font-size: 5em;
+    }
+
+    .item_aplicativo{
+        margin: 10px 25px 30px 25px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_aplicativo h1{
+        font-size: 1.2em; 
+    }
+
+    .item_aplicativo .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo img{
+        height: 140px;
+        margin: 10px 0 20px 0;
+    }
+
+    .item_noticia{
+        margin: 5px 15px 30px 15px;
+        width: 28%;
+        height: 290px;
+        padding: 20px;
+    }
+
+    .item_noticia h1{
+        font-size: 1.2em;
+    }
+
+    .item_noticia .tagline{
+        font-size: 8em;
+    }
+
+    .item_noticia img{
+        width: 290px;
+        height: 200px;
+        margin: 10px 0 10px 0;
+    }
+
+    .item_informativo{
+        margin: 10px 25px 30px 25px;
+        width: 40%;
+        height: 400px;
+        padding: 20px;
+    }
+    
+    .rodape{
+        margin-bottom: -19px;
+        padding: 9px 0;
+    }
+
+    .rodape_direto{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    .rodape li{
+        margin: 10px;
+    }
+
+    .rodape_facebook{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rodape_linkedin{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rede_social{
+        top: 37%;
+        width: 0;
+    }
+
+    .rede_social ul{
+        margin-left: 0;
+    }
+
+    .social{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social:hover{
+        width: 60px;
+    }
+
+    .espacamento_cabecalho{
+        padding: 52px 0;
+    }
+
+    .titulo_relatorio_princ{
+        padding: 30px 0 0 0;
+        font-size: 2.2em;
+    }
+
+    .relatorio_secao1{
+        padding-left: 30px;
+    }
+
+    .relatorio_secao2{
+        padding-left: 60px;
+    }
+
+    .relatorio_secao3{
+        padding-left: 90px;
+    }
+
+    .relatorio_secao4{
+        padding-left: 120px;
+    }
+
+    .relacao_pagina h1{
+        font-size: 1.7em;
+        font-weight: 700;
+        padding: 0 0 10px 0;
+    }
+
+    .relacao_pagina h2{
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 0 0 10px 30px;
+    }
+
+    .relacao_pagina h3{
+        font-size: 1.2em;
+        font-weight: 900;
+        padding: 0 0 10px 60px;
+    }
+
+    .relacao_pagina h4{
+        font-size: 1.2em;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0 0 10px 90px;
+    }
+
+    .acesso_relatorio{
+        padding: 28px 0;
+    }
+
+    .form_acesso_relatorio{
+        width: 500px;
+        margin: 4% 0 0 32%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 25px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form_acesso_relatorio h1{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .botao_relatorio .btn{
+        width: 40%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .titulo_padrao{
+        padding: 30px 0;
+        font-size: 2.2em;
+    }
+
+    .imagem_direita{
+        margin: 0 0 20px 40px;
+    }
+
+    .imagem_esquerda{
+        margin: 0 40px 20px 0;
+    }
+
+    .imagem_centro{
+        margin: 0 0 30px 0;
+    }
+
+    .imagem_padrao{
+        width: 48%;
+        padding: 20px;
+    }
+
+    .imagem_menor{
+        width: 30%;
+        padding: 20px;
+    }
+
+    .imagem_padrao h1{
+        margin-top: 20px;
+    }
+
+    .parceiro p{
+        margin-top: 40px;
+    }
+
+    .padrao p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .padrao ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .padrao ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .espacamento_relacao{
+        padding: 10px 0;
+    }
+
+    .espaco_relacao{
+        padding: 18px 0;
+    }
+
+    .msg_principal{
+        width: 300px;
+        bottom: 0;
+        right: 10%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario{
+        width: 300px;
+        height: 0;
+        bottom: 0;
+        right: 10%;
+    }
+
+    .msg_formulario form label span{
+        margin: 20px 10% 0 10%;
+    }
+
+    .msg_formulario form label input{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label textarea{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label select{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario input{
+        margin: 20px 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_principal img{
+        height: 30px;
+    }
+
+    .localizacao{
+        width: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        height: 29em;
+    }
+
+    .localizacao h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .localizacao p{
+        font-size: 1em;
+        margin: 0 5% 0 5%;
+    }
+
+    .localizacao label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .localizacao label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao table{
+        margin: 10px 5% 10px 5%;
+    }
+
+    .local{
+        margin-left: 9%;
+    }
+
+    .mapa{
+        margin-right: 9%;
+        margin-left: 9%;
+        height: 600px;
+        margin-bottom: 150px;
+    }
+
+    .formulario_contato{
+        width: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .formulario_contato h1{
+        margin-top: 20px;
+    }
+
+    .formulario_contato form label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .formulario_contato form label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label select{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato table{
+        margin: 10px 5% 0 5%;
+    }
+
+    .fale_conosco{
+        margin-left: 9%;
+    }
+
+    .trabalhe_conosco{
+        margin-right: 9%;
+    }
+
+    .logistico{
+        margin-right: 9%;
+    }
+
+    .formulario_contato .btn{
+        width: 60%;
+        margin: 20px 20% 20px 20%;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .item_ambiental{
+        margin: 10px 25px 30px 25px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_ambiental h1{
+        font-size: 3.5em;
+    }
+
+    .item_ambiental_ar h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_agua h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_energia h1{
+        margin-top: 50px;
+    }
+
+    .sub_item_ambiental h3{
+        margin-bottom: 5px;
+    }
+
+    .texto_princ{
+        padding-bottom: 30px !important;
+    }
+
+    .texto_seg{
+        padding-bottom: 15px !important;
+    }
+
+    .texto_terc{
+        padding-bottom: 15px !important;
+    }
+
+    .principios h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .principios p{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .principios ul li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .principios ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+    
+    .principios article{
+        margin-bottom: 30px;
+    }
+    
+    .produto p{
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+    
+    .produto a{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .produto article{
+        margin-bottom: 30px;
+    }
+
+    .noticia .titulo_padrao{
+        padding-bottom: 0 !important;
+    }
+
+    .noticia p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .noticia ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .noticia ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .galeria h2{
+        padding-bottom: 15px !important;
+    }
+
+    .galeria li{ 
+        margin: 0 20px 20px 0;
+    }
+
+    .galeria .thumb_small{
+        width: 180px; 
+        height: 140px;
+        background-size: 70%;
+    }
+    
+    .relatorio_secao2:last-of-type{
+        padding-bottom: 15px;
+    }
+    
+    .relatorio_secao3:last-of-type{
+        padding-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1599px){
+
+    .content{
+        float: left;
+        width: 82%;
+        margin: 0 9%;
+        padding: 5px 0;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 10px 10px 10px 0;
+    }
+
+    .area_logo img{
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .area_logo h1{
+        margin-top: 5px;
+        font-size: 1.1em;
+    }
+
+    .translate{
+        top: 2px;
+        left: 87%;
+    }
+
+    .translate img{
+        width: 40px;
+        height: 25px;
+    }
+
+    .menu{
+        margin-left: -4%;
+        margin-right: -4%;
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+
+    .menu li a{
+        padding: 10px 53px 10px 7px;
+    }
+
+    .sub_item_menu{
+        top: 77px;
+        padding: 5px;
+    }
+
+    .sub_item_menu_somos{
+        width: 174px;
+    }
+
+    .sub_item_menu_sustenta{
+        width: 202px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 137px;
+    }
+
+    .sub_item_menu_restrita{
+        width: 172px;
+    }
+    
+    .sub_item_menu_noticia{
+        width: 130px;
+    }
+
+    .slide_controll{
+        top: 48%;
+        width: 80%;
+        font-size: 3.5em;
+        margin: 0 10%;
+    }
+
+    .slide_item img{
+        height: 640px;
+    }
+
+    .slide{
+        margin-bottom: 20px;
+    }
+
+    .stop_controll{
+        top: 86%;
+        width: 80%;
+        margin: 0 10%; 
+    }
+
+    .stop{
+        font-size: 3em;
+    }
+
+    .bullet_controll{
+        top: 92%;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .bullet{
+        width: 25px;
+        height: 25px;
+        margin: 0 3px;
+    }
+
+    .secao_titulo{
+        padding: 30px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 2.7em;
+        margin-bottom: 5px;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.2em;
+    }
+
+    .politicas{
+        font-size: 1.3em;
+        margin-bottom: 0.3em;
+    }
+    
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        margin: 40px 20px;
+        width: 320px;
+        height: 220px;
+        padding: 20px;
+    }
+
+    .item_interno h1{
+        font-size: 1.2em;
+    }
+
+    .item_interno .tagline{
+        font-size: 6.5em;
+    }
+
+    .item_aplicativo{
+        margin: 10px 25px 30px 25px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_aplicativo h1{
+        font-size: 1.2em;
+    }
+
+    .item_aplicativo .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo img{
+        height: 140px;
+        margin: 10px 0 20px 0;
+    }
+
+    .item_noticia{
+        margin: 5px 15px 30px 15px;
+        width: 28%;
+        height: 290px;
+        padding: 20px;
+    }
+
+    .item_noticia h1{
+        font-size: 1.2em;
+    }
+
+    .item_noticia .tagline{
+        font-size: 8em;
+    }
+
+    .item_noticia img{
+        width: 290px;
+        height: 200px;
+        margin: 10px 0 10px 0;
+    }
+
+    .item_informativo{
+        margin: 10px 25px 30px 25px;
+        width: 40%;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .rodape{
+        margin-bottom: -19px;
+        padding: 9px 0;
+    }
+
+    .rodape_direto{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    .rodape li{
+        margin: 10px;
+    }
+
+    .rodape_facebook{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rodape_linkedin{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rede_social{
+        top: 42%;
+        width: 0;
+    }
+
+    .rede_social ul{
+        margin-left: 0;
+    }
+
+    .social{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social:hover{
+        width: 60px;
+    }
+
+    .espacamento_cabecalho{
+        padding: 52px 0;
+    }
+
+    .titulo_relatorio_princ{
+        padding: 30px 0 0 0;
+        font-size: 2.2em;
+    }
+
+    .relatorio_secao1{
+        padding-left: 30px;
+    }
+
+    .relatorio_secao2{
+        padding-left: 60px;
+    }
+
+    .relatorio_secao3{
+        padding-left: 90px;
+    }
+
+    .relatorio_secao4{
+        padding-left: 120px;
+    }
+
+    .relacao_pagina h1{
+        font-size: 1.7em;
+        font-weight: 700;
+        padding: 0 0 10px 0;
+    }
+
+    .relacao_pagina h2{
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 0 0 10px 30px;
+    }
+
+    .relacao_pagina h3{
+        font-size: 1.2em;
+        font-weight: 900;
+        padding: 0 0 10px 60px;
+    }
+
+    .relacao_pagina h4{
+        font-size: 1.2em;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0 0 10px 90px;
+    }
+
+    .acesso_relatorio{
+        padding: 28px 0;
+    }
+
+    .form_acesso_relatorio{
+        width: 500px;
+        margin: 4% 0 0 32%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 500;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 25px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form_acesso_relatorio h1{
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .botao_relatorio .btn{
+        width: 40%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .titulo_padrao{
+        padding: 30px 0;
+        font-size: 2.2em;
+    }
+
+    .imagem_direita{
+        margin: 0 0 20px 40px;
+    }
+
+    .imagem_esquerda{
+        margin: 0 40px 20px 0;
+    }
+
+    .imagem_centro{
+        margin: 0 0 30px 0;
+    }
+
+    .imagem_padrao{
+        width: 45%;
+        padding: 20px;
+    }
+
+    .imagem_menor{
+        width: 30%;
+        padding: 20px;
+    }
+
+    .imagem_padrao h1{
+        margin-top: 20px;
+    }
+
+    .parceiro p{
+        margin-top: 65px;
+    }
+
+    .padrao p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .padrao ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .padrao ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .espacamento_relacao{
+        padding: 10px 0;
+    }
+
+    .espaco_relacao{
+        padding: 18px 0;
+    }
+
+    .msg_principal{
+        width: 300px;
+        bottom: 0;
+        right: 10%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario{
+        width: 300px;
+        height: 0;
+        bottom: 0;
+        right: 10%;
+    }
+
+    .msg_formulario form label span{
+        margin: 20px 10% 0 10%;
+    }
+
+    .msg_formulario form label input{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label textarea{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label select{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario input{
+        margin: 20px 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_principal img{
+        height: 30px;
+    }
+
+    .localizacao{
+        width: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        height: 26em;
+    }
+
+    .localizacao h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .localizacao p{
+        font-size: 1.2em;
+        margin: 0 5% 0 5%;
+    }
+
+    .localizacao label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .localizacao label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao table{
+        margin: 10px 5% 10px 5%;
+    }
+
+    .local{
+        margin-left: 9%;
+    }
+
+    .mapa{
+        margin-right: 9%;
+        margin-left: 9%;
+        height: 600px;
+        margin-bottom: 150px;
+    }
+
+    .formulario_contato{
+        width: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .formulario_contato h1{
+        margin-top: 20px;
+    }
+
+    .formulario_contato form label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .formulario_contato form label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label select{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato table{
+        margin: 10px 5% 0 5%;
+    }
+
+    .formulario_contato .btn{
+        display: block;
+        width: 60%;
+        margin: 20px 20%;
+        padding: 15px;
+    }
+
+    .fale_conosco{
+        margin-left: 9%;
+    }
+
+    .trabalhe_conosco{
+        margin-right: 9%;
+    }
+
+    .logistico{
+        margin-right: 9%;
+    }
+
+    .item_ambiental{
+        margin: 10px 25px 30px 25px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_ambiental h1{
+        font-size: 3.5em;
+    }
+
+    .item_ambiental_ar h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_agua h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_energia h1{
+        margin-top: 50px;
+    }
+
+    .sub_item_ambiental h3{
+        margin-bottom: 5px;
+    }
+
+    .texto_princ{
+        padding-bottom: 30px !important;
+    }
+
+    .texto_seg{
+        padding-bottom: 15px !important;
+    }
+
+    .texto_terc{
+        padding-bottom: 15px !important;
+    }
+
+    .principios h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .principios p{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .principios ul li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .principios ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+    
+    .principios article{
+        margin-bottom: 30px;
+    }
+    
+    .produto p{
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+    
+    .produto a{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .produto article{
+        margin-bottom: 30px;
+    }
+
+    .noticia .titulo_padrao{
+        padding-bottom: 0 !important;
+    }
+
+    .noticia p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .noticia ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .noticia ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .galeria h2{
+        padding-bottom: 15px !important;
+    }
+
+    .galeria li{ 
+        margin: 0 20px 20px 0;
+    }
+
+    .galeria .thumb_small{
+        width: 180px; 
+        height: 140px;
+        background-size: 70%;
+    }
+
+    .relatorio_secao2:last-of-type{
+        padding-bottom: 15px;
+    }
+    
+    .relatorio_secao3:last-of-type{
+        padding-bottom: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1919px){
+
+    .content{
+        float: left;
+        width: 80%;
+        margin: 0 10%;
+        padding: 5px 0;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 10px 10px 10px 0;
+    }
+
+    .area_logo img{
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .area_logo h1{
+        margin-top: 7px;
+        font-size: 1.2em;
+    }
+
+    .translate{
+        top: 2px;
+        left: 87%;
+    }
+
+    .translate img{
+        width: 40px;
+        height: 25px;
+    }
+
+    .menu{
+        margin-left: -4%;
+        margin-right: -4%;
+        font-size: 1.3em;
+        margin-top: 32px;
+    }
+
+    .menu li a{
+        padding: 10px 69px 10px 7px;
+    }
+
+    .sub_item_menu{
+        top: 81px;
+        padding: 5px;
+    }
+
+    .sub_item_menu_somos{
+        width: 199px;
+    }
+
+    .sub_item_menu_sustenta{
+        width: 230px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 159px;
+    }
+
+    .sub_item_menu_restrita{
+        width: 197px;
+    }
+    
+    .sub_item_menu_noticia{
+        width: 151px;
+    }
+
+    .slide_controll{
+        top: 45%;
+        width: 80%;
+        font-size: 4em;
+        margin: 0 10%;
+    }
+
+    .slide_item img{
+        height: 770px;
+    }
+
+    .slide{
+        margin-bottom: 20px;
+    }
+
+    .stop_controll{
+        top: 86%;
+        width: 80%;
+        margin: 0 10%; 
+    }
+
+    .stop{
+        font-size: 3em;
+    }
+
+    .bullet_controll{
+        top: 92%;
+        width: 80%;
+        margin: 0 10%; 
+    }
+
+    .bullet{
+        width: 25px;
+        height: 25px;
+        margin: 0 3px;
+    }
+
+    .secao_titulo{
+        padding: 30px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.5em;
+    }
+
+    .politicas{
+        font-size: 1.4em;
+        margin-bottom: 0.3em;
+    }
+    
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        margin: 50px 30px;
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_interno h1{
+        font-size: 1.2em; 
+    }
+
+    .item_interno .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo{
+        margin: 10px 30px 30px 30px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_aplicativo h1{
+        font-size: 1.2em;
+    }
+
+    .item_aplicativo .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo img{
+        height: 140px;
+        margin: 10px 0 20px 0;
+    }
+
+    .item_noticia{
+        margin: 5px 15px 30px 15px;
+        width: 28%;
+        height: 290px;
+        padding: 20px;
+    }
+
+    .item_noticia h1{
+        font-size: 1.2em;
+    }
+
+    .item_noticia .tagline{
+        font-size: 8em;
+    }
+
+    .item_noticia img{
+        width: 290px;
+        height: 200px;
+        margin: 10px 0 10px 0;
+    }
+
+    .item_informativo{
+        margin: 5px 30px 30px 30px;
+        width: 42%;
+        height: 500px;
+        padding: 20px;
+    }
+
+    .rodape{
+        margin-bottom: -19px; 
+        padding: 10px 0;
+    }
+
+    .rodape_direto{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    .rodape li{
+        margin: 10px;
+    }
+
+    .rodape_facebook{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rodape_linkedin{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rede_social{
+        top: 39%;
+        width: 0;
+    }
+
+    .rede_social ul{
+        margin-left: 0;
+    }
+
+    .social{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social:hover{
+        width: 60px;
+    }
+
+    .espacamento_cabecalho{
+        padding: 52px 0;
+    }
+
+    .titulo_relatorio_princ{
+        padding: 30px 0 0 0;
+        font-size: 2.2em;
+    }
+
+    .relatorio_secao1{
+        padding-left: 30px;
+    }
+
+    .relatorio_secao2{
+        padding-left: 60px;
+    }
+
+    .relatorio_secao3{
+        padding-left: 90px;
+    }
+
+    .relatorio_secao4{
+        padding-left: 120px;
+    }
+
+    .relacao_pagina h1{
+        font-size: 1.7em;
+        font-weight: 700;
+        padding: 10px 0 10px 0;
+    }
+
+    .relacao_pagina h2{
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 0 0 10px 30px;
+    }
+
+    .relacao_pagina h3{
+        font-size: 1.2em;
+        font-weight: 900;
+        padding: 0 0 10px 60px;
+    }
+
+    .relacao_pagina h4{
+        font-size: 1.2em;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0 0 10px 90px;
+    }
+
+    .acesso_relatorio{
+        padding: 28px 0;
+    }
+
+    .form_acesso_relatorio{
+        width: 500px;
+        margin: 6.9% 33%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 500;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 30px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form_acesso_relatorio h1{
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .botao_relatorio .btn{
+        width: 40%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .titulo_padrao{
+        padding: 30px 0;
+        font-size: 2.2em;
+    }
+
+    .imagem_direita{
+        margin: 0 0 20px 40px;
+    }
+
+    .imagem_esquerda{
+        margin: 0 40px 20px 0;
+    }
+
+    .imagem_centro{
+        margin: 0 0 30px 0;
+    }
+
+    .imagem_padrao{
+        width: 45%;
+        padding: 20px;
+    }
+
+    .imagem_menor{
+        width: 30%;
+        padding: 20px;
+    }
+
+    .imagem_padrao h1{
+        margin-top: 20px;
+    }
+
+    .parceiro p{
+        margin-top: 65px;
+    }
+
+    .padrao p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .padrao ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .padrao ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .espacamento_relacao{
+        padding: 10px 0;
+    }
+
+    .espaco_relacao{
+        padding: 18px 0;
+    }
+
+    .msg_principal{
+        width: 300px;
+        bottom: 0;
+        right: 10%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario{
+        width: 300px;
+        height: 0;
+        bottom: 0;
+        right: 10%;
+    }
+
+    .msg_formulario form label span{
+        margin: 20px 10% 0 10%;
+    }
+
+    .msg_formulario form label input{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label textarea{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label select{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario input{
+        margin: 20px 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_principal img{
+        height: 30px;
+    }
+
+    .localizacao{
+        width: 38%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        height: 23.5em;
+    }
+
+    .localizacao h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .localizacao p{
+        font-size: 1.2em;
+        margin: 0 5% 0 5%;
+    }
+
+    .localizacao label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .localizacao label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao table{
+        margin: 10px 5% 10px 5%;
+    }
+
+    .local{
+        margin-left: 10%;
+    }
+
+    .mapa{
+        margin-right: 10%;
+        margin-left: 10%;
+        height: 600px;
+        margin-bottom: 150px;
+    }
+
+    .formulario_contato{
+        width: 38%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .formulario_contato h1{
+        margin-top: 20px;
+    }
+
+    .formulario_contato form label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .formulario_contato form label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label select{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato table{
+        margin: 10px 5% 0 5%;
+    }
+
+    .formulario_contato .btn{
+        width: 60%;
+        margin: 20px 20% 20px 20%;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .fale_conosco{
+        margin-left: 10%;
+    }
+
+    .trabalhe_conosco{
+        margin-right: 10%;
+    }
+
+    .logistico{
+        margin-right: 10%;
+    }
+
+    .texto_princ{
+        padding-bottom: 30px !important;
+    }
+
+    .texto_seg{
+        padding-bottom: 25px !important;
+    }
+
+    .texto_terc{
+        padding-bottom: 20px !important;
+    }
+
+    .principios h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .principios p{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .principios ul li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .principios ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+    
+    .principios article{
+        margin-bottom: 30px;
+    }
+    
+    .produto p{
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+    
+    .produto a{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .produto article{
+        margin-bottom: 30px;
+    }
+
+    .noticia .titulo_padrao{
+        padding-bottom: 0 !important;
+    }
+
+    .noticia p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .noticia ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .noticia ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .galeria h2{
+        padding-bottom: 15px !important;
+    }
+
+    .galeria li{ 
+        margin: 0 20px 20px 0;
+    }
+
+    .galeria .thumb_small{
+        width: 200px; 
+        height: 150px;
+        background-size: 70%;
+    }
+
+    .thumb_small{
+        width: 150px; 
+        height: 100px; 
+        background-size: 70%
+    }
+
+    .relatorio_secao2:last-of-type{
+        padding-bottom: 15px;
+    }
+    
+    .relatorio_secao3:last-of-type{
+        padding-bottom: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 1920px){
+
+    .content{
+        float: left;
+        width: 80%;
+        margin: 0 10%;
+        padding: 5px 0;
+    }
+
+    .area_logo{
+        float: left;
+        text-align: center;
+        padding: 10px 10px 10px 0;
+    }
+
+    .area_logo img{
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .area_logo h1{
+        margin-top: 7px;
+        font-size: 1.2em;
+    }
+
+    .translate{
+        top: 2px;
+        left: 87%;
+    }
+
+    .translate img{
+        width: 40px;
+        height: 25px;
+    }
+
+    .menu{
+        margin-left: -4%;
+        margin-right: -4%;
+        font-size: 1.3em;
+        margin-top: 32px;
+    }
+
+    .menu li a{
+        padding: 10px 69px 10px 7px;
+    }
+
+    .sub_item_menu{
+        top: 81px;
+        padding: 5px;
+    }
+
+    .sub_item_menu_somos{
+        width: 199px;
+    }
+
+    .sub_item_menu_sustenta{
+        width: 230px;
+    }
+
+    .sub_item_menu_contatos{
+        width: 159px;
+    }
+
+    .sub_item_menu_restrita{
+        width: 197px;
+    }
+    
+    .sub_item_menu_noticia{
+        width: 151px;
+    }
+
+    .slide_controll{
+        top: 45%;
+        width: 80%;
+        font-size: 4em;
+        margin: 0 10%;
+    }
+
+    .slide_item img{
+        height: 870px;
+    }
+
+    .slide{
+        margin-bottom: 40px;
+    }
+
+    .stop_controll{
+        top: 86%;
+        width: 80%;
+        margin: 0 10%; 
+    }
+
+    .stop{
+        font-size: 3em;
+    }
+
+    .bullet_controll{
+        top: 92%;
+        width: 80%;
+        margin: 0 10%; 
+    }
+
+    .bullet{
+        width: 25px;
+        height: 25px;
+        margin: 0 3px;
+    }
+
+    .secao_titulo{
+        padding: 30px 0;
+    }
+
+    .secao_titulo h1{
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+
+    .secao_titulo .tagline{
+        font-size: 2.5em;
+    }
+
+    .politicas{
+        font-size: 1.4em;
+        margin-bottom: 0.3em;
+    }
+    
+    .interno{
+        margin: 20px 0;
+    }
+
+    .item_interno{
+        margin: 50px 30px;
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_interno h1{
+        font-size: 1.2em; 
+    }
+
+    .item_interno .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo{
+        margin: 10px 30px 30px 30px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_aplicativo h1{
+        font-size: 1.2em;
+    }
+
+    .item_aplicativo .tagline{
+        font-size: 8em;
+    }
+
+    .item_aplicativo img{
+        height: 140px;
+        margin: 10px 0 20px 0;
+    }
+
+
+    .item_noticia{
+        margin: 5px 15px 30px 15px;
+        width: 28%;
+        height: 290px;
+        padding: 20px;
+    }
+
+    .item_noticia h1{
+        font-size: 1.2em;
+    }
+
+    .item_noticia .tagline{
+        font-size: 8em;
+    }
+
+    .item_noticia img{
+        width: 290px;
+        height: 200px;
+        margin: 10px 0 10px 0;
+    }
+
+    .item_informativo{
+        margin: 5px 30px 30px 30px;
+        width: 42%;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .rodape{
+        margin-top: 30px;
+        margin-bottom: -19px; 
+        padding: 10px 0;
+    }
+
+    .rodape_direto{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    .rodape li{
+        margin: 10px;
+    }
+
+    .rodape_facebook{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rodape_linkedin{
+        padding: 50px 0 50px 30px;
+        background-size: 25px 25px;
+    }
+
+    .rede_social{
+        top: 39%;
+        width: 0;
+    }
+
+    .rede_social ul{
+        margin-left: 0;
+    }
+
+    .social{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social:hover{
+        width: 60px;
+    }
+
+    .espacamento_cabecalho{
+        padding: 52px 0;
+    }
+
+    .titulo_relatorio_princ{
+        padding: 30px 0 0 0;
+        font-size: 2.2em;
+    }
+
+    .relatorio_secao1{
+        padding-left: 30px;
+    }
+
+    .relatorio_secao2{
+        padding-left: 60px;
+    }
+
+    .relatorio_secao3{
+        padding-left: 90px;
+    }
+
+    .relatorio_secao4{
+        padding-left: 120px;
+    }
+
+    .relacao_pagina h1{
+        font-size: 1.7em;
+        font-weight: 700;
+        padding: 10px 0 10px 0;
+    }
+
+    .relacao_pagina h2{
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 0 0 10px 30px;
+    }
+
+    .relacao_pagina h3{
+        font-size: 1.2em;
+        font-weight: 900;
+        padding: 0 0 10px 60px;
+    }
+
+    .relacao_pagina h4{
+        font-size: 1.2em;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0 0 10px 90px;
+    }
+
+    .acesso_relatorio{
+        padding: 28px 0;
+    }
+
+    .form_acesso_relatorio{
+        width: 500px;
+        margin: 6.9% 33%;
+        padding: 35px 50px;
+    }
+
+    .form_acesso_relatorio form label span{
+        font-weight: 500;
+    }
+
+    .form_acesso_relatorio form label input{
+        margin: 5px 0 30px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form_acesso_relatorio h1{
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .botao_relatorio{
+        margin-top: 10px;
+    }
+
+    .botao_relatorio .btn{
+        width: 35%;
+        margin: 20px 20% 20px 20%;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .msg_acesso_relatorio{
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .titulo_padrao{
+        padding: 30px 0;
+        font-size: 2.2em;
+    }
+
+    .imagem_direita{
+        margin: 0 0 20px 40px;
+    }
+
+    .imagem_esquerda{
+        margin: 0 40px 20px 0;
+    }
+
+    .imagem_centro{
+        margin: 0 0 30px 0;
+    }
+
+    .imagem_padrao{
+        width: 45%;
+        padding: 20px;
+    }
+
+    .imagem_menor{
+        width: 30%;
+        padding: 20px;
+    }
+
+    .imagem_padrao h1{
+        margin-top: 20px;
+    }
+
+    .parceiro p{
+        margin-top: 65px;
+    }
+
+    .padrao p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .padrao ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .padrao ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .espacamento_relacao{
+        padding: 10px 0;
+    }
+
+    .espaco_relacao{
+        padding: 18px 0;
+    }
+
+    .msg_principal{
+        width: 300px;
+        bottom: 0;
+        right: 10%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario{
+        width: 300px;
+        height: 0;
+        bottom: 0;
+        right: 10%;
+    }
+
+    .msg_formulario form label span{
+        margin: 20px 10% 0 10%;
+    }
+
+    .msg_formulario form label input{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label textarea{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+    }
+
+    .msg_formulario form label select{
+        margin: 0 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_formulario input{
+        margin: 20px 10% 10px 10%;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .msg_principal img{
+        height: 30px;
+    }
+
+    .localizacao{
+        width: 38%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        height: 23.5em;
+    }
+
+    .localizacao h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .localizacao p{
+        font-size: 1.2em;
+        margin: 0 5% 0 5%;
+    }
+
+    .localizacao label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .localizacao label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .localizacao table{
+        margin: 10px 5% 10px 5%;
+    }
+
+    .local{
+        margin-left: 10%;
+    }
+
+    .mapa{
+        margin-right: 10%;
+        margin-left: 10%;
+        height: 600px;
+        margin-bottom: 150px;
+    }
+
+    .formulario_contato{
+        width: 38%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .formulario_contato h1{
+        margin-top: 20px;
+    }
+
+    .formulario_contato form label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .formulario_contato form label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato form label select{
+        margin: 0 5% 10px 5%;
+    }
+
+    .formulario_contato table{
+        margin: 10px 5% 0 5%;
+    }
+
+    .fale_conosco{
+        margin-left: 10%;
+    }
+
+    .trabalhe_conosco{
+        margin-right: 10%;
+    }
+
+    .logistico{
+        margin-right: 10%;
+    }
+
+    .formulario_contato .btn{
+        width: 60%;
+        margin: 20px 20% 20px 20%;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .item_ambiental{
+        margin: 10px 30px 30px 30px;
+        width: 28%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .item_ambiental h1{
+        font-size: 3.5em;
+    }
+
+    .item_ambiental_ar h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_agua h1{
+        margin-top: 80px;
+    }
+
+    .item_ambiental_energia h1{
+        margin-top: 50px;
+    }
+
+    .sub_item_ambiental h3{
+        margin-bottom: 5px;
+    }
+
+    .texto_princ{
+        padding-bottom: 30px !important;
+    }
+
+    .texto_seg{
+        padding-bottom: 15px !important;
+    }
+
+    .texto_terc{
+        padding-bottom: 15px !important;
+    }
+
+    .principios h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .principios p{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .principios ul li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .principios ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+    
+    .principios article{
+        margin-bottom: 30px;
+    }
+    
+    .produto p{
+        padding-bottom: 10px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+    
+    .produto a{
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .produto article{
+        margin-bottom: 30px;
+    }
+    
+    .noticia .titulo_padrao{
+        padding-bottom: 0 !important;
+    }
+
+    .noticia p{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .noticia ul li{
+        padding-bottom: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-indent: 3em;
+    }
+
+    .noticia ul li ul li{
+        padding-bottom: 0px !important;
+        word-spacing: 2px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .galeria h2{
+        padding-bottom: 15px !important;
+    }
+
+    .galeria li{ 
+        margin: 0 20px 20px 0;
+    }
+
+    .galeria .thumb_small{
+        width: 200px; 
+        height: 150px;
+        background-size: 70%;
+    }
+    
+    .relatorio_secao2:last-of-type{
+        padding-bottom: 15px;
+    }
+    
+    .relatorio_secao3:last-of-type{
+        padding-bottom: 15px;
+    }
+
+}

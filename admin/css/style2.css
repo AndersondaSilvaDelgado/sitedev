@@ -1,0 +1,347 @@
+/*----------------------------DEFAULT-------------------------------------*/
+
+.main{
+    width: 85%;
+}
+
+.title_crud{
+    font-size: 2em;
+    margin-bottom: 15px;
+    padding: 10px 0 10px 10px;
+}
+
+.content{
+    margin-left: 30px;
+}
+
+.paginator{
+    padding: 5px;
+}
+
+.paginator a, .paginator span{
+    margin: 0 5px; 
+    padding: 3px 8px; 
+    font-size: 14px; 
+}
+
+/*------------------------------------------------------------------------*/   
+
+/*---------------------INDEX PRINCIPAL - PAINEL---------------------------*/
+
+.main_header{
+    width: 15%;
+    height: 100%;
+}
+
+.area_logo{
+    padding: 30px 10px;
+}
+
+.area_logo img{
+    height: 55px;
+}
+
+.area_logo h1{
+    font-size: 1.2em;
+}
+
+.menu li a{
+    padding: 3px 5px 3px 10px;
+}
+
+.sub_menu_item li a{
+    padding: 3px 5px 3px 20px;
+}
+
+/*------------------------------------------------------------------------*/   
+
+/*---------------------------------DASHBOARD------------------------------*/
+
+.grafico_princ{
+    width: 70%; 
+}
+
+/*------------------------------------------------------------------------*/
+
+/*--------------------------INDEX FORMADO BOLA---------------------------*/
+
+.box_item{
+    width: 20%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    height: 14em;
+}
+
+.imagem_novo{
+    width: 70%;
+    height: 70%;
+    margin: 1.8em 15% 0 15%;
+}
+
+.imagem_noticia{
+    width: 70%;
+    height: 50%;
+    margin: 0.5em 15% 0 15%;
+}
+
+.box_item h1{
+    margin: 9px 12px 0 12px;
+    font-size: 0.9em;
+}
+
+.box_item p{
+    margin: 1em 0.5em 0 0.5em;
+}
+
+.inserir{
+    font-size: 9.7em;
+}
+
+.post_actions{
+    margin-right: 5px;
+    font-size: 1.8em;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------INDEX TABELA DEFAULT---------------------------*/
+
+/*.user_cad{
+    width: 120px;
+    padding: 8px 10px;
+    font-size: 1em;
+}*/
+
+.ultable{
+    width: 90%;
+    margin-top: 15px; 
+    margin-bottom: 7px;
+}
+
+.ultable .t_title{
+    width: 100%;
+}
+
+.ultable li{
+    width: 100%; 
+    font-size: 14px;
+}
+
+.ultable li span{
+    padding: 11px 7px 10px 7px; 
+    /*min-height: 22px;*/
+}
+
+.ultable li .ed{
+    width: 10%;
+    font-size: 1.7em;
+    padding: 4.5px;
+}
+
+.label_botao_inicial{
+    width: 15%;
+}
+
+.label_botao_inicial input,
+.label_botao_inicial select{
+    width: 100%;
+}
+
+.label_pesq_inicial{
+    margin-left: 5em;
+    margin-top: 6px;
+    width: 55%;
+}
+
+.label_pesq_inicial input,
+.label_pesq_inicial select{
+    width: 98%;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------TABELA USUARIO-------------------------------*/
+
+.ultable li .cod_usuario{
+    width: 10%;
+}
+
+.ultable li .nome_usuario{
+    width: 15%;
+}
+
+.ultable li .nome_compl_usuario{
+    width: 50%;
+}
+
+.ultable li .nivel_usuario{
+    width: 15%;
+}
+
+/*------------------------------INDEX ARVORE------------------------------*/
+
+.secao p{
+    font-size: 0.9em;
+}
+
+.titulo1{
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.titulo2{
+    font-size: 1em;
+    margin-left: 15px;
+    margin-top: 0.5em;
+}
+
+.titulo3{
+    font-size: 1em;
+    margin-left: 30px;
+    margin-top: 0.3em;
+}
+
+.titulo4{
+    font-size: 1em;
+    margin-left: 45px;
+}
+
+.relatorio_secao1{
+    margin-left: 15px;
+}
+
+.relatorio_secao2{
+    margin-left: 30px;
+}
+
+.relatorio_secao3{
+    margin-left: 45px;
+}
+
+.relatorio_secao4{
+    margin-left: 60px;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------CADASTRO DEFAULT-----------------------------*/
+
+.field{
+    margin-bottom: 5px; 
+}
+
+.label_line{
+    width: 90%;  
+    margin-bottom: 15px;
+}
+
+.label_larger input,
+.label_larger select{
+    width: 88%;
+}
+
+.label_medium{
+    width: 45%;
+}
+
+.label_medium input,
+.label_medium select{
+    width: 95%;
+}
+
+.label_small{
+    width: 30%;
+}
+
+.label_small input,
+.label_small select{
+    width: 92%;
+}
+
+.lista_detalhe{
+    width: 180px;
+}
+
+.lista_dados{ 
+    width: 430px;
+}
+
+.lista_dados select,
+.lista_dados input{
+    width: 400px;
+}
+
+.botoes_lista{ 
+    width: 100px;
+}
+
+.botoes_lista input{
+    width: 70px;
+    height: 45px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+
+/*    .botoes{
+        margin-top: 15px;
+    }*/
+
+.textarea{
+    margin-bottom: 20px;
+}
+
+table.mceLayout, textarea.richEditor {
+    width: 88% !important;
+}
+
+.mceEditor td.mceIframeContainer iframe {
+    min-height: 220px !important;
+}
+
+.mceEditor table {
+    height: auto !important;
+}
+
+/*    .gbform{
+        margin-bottom: 60px;
+    }*/
+
+.gbform .gallery{
+    width: 95%;
+    margin-top: 15px;
+}
+
+.gbform .gallery li{
+    margin: 0 20px 15px 0; 
+}
+
+.gbform .gallery li .del{
+    right: 0px; 
+    bottom: 0px; 
+    width: 20px; 
+    height: 20px;
+}
+
+.thumb_small{
+    width: 150px; 
+    height: 100px; 
+    background-size: 70%
+}
+
+.btn{
+    padding: 7px 22px;
+    font-size: 0.8em; 
+}
+
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------RELATORIO DEFAULT----------------------------*/
+
+.relatorio_princ{
+    width: 1100px;
+    height: 750px;
+}
+
+/*------------------------------------------------------------------------*/

@@ -1,0 +1,40 @@
+/*RESET*/
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0em;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+h1{font-family: 'Roboto', sans-serif; font-size: 2em; font-weight: 300;}
+h2{font-family: 'Roboto', sans-serif; font-size: 1.7em; font-weight: bold;}
+h3{font-family: 'Roboto', sans-serif; font-size: 1.5em; font-weight: 500;}
+img{max-width: 100%;vertical-align: middle;}
+ul{font-family: 'Roboto', sans-serif; list-style: none;}
+fieldset{font-family: 'Roboto', sans-serif; border: 0;}
+input, select, textarea{font-family: 'Roboto', sans-serif;}
+input.btn{font-family: 'Roboto', sans-serif;}
+a{font-family: 'Roboto', sans-serif; text-decoration: none; color: #000;}
+p{font-family: 'Roboto', sans-serif;}
+span{font-family: 'Roboto', sans-serif;}
+.rodape_direito{font-family: 'Roboto', sans-serif;}
+
+.container{
+    float: left;
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.fontzero{font-size: 0em !important;}
+
+
+
