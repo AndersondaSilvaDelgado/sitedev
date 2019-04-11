@@ -80,36 +80,39 @@ endif;
 
             $read = new Read;
 
-			$sql = 'SELECT * FROM SITE_USUARIO_NV ';
-			
-			$partePesq = '';
-			
-			if ($user['NIVEL'] == 'FINANCEIRO') {
-				$partePesq = ' WHERE (NIVEL IN (\'BANCÁRIO\', \'FINANCEIRO\'))';
-			} elseif ($user['NIVEL'] == 'CONTRATAÇÃO') {
-				$partePesq = ' WHERE (NIVEL LIKE \'CONTRATAÇÃO\')';
-			} elseif ($user['NIVEL'] == 'NOTÍCIA') {
-				$partePesq = ' WHERE (NIVEL LIKE \'NOTÍCIA\')';
-			} elseif ($user['NIVEL'] == 'ADM. POL. DE RH') {
-				$partePesq = ' WHERE (NIVEL IN (\'ADM. POL. DE RH\', \'USU. POL. DE RH\'))';
-			} elseif ($user['NIVEL'] == 'ADM. GOVERNANÇA') {
-				$partePesq = ' WHERE (NIVEL IN (\'ADM. GOVERNANÇA\', \'USU. PORTAL DE GOVERNANÇA\'))';
-			}
-			
+            $sql = 'SELECT * FROM SITE_USUARIO_NV ';
+            
+            $partePesq = '';
+            
+            if ($user['NIVEL'] == 'FINANCEIRO') {
+                $partePesq = '(NIVEL IN (\'BANCÁRIO\', \'FINANCEIRO\')) AND ';
+            } elseif ($user['NIVEL'] == 'CONTRATAÇÃO') {
+                $partePesq = '(NIVEL LIKE \'CONTRATAÇÃO\') AND ';
+            } elseif ($user['NIVEL'] == 'NOTÍCIA') {
+                $partePesq = '(NIVEL LIKE \'NOTÍCIA\') AND ';
+            } elseif ($user['NIVEL'] == 'ADM. POL. DE RH') {
+                $partePesq = '(NIVEL IN (\'ADM. POL. DE RH\', \'USU. POL. DE RH\')) AND ';
+            } elseif ($user['NIVEL'] == 'ADM. GOVERNANÇA') {
+                $partePesq = '(NIVEL IN (\'ADM. GOVERNANÇA\', \'USU. PORTAL DE GOVERNANÇA\')) AND ';
+            }
+
             if ($campoPesq != '') {
-				
-                $partePesq = $partePesq . ' AND ((upper(nome) LIKE UPPER(caracter(\'%' . $campoPesq . '%\'))) '
+
+                $partePesq = $partePesq . '((upper(nome) LIKE UPPER(caracter(\'%' . $campoPesq . '%\'))) '
                         . ' OR (upper(instituicao) LIKE UPPER(caracter(\'%' . $campoPesq . '%\'))) '
                         . ' OR (upper(usuario) LIKE UPPER(caracter(\'%' . $campoPesq . '%\'))) '
                         . ' OR (upper(email) LIKE UPPER(caracter(\'%' . $campoPesq . '%\'))) '
                         . ' OR (upper(classe) LIKE UPPER(caracter(\'%' . $campoPesq . '%\')))) ';
-
             }
 
             $parteOrd = ' ORDER BY CODIGO DESC';
 
-			$sql = $sql . $partePesq . $parteOrd;
-
+            if($partePesq != ''){
+                $sql = $sql . ' WHERE ' . $partePesq . $parteOrd;
+            }else{
+                $sql = $sql . $parteOrd;
+            }
+            
             $read->ExeReadMod($sql);
 
             $i = 0;

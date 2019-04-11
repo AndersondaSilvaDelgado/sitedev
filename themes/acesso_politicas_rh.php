@@ -16,7 +16,7 @@
             $senha = (string) strip_tags(trim($dataLogin['pass']));
 
             $read = new Read;
-            $read->ExeReadMod("SELECT * FROM SITE_USUARIO_NV WHERE USUARIO LIKE '{$usuario}' AND NIVEL IN ('ADMINISTRADOR', 'ADM. POL. DE RH', 'USU. POL. DE RH')");
+            $read->ExeReadMod(" SELECT * FROM SITE_USUARIO_NV WHERE USUARIO LIKE '{$usuario}' AND NIVEL IN ('ADMINISTRADOR', 'ADM. POL. DE RH', 'USU. POL. DE RH', 'NOTÍCIA') ");
             if (!$read->getResult()):
                 ?>
 
