@@ -177,10 +177,25 @@
     }
 
     .item_informativo{
-        margin: 10px 25px 30px 25px;
-        width: 40%;
-        height: 400px;
+        margin: 5px 15px 30px 15px;
+        width: 28%;
         padding: 20px;
+    }
+    
+    .item_informativo .informativo{
+        height: 290px;
+    }
+    
+     .informativo img{
+        width: 200px;
+        margin-left: 55px;
+        cursor: pointer;
+    }
+    
+    .item_informativo .tagline{
+        padding: 8px 0;
+        font-size: 1em !important;
+        text-align: center;
     }
     
     .rodape{
@@ -827,10 +842,25 @@
     }
 
     .item_informativo{
-        margin: 10px 22px 30px 22px;
-        width: 40%;
-        height: 400px;
+        margin: 5px 15px 30px 15px;
+        width: 28%;
         padding: 20px;
+    }
+    
+    .item_informativo .informativo{
+        height: 290px;
+    }
+    
+     .informativo img{
+        width: 200px;
+        margin-left: 55px;
+        cursor: pointer;
+    }
+    
+    .item_informativo .tagline{
+        padding: 8px 0;
+        font-size: 1em !important;
+        text-align: center;
     }
     
     .rodape{
@@ -1484,10 +1514,25 @@
     }
 
     .item_informativo{
-        margin: 10px 25px 30px 25px;
-        width: 40%;
-        height: 400px;
+        margin: 5px 15px 30px 15px;
+        width: 28%;
         padding: 20px;
+    }
+    
+    .item_informativo .informativo{
+        height: 290px;
+    }
+    
+     .informativo img{
+        width: 200px;
+        margin-left: 55px;
+        cursor: pointer;
+    }
+    
+    .item_informativo .tagline{
+        padding: 8px 0;
+        font-size: 1em !important;
+        text-align: center;
     }
     
     .rodape{
@@ -2148,10 +2193,25 @@
     }
 
     .item_informativo{
-        margin: 10px 25px 30px 25px;
-        width: 40%;
-        height: 400px;
+        margin: 5px 15px 30px 15px;
+        width: 28%;
         padding: 20px;
+    }
+    
+    .item_informativo .informativo{
+        height: 290px;
+    }
+    
+     .informativo img{
+        width: 200px;
+        margin-left: 55px;
+        cursor: pointer;
+    }
+    
+    .item_informativo .tagline{
+        padding: 8px 0;
+        font-size: 1em !important;
+        text-align: center;
     }
 
     .rodape{
@@ -2811,10 +2871,25 @@
     }
 
     .item_informativo{
-        margin: 5px 30px 30px 30px;
-        width: 42%;
-        height: 500px;
+        margin: 5px 15px 30px 15px;
+        width: 28%;
         padding: 20px;
+    }
+    
+    .item_informativo .informativo{
+        height: 290px;
+    }
+    
+     .informativo img{
+        width: 200px;
+        margin-left: 55px;
+        cursor: pointer;
+    }
+    
+    .item_informativo .tagline{
+        padding: 8px 0;
+        font-size: 1em !important;
+        text-align: center;
     }
 
     .rodape{
@@ -3454,10 +3529,25 @@
     }
 
     .item_informativo{
-        margin: 5px 30px 30px 30px;
-        width: 42%;
-        height: 400px;
+        margin: 5px 15px 30px 15px;
+        width: 28%;
         padding: 20px;
+    }
+    
+    .item_informativo .informativo{
+        height: 290px;
+    }
+    
+     .informativo img{
+        width: 200px;
+        margin-left: 55px;
+        cursor: pointer;
+    }
+    
+    .item_informativo .tagline{
+        padding: 8px 0;
+        font-size: 1em !important;
+        text-align: center;
     }
 
     .rodape{

@@ -254,7 +254,7 @@
 
 .item_noticia p{
     font-size: 1em !important;
-    color: #AAAAAA;
+    color: #777777;
 }
 
 .item_noticia h1{
@@ -265,6 +265,10 @@
 .item_informativo{
     float: left;
     text-align: left;
+}
+
+.item_informativo .tagline{
+    font-weight: bold;
 }
 
 .rodape{

@@ -49,14 +49,15 @@ endif;
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
             <link rel="stylesheet" href="themes/css/stylemobile.css?v=1"/>
         <?php else: ?>
-            <link rel="stylesheet" href="themes/css/stylemain.css?v=10"/>
-            <link rel="stylesheet" href="themes/css/style.css?v=10"/>
+            <link rel="stylesheet" href="themes/css/stylemain.css?v=18"/>
+            <link rel="stylesheet" href="themes/css/style.css?v=18"/>
             <link rel="stylesheet" href="themes/css/lightbox.min.css"/>
         <?php endif; ?>
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500,700,700italic,900' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="themes/img/icone.ico"/>
         <link rel="stylesheet" href="themes/css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="themes/css/w3.css?v=2"/>
     </head>
     <body>
         <header class="cabecalho container">
@@ -177,6 +178,7 @@ endif;
             <script src="_cdn/jquery.js"></script>
             <script src="_cdn/script.js?v=8"></script>
             <script src="_cdn/lightbox-plus-jquery.min.js"></script>
+            <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 
             <?php
             if ($verDisp) {
