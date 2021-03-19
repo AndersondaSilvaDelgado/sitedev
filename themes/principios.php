@@ -78,12 +78,49 @@
             <article>
                 <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Código de Ética e Conduta' : 'Código de Ética e Conduta'; ?></h1>
                 <ul><li class="tagline">
-						<a href="themes/arquivos/codigo_etica_e_conduta.pdf" target="_blank" >
+						<a href="themes/arquivos/codigo_etica_e_conduta.pdf?v=1" target="_blank" >
 							<span class="link">
 							<?= ($idioma == 1) ? "
 								Clique aqui para acessar o documento referente ao Código de Ética e Conduta da Empresa
 								" : "
 								Clique aqui para acessar o documento referente ao Código de Ética e Conduta da Empresa
+								"; ?>
+							</span>
+						</a>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Recursos Humanos' : 'Human resource'; ?></h1>
+                <ul><li class="tagline">
+						<a href="themes/arquivos/manual_recursos_humanos.pdf" target="_blank" >
+							<span class="link">
+							<?= ($idioma == 1) ? "
+								Clique aqui para acessar o manual de Recursos Humanos da Empresa
+								" : "
+								Clique aqui para acessar o manual de Recursos Humanos da Empresa
+								"; ?>
+							</span>
+						</a>
+                    </li>
+					<li class="tagline">
+						<a href="themes/arquivos/plano_covid.pdf?v=5" target="_blank" >
+							<span class="link">
+							<?= ($idioma == 1) ? "
+								Clique aqui para acessar o Plano de Contingência - COVID 19
+								" : "
+								Clique aqui para acessar o Plano de Contingência - COVID 19
+								"; ?>
+							</span>
+						</a>
+                    </li>
+					<li class="tagline">
+						<a href="themes/arquivos/plano_fase_covid.pdf" target="_blank" >
+							<span class="link">
+							<?= ($idioma == 1) ? "
+								Clique aqui para acessar o Protocolo das Fases - Coronavírus (COVID 19)
+								" : "
+								Clique aqui para acessar o Protocolo das Fases - Coronavírus (COVID 19)
 								"; ?>
 							</span>
 						</a>

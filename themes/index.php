@@ -1,7 +1,6 @@
 <main>
 
     <section class="slide container">
-        <h1 class="fontzero">Imagens da Empresa</h1>
 
         <?php
         $form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -14,17 +13,19 @@
         if ($verDisp):
             ?>
 
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="themes/img/imagem01.jpg" /></div>
-                    <div class="swiper-slide"><img src="themes/img/imagem02.jpg" /></div>
-                    <div class="swiper-slide"><img src="themes/img/imagem03.jpg" /></div>
-                    <div class="swiper-slide"><img src="themes/img/imagem04.jpg" /></div>
-                    <div class="swiper-slide"><img src="themes/img/imagem05.jpg" /></div>
-                    <div class="swiper-slide"><img src="themes/img/imagem06.jpg" /></div>
-                    <div class="swiper-slide"><img src="themes/img/imagem07.jpg" /></div>
+            <a href="themes/arquivos/plano_covid.pdf?v=1">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="themes/img/imagem01.jpg" /></div>
+                        <div class="swiper-slide"><img src="themes/img/imagem02.jpg" /></div>
+                        <div class="swiper-slide"><img src="themes/img/imagem03.jpg" /></div>
+                        <div class="swiper-slide"><img src="themes/img/imagem04.jpg" /></div>
+                        <div class="swiper-slide"><img src="themes/img/imagem05.jpg" /></div>
+                        <div class="swiper-slide"><img src="themes/img/imagem06.jpg" /></div>
+                        <div class="swiper-slide"><img src="themes/img/imagem07.jpg" /></div>
+                    </div>
                 </div>
-            </div>
+            </a>
 
         <?php else: ?>
 
@@ -48,11 +49,23 @@
             </div>
 
             <article class="slide_item">
-                <a id="link_imagem" href="index.php?exe=principios">
-                    <img id="imagem_principal" src="themes/img/imagem01.jpg?v=6" alt="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>" title="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>"/>
-                    <h1 class="fontzero"><?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?></h1>
+                <a href="index.php?exe=principios&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">
+                    <img src="themes/img/imagem01.jpg?v=4" alt="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>" title="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>" />
                 </a>
             </article>
+
+            <div id="plano_covid" class="w3-modal">
+                <div class="w3-modal-content">
+                    <header class="w3-container w3-blue"> 
+                        <span onclick="document.getElementById('plano_covid').style.display='none'" 
+                        class="w3-button w3-display-topright">&times;</span>
+                        <h2>Plano de Contingência COVID 19</h2>
+                    </header>
+                    <div class="w3-container">
+                        <iframe src="themes/arquivos/plano_covid.pdf" width="100%" height="500px"></iframe>
+                    </div>
+                </div>
+            </div>
 
         <?php endif; ?>
 
@@ -62,24 +75,31 @@
         <div class="content">
             <h1 class="fontzero">Area restrita</h1>
             <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=232" target="_blank">
-                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Supplier Portal'; ?>">
+                <article class="item_index" title="<?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Supplier Portal'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Supplier Portal'; ?></h1>
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal com dados dos Fornecedores de Matéria-Prima da Empresa.' : 'Raw Material Supplier Data Portal.'; ?></p>
                 </article>
             </a>
             <a href="index.php?exe=acesso_relacao">
-                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?>">
+                <article class="item_index" title="<?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?>">
                     <p class="tagline"><i class="fa fa-users" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?></h1>
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Relatórios com Informações Gerais relativo a Empresa para Instituições Financeiras.' : 'Relations with Financial Institutions'; ?></p>
                 </article>
             </a>
-            <a href="http://compras.usinasantafe.com.br:7777/cotacao/home.action" target="_blank">
-                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?>">
+            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=139" target="_blank">
+                <article class="item_index" title="<?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?>">
                     <p class="tagline"><i class="fa fa-calendar" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?></h1>
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'O novo Portal de Compras do GRUPO SANTA FÉ - Nova Europa - SP - BR é ferramenta cujo objetivo é agilizar o processo de compras da empresa.' : 'Supplier Bidding Portal'; ?></p>
+                </article>
+            </a>
+            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=CAR:POSICAO_TICKET" target="_blank">
+                <article class="item_index" title="<?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?>">
+                    <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
+                    <h1><?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?></h1>
+                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?></p>
                 </article>
             </a>
             <div class="clear"></div>

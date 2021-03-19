@@ -21,7 +21,7 @@
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Relatórios com Informações Gerais relativo a Empresa.' : 'Reports providing general information about the company.'; ?></p>
                 </article>
             </a>
-            <a href="http://compras.usinasantafe.com.br:7777/cotacao/home.action" target="_blank">
+            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=139" target="_blank">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?>">
                     <p class="tagline"><i class="fa fa-calendar" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?></h1>
@@ -77,7 +77,7 @@
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal de Chamado Interno para TI.' : 'IT Internal Help Desk Portal.'; ?></p>
                 </article>
             </a>
-            <a href="http://wntvmit.usinasantafe.com.br/org/admin/index" target="_blank">
+            <a href="http://wntvmit.usinasantafe.com.br/org/autenticar" target="_blank">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'CI - Portal de Comunicação Interna da Empresa' : 'CI - Company Internal Communication Portal'; ?>">
                     <p class="tagline"><i class="fa fa-share" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'CI - Portal de Comunicação Interna da Empresa' : 'CI - Company Internal Communication Portal'; ?></h1>
@@ -91,18 +91,25 @@
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal EAD - Universidade Corporativa Santa Fé' : 'Distance Learning Portal - Santa Fé Corporate University'; ?></p>
                 </article>
             </a>
-            <a href="https://wntvmgedprod.usinasantafe.com.br/softexpert/login" target="_blank">
+            <a href="https://wntvmsesuite.usinasantafe.com.br/softexpert/login" target="_blank">
                 <article class="item_aplicativo" title="GED - Gerenciamento Eletrônico de Documentos">
                     <img src="themes/img/sesuite.png" alt="GED - Gerenciamento Eletrônico de Documentos" title="GED - Gerenciamento Eletrônico de Documentos"/>
                     <h1>SoftExpert Excellence Suite</h1>
                     <p class="tagline fontzero">SoftExpert Excellence Suite</p>
                 </article>
             </a>
-			<a href="http://apex.usinasantafe.com.br:9080/apex/f?p=200" target="_blank">
+            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=200" target="_blank">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal de Carregamento' : 'Portal de Carregamento'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal de Carregamento' : 'Portal de Carregamento'; ?></h1>
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal de Carregamento' : 'Portal de Carregamento'; ?></p>
+                </article>
+            </a>
+            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=CAR:POSICAO_TICKET" target="_blank">
+                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?>">
+                    <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
+                    <h1><?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?></h1>
+                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?></p>
                 </article>
             </a>
             <div class="clear"></div>

@@ -34,8 +34,8 @@ endif;
     <section class="container">
         <div class="content noticia">
             <h1 class="titulo_padrao"><?= $tituloRet; ?></h1>
-            <p><span><?= $dataRet; ?></span></p>
-            <?= $conteudoRet; ?>
+            <p class=""><span><?= $dataRet; ?></span></p>
+            <div class="descr_noticia"><?= $conteudoRet; ?></div>
             <div class="clear"></div>
         </div>
         <ul class="galeria content">

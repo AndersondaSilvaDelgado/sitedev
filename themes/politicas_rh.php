@@ -16,7 +16,7 @@ endif;
 
     <div class="container">
         <div class="content">
-            <h1 class="titulo_relatorio_princ">Políticas de RH</h1>
+            <h1 class="titulo_relatorio_princ">Políticas e Procedimentos de RH</h1>
             <p class="tagline usuario_relacao fontzero"><?= $_SESSION['userlogin']['CODIGO']; ?></p>
         </div>
     </div>
@@ -45,7 +45,7 @@ endif;
                 foreach ($listDoc as $doc) {
                     ?>
                     <p class="tagline politicas">
-                        <a href="uploads/<?= $doc['DOCUMENTO']; ?>" target="_blank">
+                        <a href="uploads/<?= $doc['DOCUMENTO']; ?>?v=1" target="_blank">
                             <?= $doc['DESCRICAO']; ?>
                         </a>
                     </p>

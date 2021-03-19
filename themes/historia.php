@@ -57,12 +57,14 @@
             </p>
             <p class="tagline">
                 <?= ($idioma == 1) ? "
-                Neste caminho, o Grupo avançou também no que tange à governança corporativa.  Os demonstrativos 
-                financeiros do Grupo Itaquerê são auditados pela KPMG desde 2004, trazendo transparência para os 
-                acionistas e financiadores.
+                Neste caminho, o Grupo avançou também no que tange à governança corporativa.  Desde 2004, 
+				os demonstrativos financeiros do Grupo Itaquerê, são auditados por uma das “Big Four”, 
+				as quatro maiores e mais reconhecidas empresas de auditoria do mundo, trazendo transparência 
+				para os acionistas e financiadores.
                 " : "
-                In parallel, the group has progressed in corporate governance. The Grupo Itaquerê financial statements have been 
-                audited by KPMG since 2004, ensuring transparency for shareholders and financiers.
+                In parallel, the group has progressed in corporate governance. Since 2004, the Itaquerê Group's 
+				financial statements have been audited by one of the “Big Four”, the four largest and most 
+				recognized auditing companies in the world, ensuring transparency for shareholders and financiers.
                 "; ?>
             </p>
             <div class="clear"></div>

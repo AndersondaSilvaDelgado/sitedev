@@ -114,25 +114,25 @@
         font-size: 1.3em;
         margin-bottom: 0.3em;
     }
-
-    .interno{
-        margin: 20px 0;
+    
+    .item_index{
+        margin: 10px 12px 30px 12px;
+        width: 21%;
+        height: 180px;
+        padding: 12px;
     }
 
-    .item_interno{
-        margin: 30px 10px;
-        width: 200px;
-        height: 190px;
-        padding: 20px;
+    .item_index h1{
+        font-size: 1em;
     }
 
-    .item_interno h1{
-        margin-bottom: 10px;
-        font-size: 1em; 
-    }
-
-    .item_interno .tagline{
+    .item_index .tagline{
         font-size: 5em;
+    }
+
+    .item_index img{
+        height: 140px;
+        margin: 15px 0 20px 0;
     }
 
     .item_aplicativo{
@@ -186,7 +186,7 @@
         height: 290px;
     }
     
-     .informativo img{
+    .informativo img{
         width: 200px;
         margin-left: 55px;
         cursor: pointer;
@@ -433,16 +433,26 @@
         height: 30px;
     }
 
-    .localizacao{
+    .local{
         width: 41%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+        margin-left: 7%;
+        height: 23em;
+    }
+	
+    .logistico{
+        width: 41%;
+        margin-right: 7%;
         height: 23em;
     }
 
+    .localizacao{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
     .localizacao h1{
-        margin-top: 20px;
+        padding-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -466,9 +476,49 @@
     .localizacao table{
         margin: 10px 5% 10px 5%;
     }
-
-    .local{
+	
+    .direita{
+        width: 41%;
         margin-left: 7%;
+        height: 23em;
+    }
+	
+    .esquerda{
+        width: 41%;
+        margin-right: 7%;
+        height: 23em;
+    }
+
+    .msg_index{
+	margin-top: 140px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .msg_index h1{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .msg_index p{
+        font-size: 1em;
+        margin: 0 5% 0 5%;
+    }
+
+    .msg_index label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .msg_index label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index table{
+        margin: 10px 5% 10px 5%;
     }
 
     .mapa{
@@ -513,10 +563,6 @@
     }
 
     .trabalhe_conosco{
-        margin-right: 7%;
-    }
-
-    .logistico{
         margin-right: 7%;
     }
 
@@ -781,25 +827,26 @@
         margin-bottom: 0.3em;
     }
 
-    .interno{
-        margin: 20px 0;
+    .item_index{
+        margin: 10px 12px 30px 12px;
+        width: 22%;
+        height: 230px;
+        padding: 14px;
     }
 
-    .item_interno{
-        margin: 10px 25px 30px 25px;
-        width: 28%;
-        height: 250px;
-        padding: 20px;
-    }
-
-    .item_interno h1{
+    .item_index h1{
         font-size: 1.2em;
     }
 
-    .item_interno .tagline{
-        font-size: 8em;
+    .item_index .tagline{
+        font-size: 7em;
     }
 
+    .item_index img{
+        height: 140px;
+        margin: 15px 0 20px 0;
+    }
+    
     .item_aplicativo{
         margin: 10px 22px 30px 22px;
         width: 28%;
@@ -851,7 +898,7 @@
         height: 290px;
     }
     
-     .informativo img{
+    .informativo img{
         width: 200px;
         margin-left: 55px;
         cursor: pointer;
@@ -1097,17 +1144,27 @@
     .msg_principal img{
         height: 30px;
     }
-
-    .localizacao{
+	
+    .local{
         width: 42%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+        margin-left: 6%;
         height: 22em;
     }
 
+    .logistico{
+        width: 42%;
+        margin-right: 6%;
+        height: 22em;
+    }
+
+    .localizacao{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
     .localizacao h1{
-        margin-top: 20px;
+        padding-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -1131,9 +1188,49 @@
     .localizacao table{
         margin: 10px 5% 10px 5%;
     }
-
-    .local{
+	
+    .direita{
+        width: 42%;
         margin-left: 6%;
+        height: 22em;
+    }
+
+    .esquerda{
+        width: 42%;
+        margin-right: 6%;
+        height: 22em;
+    }
+
+    .msg_index{
+        margin-top: 140px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .msg_index h1{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .msg_index p{
+        font-size: 1em;
+        margin: 0 5% 0 5%;
+    }
+
+    .msg_index label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .msg_index label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index table{
+        margin: 10px 5% 10px 5%;
     }
 
     .mapa{
@@ -1178,10 +1275,6 @@
     }
 
     .trabalhe_conosco{
-        margin-right: 6%;
-    }
-
-    .logistico{
         margin-right: 6%;
     }
 
@@ -1453,23 +1546,24 @@
         margin-bottom: 0.3em;
     }
 
-    .interno{
-        margin: 20px 0;
+    .item_index{
+        margin: 10px 15px 30px 15px;
+        width: 22%;
+        height: 230px;
+        padding: 14px;
     }
 
-    .item_interno{
-        margin: 30px 10px;
-        width: 320px;
-        height: 220px;
-        padding: 20px;
+    .item_index h1{
+        font-size: 1.2em;
     }
 
-    .item_interno h1{
-        font-size: 1.5em;
+    .item_index .tagline{
+        font-size: 7em;
     }
 
-    .item_interno .tagline{
-        font-size: 5em;
+    .item_index img{
+        height: 140px;
+        margin: 15px 0 20px 0;
     }
 
     .item_aplicativo{
@@ -1776,17 +1870,27 @@
     .msg_principal img{
         height: 30px;
     }
-
-    .localizacao{
+	
+    .local{
         width: 40%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+        margin-left: 9%;
         height: 29em;
     }
 
+    .logistico{
+        width: 40%;
+        margin-right: 9%;
+        height: 29em;
+    }
+	
+    .localizacao{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
     .localizacao h1{
-        margin-top: 20px;
+        padding-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -1811,8 +1915,48 @@
         margin: 10px 5% 10px 5%;
     }
 
-    .local{
+    .direita{
+        width: 40%;
         margin-left: 9%;
+        height: 29em;
+    }
+
+    .esquerda{
+        width: 40%;
+        margin-right: 9%;
+        height: 29em;
+    }
+	
+    .msg_index{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .msg_index h1{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .msg_index p{
+        font-size: 1em;
+        margin: 0 5% 0 5%;
+    }
+
+    .msg_index label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .msg_index label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index table{
+        margin: 10px 5% 10px 5%;
     }
 
     .mapa{
@@ -1857,10 +2001,6 @@
     }
 
     .trabalhe_conosco{
-        margin-right: 9%;
-    }
-
-    .logistico{
         margin-right: 9%;
     }
 
@@ -2131,26 +2271,27 @@
         font-size: 1.3em;
         margin-bottom: 0.3em;
     }
-    
-    .interno{
-        margin: 20px 0;
-    }
 
-    .item_interno{
-        margin: 40px 20px;
-        width: 320px;
+    .item_index{
+        margin: 10px 15px 30px 15px;
+        width: 22%;
         height: 220px;
-        padding: 20px;
+        padding: 14px;
     }
 
-    .item_interno h1{
+    .item_index h1{
         font-size: 1.2em;
     }
 
-    .item_interno .tagline{
-        font-size: 6.5em;
+    .item_index .tagline{
+        font-size: 7em;
     }
 
+    .item_index img{
+        height: 140px;
+        margin: 15px 0 20px 0;
+    }
+    
     .item_aplicativo{
         margin: 10px 25px 30px 25px;
         width: 28%;
@@ -2202,7 +2343,7 @@
         height: 290px;
     }
     
-     .informativo img{
+    .informativo img{
         width: 200px;
         margin-left: 55px;
         cursor: pointer;
@@ -2455,16 +2596,26 @@
         height: 30px;
     }
 
-    .localizacao{
+    .local{
         width: 40%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+        margin-left: 9%;
         height: 26em;
     }
 
+    .logistico{
+        width: 40%;
+        margin-right: 9%;
+        height: 26em;
+    }
+	
+    .localizacao{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
     .localizacao h1{
-        margin-top: 20px;
+        padding-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -2489,8 +2640,48 @@
         margin: 10px 5% 10px 5%;
     }
 
-    .local{
-        margin-left: 9%;
+    .direita{
+        width: 45%;
+        margin-left: 4%;
+        height: 23em;
+    }
+
+    .esquerda{
+        width: 45%;
+        margin-right: 4%;
+        height: 23em;
+    }
+	
+    .msg_index{
+        margin-top: 140px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .msg_index h1{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .msg_index p{
+        font-size: 1.2em;
+        margin: 0 5% 0 5%;
+    }
+
+    .msg_index label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .msg_index label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index table{
+        margin: 10px 5% 10px 5%;
     }
 
     .mapa{
@@ -2542,10 +2733,6 @@
     }
 
     .trabalhe_conosco{
-        margin-right: 9%;
-    }
-
-    .logistico{
         margin-right: 9%;
     }
 
@@ -2809,26 +2996,27 @@
         font-size: 1.4em;
         margin-bottom: 0.3em;
     }
+
+    .item_index{
+        margin: 10px 18px 30px 18px;
+        width: 22%;
+        height: 220px;
+        padding: 14px;
+    }
+
+    .item_index h1{
+        font-size: 1.2em;
+    }
+
+    .item_index .tagline{
+        font-size: 7em;
+    }
+
+    .item_index img{
+        height: 140px;
+        margin: 15px 0 20px 0;
+    }
     
-    .interno{
-        margin: 20px 0;
-    }
-
-    .item_interno{
-        margin: 50px 30px;
-        width: 350px;
-        height: 250px;
-        padding: 20px;
-    }
-
-    .item_interno h1{
-        font-size: 1.2em; 
-    }
-
-    .item_interno .tagline{
-        font-size: 8em;
-    }
-
     .item_aplicativo{
         margin: 10px 30px 30px 30px;
         width: 28%;
@@ -3133,16 +3321,26 @@
         height: 30px;
     }
 
-    .localizacao{
+    .local{
         width: 38%;
+        margin-left: 10%;
+        height: 23.5em;
+    }
+	
+    .logistico{
+	width: 38%;
+        margin-right: 10%;
+        height: 23.5em;
+    }
+	
+    .localizacao{
         margin-top: 30px;
         margin-bottom: 30px;
         padding-bottom: 30px;
-        height: 23.5em;
     }
 
     .localizacao h1{
-        margin-top: 20px;
+        padding-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -3167,8 +3365,48 @@
         margin: 10px 5% 10px 5%;
     }
 
-    .local{
+    .direita{
+        width: 38%;
         margin-left: 10%;
+        height: 23.5em;
+    }
+	
+    .esquerda{
+		width: 38%;
+        margin-right: 10%;
+        height: 23.5em;
+    }
+	
+    .msg_index{
+        margin-top: 140px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .msg_index h1{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .msg_index p{
+        font-size: 1.2em;
+        margin: 0 5% 0 5%;
+    }
+
+    .msg_index label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .msg_index label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index table{
+        margin: 10px 5% 10px 5%;
     }
 
     .mapa{
@@ -3220,10 +3458,6 @@
     }
 
     .trabalhe_conosco{
-        margin-right: 10%;
-    }
-
-    .logistico{
         margin-right: 10%;
     }
 
@@ -3465,25 +3699,6 @@
     .politicas{
         font-size: 1.4em;
         margin-bottom: 0.3em;
-    }
-    
-    .interno{
-        margin: 20px 0;
-    }
-
-    .item_interno{
-        margin: 50px 30px;
-        width: 350px;
-        height: 250px;
-        padding: 20px;
-    }
-
-    .item_interno h1{
-        font-size: 1.2em; 
-    }
-
-    .item_interno .tagline{
-        font-size: 8em;
     }
 
     .item_aplicativo{
@@ -3793,16 +4008,26 @@
         height: 30px;
     }
 
-    .localizacao{
+    .local{
         width: 38%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+        margin-left: 10%;
         height: 23.5em;
     }
 
+    .logistico{
+        width: 38%;
+        margin-right: 10%;
+        height: 23.5em;
+    }
+	
+    .localizacao{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
     .localizacao h1{
-        margin-top: 20px;
+        padding-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -3827,8 +4052,48 @@
         margin: 10px 5% 10px 5%;
     }
 
-    .local{
+    .direita{
+        width: 38%;
         margin-left: 10%;
+        height: 23.5em;
+    }
+
+    .esquerda{
+        width: 38%;
+        margin-right: 10%;
+        height: 23.5em;
+    }
+	
+    .msg_index{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .msg_index h1{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .msg_index p{
+        font-size: 1.2em;
+        margin: 0 5% 0 5%;
+    }
+
+    .msg_index label span{
+        margin: 20px 5% 0 5%;
+    }   
+
+    .msg_index label input{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index label textarea{
+        margin: 0 5% 10px 5%;
+    }
+
+    .msg_index table{
+        margin: 10px 5% 10px 5%;
     }
 
     .mapa{
@@ -3873,10 +4138,6 @@
     }
 
     .trabalhe_conosco{
-        margin-right: 10%;
-    }
-
-    .logistico{
         margin-right: 10%;
     }
 

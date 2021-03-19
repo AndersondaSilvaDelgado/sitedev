@@ -65,9 +65,16 @@
                     The company's crystal sugar storage capacity is 1,350,000 50kg bags.
                     "; ?>
                 </p>
-                <a href="themes/arquivos/Especificacoes_Tecnica_do_Acucar_Cristal.pdf" target="_blank" >
-                    <span class="link"><?= ($idioma == 1) ? 'Especificação Técnica' : 'Technical Specification'; ?></span>
-                </a>
+				<p class="tagline">
+					<a href="themes/arquivos/Especificacoes_Tecnica_do_Acucar_Cristal.pdf?v=2" target="_blank" >
+						<span class="link"><?= ($idioma == 1) ? 'Especificação Técnica' : 'Technical Specification'; ?></span>
+					</a>
+				</p>
+				<p class="tagline">
+					<a href="themes/arquivos/fispq_acucar_cristal.pdf" target="_blank" >
+						<span class="link"><?= ($idioma == 1) ? 'FISPQ - Açúcar Cristal' : 'Technical Specification'; ?></span>
+					</a>
+				</p>
             </article>
             <article>
                 <h2><?= ($idioma == 1) ? 'Etanol: Hidratado e Anidro' : 'Ethanol: Hydrated and Anhydrous'; ?></h2>
@@ -93,10 +100,21 @@
                     The company's hydrated/anhydrous ethanol storage capacity is 84,000,000 liters.
                     "; ?>
                 </p>
-                <a href="themes/arquivos/Especificacoes_Tecnica_do_Etanol.pdf" target="_blank" >
-                    <span class="link"><?= ($idioma == 1) ? 'Especificação Técnica' : 'Technical Specification'; ?></span>
-                </a>
-
+				<p class="tagline">
+					<a href="themes/arquivos/Especificacoes_Tecnica_do_Etanol.pdf?v=2" target="_blank" >
+						<span class="link"><?= ($idioma == 1) ? 'Especificação Técnica' : 'Technical Specification'; ?></span>
+					</a>
+				</p>
+				<p class="tagline">
+					<a href="themes/arquivos/fispq_etanol_anidro.pdf" target="_blank" >
+						<span class="link"><?= ($idioma == 1) ? 'FISPQ - Etanol Anidro' : 'FISPQ - ETANOL ANIDRO'; ?></span>
+					</a>
+				</p>
+				<p class="tagline">
+					<a href="themes/arquivos/fispq_etanol_hidratado.pdf" target="_blank" >
+						<span class="link"><?= ($idioma == 1) ? 'FISPQ - Etanol Hidratado' : 'FISPQ - ETANOL HIDRATADO'; ?></span>
+					</a>
+				</p>
             </article>
         </div>
     </section>

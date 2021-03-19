@@ -43,21 +43,21 @@ endif;
     <head>
         <meta charset="UTF-8">
         <title>Usina Santa Fé S.A.</title>
-        <link rel="stylesheet" href="themes/css/boot.css"/>
+        <link rel="stylesheet" href="themes/css/boot.css?v=1"/>
 
         <?php if ($verDisp): ?>
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
-            <link rel="stylesheet" href="themes/css/stylemobile.css?v=1"/>
+            <link rel="stylesheet" href="themes/css/stylemobile.css?v=5"/>
         <?php else: ?>
-            <link rel="stylesheet" href="themes/css/stylemain.css?v=18"/>
-            <link rel="stylesheet" href="themes/css/style.css?v=18"/>
+            <link rel="stylesheet" href="themes/css/stylemain.css?v=26"/>
+            <link rel="stylesheet" href="themes/css/style.css?v=26"/>
             <link rel="stylesheet" href="themes/css/lightbox.min.css"/>
         <?php endif; ?>
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500,700,700italic,900' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="themes/img/icone.ico"/>
         <link rel="stylesheet" href="themes/css/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="themes/css/w3.css?v=2"/>
+		<link rel="stylesheet" href="themes/css/w3.css"/>
     </head>
     <body>
         <header class="cabecalho container">
@@ -107,6 +107,7 @@ endif;
                         </li>
                         <li class="menu_item"><a href="#" title="Área restrita"><?= ($idioma == 1) ? 'Área Restrita' : 'Restricted Area'; ?></a>
                             <ul class="sub_item_menu sub_item_menu_restrita">
+				<li ><a href="http://www.usinasantafe.com.br/prestadordeservicos"  target="_blank"><?= ($idioma == 1) ? 'Prestador de serviços' : 'Prestador de serviços'; ?></a></li>
                                 <li ><a href="index.php?exe=acesso_relacao&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?></a></li>
                                 <li ><a href="index.php?exe=acesso_politicas_rh&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Políticas do RH' : 'HR Policies'; ?></a></li>
                                 <li ><a href="index.php?exe=acesso_dashboard&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Configuração' : 'Configuration'; ?></a></li>
@@ -178,7 +179,7 @@ endif;
             <script src="_cdn/jquery.js"></script>
             <script src="_cdn/script.js?v=8"></script>
             <script src="_cdn/lightbox-plus-jquery.min.js"></script>
-            <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+			<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 
             <?php
             if ($verDisp) {
@@ -195,7 +196,8 @@ endif;
                         loop: true
                     });
                 </script>
-            <?php } ?>
+            <?php } 
+            ?>
 
     </body>
 

@@ -113,6 +113,8 @@ endif;
                 $sql = $sql . $parteOrd;
             }
             
+            
+
             $read->ExeReadMod($sql);
 
             $i = 0;

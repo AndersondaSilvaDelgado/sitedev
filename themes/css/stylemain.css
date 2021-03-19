@@ -180,41 +180,6 @@
     color: #003082;
 }
 
-.interno{
-    color: #0089B7;
-}
-
-.item_interno{
-    float: left;
-    color: #003082;
-    background: #EEEEEE; 
-    -webkit-border-radius: 5px; 
-    -moz-border-radius: 5px; 
-    border-radius: 5px;
-}
-
-.item_interno:hover{
-    background: #00759B;
-    color: #FFFFFF !important;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
-    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
-    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
-}
-
-.item_interno h1{
-    text-align: center;
-    font-weight: bold;
-}
-
-.item_interno:hover h1{
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-}
-
-.item_interno .tagline{
-    text-align: center;
-}
-
 .item_aplicativo{
     float: left;
     color: #003082;
@@ -243,6 +208,38 @@
 }
 
 .item_aplicativo img{
+    height: 140px;
+    margin: 10px 0 20px 0;
+}
+
+.item_index{
+    float: left;
+    color: #003082;
+    background: #EEEEEE; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item_index:hover{
+    background: #00759B;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+}
+
+.item_index h1{
+    font-weight: bold;
+}
+
+.item_index:hover h1{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.item_index img{
     height: 140px;
     margin: 10px 0 20px 0;
 }
@@ -570,9 +567,13 @@
 }
 
 .local{
-    border: 1px solid #AAAAAA;
     display: block; 
     float: left;
+}
+
+.logistico{
+    display: block; 
+    float: right;
 }
 
 .localizacao{
@@ -647,9 +648,70 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.logistico{
+.senai{
+	margin-top: 140px !important;
+}
+
+.tit_senai{
+	background-color: rgba(0, 48, 130, 1);
+	color: #FFFFFF !important;
+}
+
+.esquerda{
+    display: block; 
+    float: left;
+}
+
+.direita{
     display: block; 
     float: right;
+}
+
+.msg_index{
+    border: 1px solid #AAAAAA;
+}
+
+.msg_index h1{
+	background-color: rgba(0, 48, 130, 1);
+	color: #FFFFFF !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.msg_index h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.msg_index p{
+    display: block;
+    width: 90%;
+}
+
+.msg_index form label span{
+    display: block;
+    width: 90%;
+}
+
+.msg_index form label input{
+    display: block;
+    width: 90%;
+}
+
+.msg_index form label textarea{
+    display: block;
+    width: 90%;
+}
+
+.msg_index table{
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
 }
 
 .formulario_contato{

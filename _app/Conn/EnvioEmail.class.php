@@ -22,7 +22,7 @@ class EnvioEmail extends Conn {
         $email = ''; 
         
         if($dados['departamento'] == 1){
-            $email = 'matheus.rodrigues@usinasantafe.com.br';
+            $email = 'joao.rogante@usinasantafe.com.br; laura.vicentini@usinasantafe.com.br;';
         }
         elseif($dados['departamento'] == 2){
             $email = 'marcio@usinasantafe.com.br';
@@ -40,20 +40,26 @@ class EnvioEmail extends Conn {
             $email = 'anderson@usinasantafe.com.br';
         }
         
-        $this->Connect();
-        $sql = "CALL USINAS.PK_ENVIA_EMAIL.PB_ENVIA_EMAIL (  'ti@usinasantafe.com.br' " 
+		if(!empty($dados['mensagem']) && ($dados['nome'] !== 'HenryjaB')){
+			
+			$msg = preg_replace('/(http[s]{0,1}\:\/\/\S{4,})\s{0,}/ims', '', $dados['mensagem']);
+			
+			$this->Connect();
+			$sql = "CALL USINAS.PK_ENVIA_EMAIL.PB_ENVIA_EMAIL (  'ti@usinasantafe.com.br' " 
                                . " , '" . $email . "' " 
                                . " , 'MENSAGEM - SITE DA EMPRESA' "
                                . " , 'NOME: " . $dados['nome']
                                . " ' || chr(13) || 'E-MAIL:  " . $dados['email']
                                . " ' || chr(13) || 'TELEFONE:  " . $dados['telefone']
-                               . " ' || chr(13) || 'MSG: " . $dados['mensagem'] . "' "
+                               . " ' || chr(13) || 'MSG: " . $msg . "'"
                                . " , null  "
                                . " , null)";
 
-        $stmt = $this->Conn->prepare($sql);
-        
-        $stmt->execute();
+			$stmt = $this->Conn->prepare($sql);
+			$stmt->execute();
+		
+		}
+		
     }
 
     private function Connect() {
