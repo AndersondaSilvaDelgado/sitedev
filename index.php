@@ -49,8 +49,8 @@ endif;
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
             <link rel="stylesheet" href="themes/css/stylemobile.css?v=5"/>
         <?php else: ?>
-            <link rel="stylesheet" href="themes/css/stylemain.css?v=26"/>
-            <link rel="stylesheet" href="themes/css/style.css?v=26"/>
+            <link rel="stylesheet" href="themes/css/stylemain.css?v=32"/>
+            <link rel="stylesheet" href="themes/css/style.css?v=32"/>
             <link rel="stylesheet" href="themes/css/lightbox.min.css"/>
         <?php endif; ?>
 
@@ -103,7 +103,11 @@ endif;
                                 <li ><a href="index.php?exe=informativo&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Informativo Itaquerê</a></li>
                             </ul>
                         </li>
-                        <li class="menu_item"><a href="index.php?exe=aplicativo&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>" title="Contatos"><?= ($idioma == 1) ? 'Aplicativos' : 'Applications'; ?></a>
+                        <li class="menu_item"><a href="#" title="Área Pública"><?= ($idioma == 1) ? 'Área Pública' : 'Public Area'; ?></a>
+                            <ul class="sub_item_menu sub_item_menu_restrita">
+                                <li ><a href="index.php?exe=doc_juridico&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Informações Financeiras</a></li>
+                                <li ><a href="index.php?exe=aplicativo&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Aplicativos' : 'Applications'; ?></a></li>
+                            </ul>
                         </li>
                         <li class="menu_item"><a href="#" title="Área restrita"><?= ($idioma == 1) ? 'Área Restrita' : 'Restricted Area'; ?></a>
                             <ul class="sub_item_menu sub_item_menu_restrita">
@@ -177,7 +181,7 @@ endif;
             </footer>
 
             <script src="_cdn/jquery.js"></script>
-            <script src="_cdn/script.js?v=8"></script>
+            <script src="_cdn/script.js?v=11"></script>
             <script src="_cdn/lightbox-plus-jquery.min.js"></script>
 			<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 
