@@ -44,7 +44,6 @@ endif;
 <div class="list_content">
 
     <section>
-        <!--<div class="clear"></div>-->
         <h1 class="title_crud">CATEGORIAS</h1>
         <a href="painel.php?exe=categoria/edit&status=create" title="Inserir">
             <article class="box_item inserir">

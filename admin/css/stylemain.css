@@ -1,7 +1,7 @@
 /*----------------------------DEFAULT-------------------------------------*/
 
 .main{
-    display: block; 
+    /*display: block;*/ 
     float: left;
 }
 
@@ -51,6 +51,7 @@
     display: block; 
     float: left;
     background-color: #003082;
+    position: fixed;
 }
 
 .area_logo{
@@ -235,6 +236,10 @@
 }
 
 .label_small{
+    float: left;
+}
+
+.div_small{
     float: left;
 }
 

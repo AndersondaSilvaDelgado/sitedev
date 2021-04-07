@@ -68,7 +68,7 @@ endif;
         <!--<div class="clear"></div>-->
 
         <header >
-            <h1 class="title_crud">EDIÇÃO DE CATEGORIA</h1>
+            <h1 class="title_crud">EDIÇÃO DE CATEGORIA -</h1>
         </header>
 
         <form name="PostForm" action="painel.php?exe=categoria/index&status=<?= $status; ?><?= ($status == 'update' ? '&idcategoria=' . $idCategoria . '' : '') ?>" method="post" enctype="multipart/form-data">

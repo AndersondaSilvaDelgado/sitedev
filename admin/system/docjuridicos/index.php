@@ -4,11 +4,11 @@ $retornpost = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 $idCategoria = filter_input(INPUT_GET, 'idcategoria', FILTER_VALIDATE_INT);
 $idDocumento = filter_input(INPUT_GET, 'iddocumento', FILTER_VALIDATE_INT);
 
-require_once '_models/AdminCategoria.class.php';
-$adminCategoria = new AdminCategoria;
+require_once '_models/AdminCatJuridico.class.php';
+$adminCatJuridico = new AdminCatJuridico();
 
-require_once '_models/AdminDocumento.class.php';
-$adminDocumento = new AdminDocumento();
+require_once '_models/AdminDocJuridico.class.php';
+$adminDocJuridico = new AdminDocJuridico();
 
 if ($status):
 
@@ -17,12 +17,12 @@ if ($status):
         case 'createdoc':
             $retornpost['DOCUMENTO'] = ( $_FILES['DOCUMENTO']['tmp_name'] ? $_FILES['DOCUMENTO'] : 'null' );
             unset($retornpost['SendPostForm']);
-            $adminDocumento->ExeCreate($retornpost);
+            $adminDocJuridico->ExeCreate($retornpost);
             break;
 
         case 'createsecao':
             unset($retornpost['SendPostForm']);
-            $adminCategoria->ExeCreate($retornpost);
+            $adminCatJuridico->ExeCreate($retornpost);
             break;
 
         case 'updatedoc':
@@ -30,7 +30,7 @@ if ($status):
                 $retornpost['DOCUMENTO'] = ( $_FILES['DOCUMENTO']['tmp_name'] ? $_FILES['DOCUMENTO'] : 'null' );
                 unset($retornpost['SendPostForm']);
                 $retornpost['DATA'] = date('d/m/Y H:i:s');
-                $adminDocumento->ExeUpdate($idDocumento, $retornpost);
+                $adminDocJuridico->ExeUpdate($idDocumento, $retornpost);
             endif;
             break;
 
@@ -38,32 +38,32 @@ if ($status):
             if (isset($retornpost) && $retornpost['SendPostForm']):
                 unset($retornpost['SendPostForm']);
                 $retornpost['DATA'] = date('d/m/Y H:i:s');
-                $adminCategoria->ExeUpdate($idCategoria, $retornpost);
+                $adminCatJuridico->ExeUpdate($idCategoria, $retornpost);
             endif;
             break;
 
         case 'deldoc':
-            $adminDocumento->ExeDelete($idDocumento);
+            $adminDocJuridico->ExeDelete($idDocumento);
             break;
 
         case 'delsecao':
-            $adminCategoria->ExeDelete($idCategoria);
+            $adminCatJuridico->ExeDelete($idCategoria);
             break;
 
         case 'downdoc':
-            $adminDocumento->DownDoc($idDocumento);
+            $adminDocJuridico->DownDoc($idDocumento);
             break;
 
         case 'updoc':
-            $adminDocumento->UpDoc($idDocumento);
+            $adminDocJuridico->UpDoc($idDocumento);
             break;
 
         case 'downsecao':
-            $adminCategoria->DownSecao($idCategoria);
+            $adminCatJuridico->DownSecao($idCategoria);
             break;
 
         case 'upsecao':
-            $adminCategoria->UpSecao($idCategoria);
+            $adminCatJuridico->UpSecao($idCategoria);
             break;
 
     endswitch;
@@ -72,24 +72,24 @@ endif;
 ?>
 <div>
 
-    <h1 class="title_crud">DEMONSTRAÇÕES FINANCEIRAS</h1>
+    <h1 class="title_crud">INFORMAÇÕES FINANCEIRAS</h1>
 
     <div class="content">
 
         <?php
         $readDoc = new Read;
-        $readDoc->ExeReadMod(" SELECT "
-                                . " CODIGO "
-                                . " , DESCRICAO "
-                                . " , DOCUMENTO "
-                                . " , SECAO "
-                                . " , DATA "
-                                . " , POSICAO "
-                            . " FROM "
-                                . " SITE_RELATORIO "
-                            . " ORDER BY "
-                                . " POSICAO "
-                            . " DESC ");
+        $readDoc->ExeReadMod(' SELECT '
+                . ' CODIGO '
+                . ' , DESCRICAO '
+                . ' , DOCUMENTO '
+                . ' , SECAO '
+                . ' , DATA '
+                . ' , POSICAO '
+                . ' FROM '
+                . ' SITE_DOC_JURIDICO '
+                . ' ORDER BY '
+                . ' POSICAO '
+                . ' DESC ');
         $listDoc = null;
         if ($readDoc->getResult()) {
             $listDoc = $readDoc->getResult();
@@ -97,19 +97,17 @@ endif;
 
         $readSes = new Read;
         $readSes->ExeReadMod("SELECT "
-                                . " CAT.CODIGO "
-                                . " , CAT.DESCRICAO "
-                            . " FROM "
-                                . " SITE_CATEGORIA_RELATORIO CAT "
-                            . " WHERE "
-                                . " CAT.NIVEL = 1 "
-                            . " ORDER BY "
-                                . " CAT.POSICAO "
-                            . " DESC");
+                . " CAT.CODIGO "
+                . " , CAT.DESCRICAO "
+                . " FROM "
+                . " SITE_CATEGORIA_DOC_JURIDICO CAT "
+                . " WHERE "
+                . " CAT.NIVEL = 1 "
+                . " ORDER BY CAT.POSICAO DESC");
         ?>
         <article class="secao">
             <h1 class="titulo1">
-                <a href="painel.php?exe=documentos/editsecao&status=createsecao&idcodparente=0" >
+                <a href="painel.php?exe=docjuridicos/editsecao&status=createsecao&idcodparente=0" >
                     <i class="fa fa-file icon_green">&nbsp;&nbsp;</i>Nova seção
                 </a>
             </h1>
@@ -118,16 +116,16 @@ endif;
                 foreach ($readSes->getResult() as $secao1) {
                     ?>
                     <h1 class="titulo1"><?= $secao1['DESCRICAO']; ?>
-                        <a href="painel.php?exe=documentos/editsecao&status=updatesecao&idcategoria=<?= $secao1['CODIGO']; ?>" >
+                        <a href="painel.php?exe=docjuridicos/editsecao&status=updatesecao&idcategoria=<?= $secao1['CODIGO']; ?>" >
                             <i class="fa fa-edit icon_blue"></i>
                         </a>
-                        <a href="#" onclick="return confirm_delete('painel.php?exe=documentos/index&status=delsecao&idcategoria=<?= $secao1['CODIGO']; ?>');" >
+                        <a href="#" onclick="return confirm_delete('painel.php?exe=docjuridicos/index&status=delsecao&idcategoria=<?= $secao1['CODIGO']; ?>');" >
                             <i class="fa fa-trash icon_red"></i>
                         </a>
-                        <a href="painel.php?exe=documentos/index&status=downsecao&idcategoria=<?= $secao1['CODIGO']; ?>" >
+                        <a href="painel.php?exe=docjuridicos/index&status=downsecao&idcategoria=<?= $secao1['CODIGO']; ?>" >
                             <i class="fa fa-caret-down"></i>
                         </a>
-                        <a href="painel.php?exe=documentos/index&status=upsecao&idcategoria=<?= $secao1['CODIGO']; ?>" >
+                        <a href="painel.php?exe=docjuridicos/index&status=upsecao&idcategoria=<?= $secao1['CODIGO']; ?>" >
                             <i class="fa fa-caret-up"></i>
                         </a>
                     </h1>
@@ -139,16 +137,16 @@ endif;
                                 <div class="relatorio_secao1">
                                     <p class="tagline documento">
                                         <?= $doc['DESCRICAO']; ?>
-                                        <a href="painel.php?exe=documentos/editdoc&status=updatedoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                        <a href="painel.php?exe=docjuridicos/editdoc&status=updatedoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                             <i class="fa fa-edit icon_blue"></i>
                                         </a>
-                                        <a href="#" onclick="confirm_delete('painel.php?exe=documentos/index&status=deldoc&iddocumento=<?= $doc['CODIGO']; ?>');" >
+                                        <a href="#" onclick="confirm_delete('painel.php?exe=docjuridicos/index&status=deldoc&iddocumento=<?= $doc['CODIGO']; ?>');" >
                                             <i class="fa fa-trash icon_red"></i>
                                         </a>
-                                        <a href="painel.php?exe=documentos/index&status=downdoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                        <a href="painel.php?exe=docjuridicos/index&status=downdoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                             <i class="fa fa-caret-down"></i>
                                         </a>
-                                        <a href="painel.php?exe=documentos/index&status=updoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                        <a href="painel.php?exe=docjuridicos/index&status=updoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                             <i class="fa fa-caret-up"></i>
                                         </a>
                                     </p>
@@ -160,11 +158,11 @@ endif;
                     ?>
                     <div class="relatorio_secao1">
                         <p class="tagline documento">
-                            <a href="painel.php?exe=documentos/editdoc&status=createdoc&idcodparente=<?= $secao1['CODIGO']; ?>" >
+                            <a href="painel.php?exe=docjuridicos/editdoc&status=createdoc&idcodparente=<?= $secao1['CODIGO']; ?>" >
                                 <i class="fa fa-file icon_green">&nbsp;</i>Novo Documento
                             </a>
                             &nbsp;&nbsp;|&nbsp;&nbsp;
-                            <a href="painel.php?exe=documentos/editsecao&status=createsecao&idcodparente=<?= $secao1['CODIGO']; ?>" >
+                            <a href="painel.php?exe=docjuridicos/editsecao&status=createsecao&idcodparente=<?= $secao1['CODIGO']; ?>" >
                                 <i class="fa fa-file icon_green">&nbsp;</i> Nova Seção 
                             </a>
                         </p>
@@ -174,7 +172,7 @@ endif;
                             . " CAT.CODIGO "
                             . " , CAT.DESCRICAO "
                             . " FROM "
-                            . " SITE_CATEGORIA_RELATORIO CAT "
+                            . " SITE_CATEGORIA_DOC_JURIDICO CAT "
                             . " WHERE "
                             . " CAT.NIVEL = 2 "
                             . " AND "
@@ -190,16 +188,16 @@ endif;
                             ?>
                             <article class="subsecao1">
                                 <h2 class="titulo2"><?= $secao2['DESCRICAO']; ?>
-                                    <a href="painel.php?exe=documentos/editsecao&status=updatesecao&idcategoria=<?= $secao2['CODIGO']; ?>" >
+                                    <a href="painel.php?exe=docjuridicos/editsecao&status=updatesecao&idcategoria=<?= $secao2['CODIGO']; ?>" >
                                         <i class="fa fa-edit icon_blue"></i>
                                     </a>
-                                    <a href="#" onclick="return confirm_delete('painel.php?exe=documentos/index&status=delsecao&idcategoria=<?= $secao2['CODIGO']; ?>');" >
+                                    <a href="#" onclick="return confirm_delete('painel.php?exe=docjuridicos/index&status=delsecao&idcategoria=<?= $secao2['CODIGO']; ?>');" >
                                         <i class="fa fa-trash icon_red"></i>
                                     </a>
-                                    <a href="painel.php?exe=documentos/index&status=downsecao&idcategoria=<?= $secao2['CODIGO']; ?>" >
+                                    <a href="painel.php?exe=docjuridicos/index&status=downsecao&idcategoria=<?= $secao2['CODIGO']; ?>" >
                                         <i class="fa fa-caret-down"></i>
                                     </a>
-                                    <a href="painel.php?exe=documentos/index&status=upsecao&idcategoria=<?= $secao2['CODIGO']; ?>" >
+                                    <a href="painel.php?exe=docjuridicos/index&status=upsecao&idcategoria=<?= $secao2['CODIGO']; ?>" >
                                         <i class="fa fa-caret-up"></i>
                                     </a>
                                 </h2>
@@ -211,16 +209,16 @@ endif;
                                             <div class="relatorio_secao2">
                                                 <p class="tagline documento">
                                                     <?= $doc['DESCRICAO']; ?>
-                                                    <a href="painel.php?exe=documentos/editdoc&status=updatedoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                                    <a href="painel.php?exe=docjuridicos/editdoc&status=updatedoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                                         <i class="fa fa-edit icon_blue"></i>
                                                     </a>
-                                                    <a href="#" onclick="confirm_delete('painel.php?exe=documentos/index&status=deldoc&iddocumento=<?= $doc['CODIGO']; ?>');" >
+                                                    <a href="#" onclick="confirm_delete('painel.php?exe=docjuridicos/index&status=deldoc&iddocumento=<?= $doc['CODIGO']; ?>');" >
                                                         <i class="fa fa-trash icon_red"></i>
                                                     </a>
-                                                    <a href="painel.php?exe=documentos/index&status=downdoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                                    <a href="painel.php?exe=docjuridicos/index&status=downdoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                                         <i class="fa fa-caret-down"></i>
                                                     </a>
-                                                    <a href="painel.php?exe=documentos/index&status=updoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                                    <a href="painel.php?exe=docjuridicos/index&status=updoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                                         <i class="fa fa-caret-up"></i>
                                                     </a>
                                                 </p>
@@ -232,11 +230,11 @@ endif;
                                 ?>
                                 <div class="relatorio_secao2">
                                     <p class="tagline documento">
-                                        <a href="painel.php?exe=documentos/editdoc&status=createdoc&idcodparente=<?= $secao2['CODIGO']; ?>" >
+                                        <a href="painel.php?exe=docjuridicos/editdoc&status=createdoc&idcodparente=<?= $secao2['CODIGO']; ?>" >
                                             <i class="fa fa-file icon_green">&nbsp;</i>Novo Documento
                                         </a>
                                         &nbsp;&nbsp;|&nbsp;&nbsp;
-                                        <a href="painel.php?exe=documentos/editsecao&status=createsecao&idcodparente=<?= $secao2['CODIGO']; ?>" >
+                                        <a href="painel.php?exe=docjuridicos/editsecao&status=createsecao&idcodparente=<?= $secao2['CODIGO']; ?>" >
                                             <i class="fa fa-file icon_green">&nbsp;</i> Nova Seção 
                                         </a>
                                     </p>
@@ -246,7 +244,7 @@ endif;
                                         . " CAT.CODIGO "
                                         . " , CAT.DESCRICAO "
                                         . " FROM "
-                                        . " SITE_CATEGORIA_RELATORIO CAT "
+                                        . " SITE_CATEGORIA_DOC_JURIDICO CAT "
                                         . " WHERE "
                                         . " CAT.NIVEL = 3 "
                                         . " AND "
@@ -262,16 +260,16 @@ endif;
                                         ?>
                                         <article class="subsecao2">
                                             <h3 class="titulo3"><?= $secao3['DESCRICAO']; ?>
-                                                <a href="painel.php?exe=documentos/editsecao&status=updatesecao&idcategoria=<?= $secao3['CODIGO']; ?>" >
+                                                <a href="painel.php?exe=docjuridicos/editsecao&status=updatesecao&idcategoria=<?= $secao3['CODIGO']; ?>" >
                                                     <i class="fa fa-edit icon_blue"></i>
                                                 </a>
-                                                <a href="#" onclick="return confirm_delete('painel.php?exe=documentos/index&status=delsecao&idcategoria=<?= $secao3['CODIGO']; ?>');" >
+                                                <a href="#" onclick="return confirm_delete('painel.php?exe=docjuridicos/index&status=delsecao&idcategoria=<?= $secao3['CODIGO']; ?>');" >
                                                     <i class="fa fa-trash icon_red"></i>
                                                 </a>
-                                                <a href="painel.php?exe=documentos/index&status=downsecao&idcategoria=<?= $secao3['CODIGO']; ?>" >
+                                                <a href="painel.php?exe=docjuridicos/index&status=downsecao&idcategoria=<?= $secao3['CODIGO']; ?>" >
                                                     <i class="fa fa-caret-down"></i>
                                                 </a>
-                                                <a href="painel.php?exe=documentos/index&status=upsecao&idcategoria=<?= $secao3['CODIGO']; ?>" >
+                                                <a href="painel.php?exe=docjuridicos/index&status=upsecao&idcategoria=<?= $secao3['CODIGO']; ?>" >
                                                     <i class="fa fa-caret-up"></i>
                                                 </a>
                                             </h3>
@@ -283,16 +281,16 @@ endif;
                                                         <div class="relatorio_secao3">
                                                             <p class="tagline documento">
                                                                 <?= $doc['DESCRICAO']; ?>
-                                                                <a href="painel.php?exe=documentos/editdoc&statusdoc=update&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                                                <a href="painel.php?exe=docjuridicos/editdoc&statusdoc=update&iddocumento=<?= $doc['CODIGO']; ?>" >
                                                                     <i class="fa fa-edit icon_blue"></i>
                                                                 </a>
-                                                                <a href="#" onclick="confirm_delete('painel.php?exe=documentos/index&status=deldoc&iddocumento=<?= $doc['CODIGO']; ?>');" >
+                                                                <a href="#" onclick="confirm_delete('painel.php?exe=docjuridicos/index&status=deldoc&iddocumento=<?= $doc['CODIGO']; ?>');" >
                                                                     <i class="fa fa-trash icon_red"></i>
                                                                 </a>
-                                                                <a href="painel.php?exe=documentos/index&status=downdoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                                                <a href="painel.php?exe=docjuridicos/index&status=downdoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                                                     <i class="fa fa-caret-down"></i>
                                                                 </a>
-                                                                <a href="painel.php?exe=documentos/index&status=updoc&iddocumento=<?= $doc['CODIGO']; ?>" >
+                                                                <a href="painel.php?exe=docjuridicos/index&status=updoc&iddocumento=<?= $doc['CODIGO']; ?>" >
                                                                     <i class="fa fa-caret-up"></i>
                                                                 </a>
                                                             </p>
@@ -304,7 +302,7 @@ endif;
                                             ?>
                                             <div class="relatorio_secao3">
                                                 <p class="tagline documento">
-                                                    <a href="painel.php?exe=documentos/editdoc&status=createdoc&idcodparente=<?= $secao3['CODIGO']; ?>" >
+                                                    <a href="painel.php?exe=docjuridicos/editdoc&status=createdoc&idcodparente=<?= $secao3['CODIGO']; ?>" >
                                                         <i class="fa fa-file icon_green">&nbsp;</i>Novo Documento
                                                     </a>
                                                 </p>

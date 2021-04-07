@@ -14,15 +14,16 @@ if ($status == 'updatesecao'):
 
     $read = new Read;
     $read->ExeReadMod("SELECT "
-            . " CAT.CODIGO "
-            . " , CAT.CODPARENTE "
-            . " , CAT.DESCRICAO "
-            . " , TO_CHAR(CAT.DATA, 'DD/MM/YYYY HH24:MI:SS') AS DATA "
-            . " , CAT.POSICAO "
-            . " , CAT.NIVEL "
-            . " FROM "
-            . " SITE_CATEGORIA_RELATORIO CAT "
-            . " WHERE CAT.CODIGO = " . $idCategoria);
+                        . " CAT.CODIGO "
+                        . " , CAT.CODPARENTE "
+                        . " , CAT.DESCRICAO "
+                        . " , TO_CHAR(CAT.DATA, 'DD/MM/YYYY HH24:MI:SS') AS DATA "
+                        . " , CAT.POSICAO "
+                        . " , CAT.NIVEL "
+                    . " FROM "
+                        . " SITE_CATEGORIA_DOC_JURIDICO CAT "
+                    . " WHERE "
+                        . " CAT.CODIGO = " . $idCategoria);
 
     if ($read->getResult()):
 
@@ -44,8 +45,10 @@ elseif ($status == 'createsecao'):
     $codParenteRet = $codParente;
 
     $readCod = new Read;
-    $readCod->ExeReadMod("SELECT MAX(CAT.CODIGO) AS CODIGO "
-            . " FROM SITE_CATEGORIA_RELATORIO CAT");
+    $readCod->ExeReadMod("SELECT "
+                            . " MAX(CAT.CODIGO) AS CODIGO "
+                        . " FROM "
+                            . " SITE_CATEGORIA_DOC_JURIDICO CAT ");
 
     if ($readCod->getResult()):
         foreach ($readCod->getResult() as $catCod):
@@ -54,8 +57,10 @@ elseif ($status == 'createsecao'):
     endif;
 
     $readPos = new Read;
-    $readPos->ExeReadMod("SELECT MAX(CAT.POSICAO) AS POSICAO "
-            . " FROM SITE_CATEGORIA_RELATORIO CAT");
+    $readPos->ExeReadMod("SELECT "
+                            . " MAX(CAT.POSICAO) AS POSICAO "
+                        . " FROM "
+                            . " SITE_CATEGORIA_DOC_JURIDICO CAT ");
 
     if ($readPos->getResult()):
         foreach ($readPos->getResult() as $catPos):
@@ -71,7 +76,7 @@ endif;
 
     <div class="content">
 
-        <form name="PostForm" action="painel.php?exe=documentos/index&status=<?= $status; ?><?= ($status == 'updatesecao' ? '&idcategoria=' . $idCategoria . '' : '') ?>" method="post" enctype="multipart/form-data">
+        <form name="PostForm" action="painel.php?exe=docjuridicos/index&status=<?= $status; ?><?= ($status == 'updatesecao' ? '&idcategoria=' . $idCategoria . '' : '') ?>" method="post" enctype="multipart/form-data">
 
             <input type="hidden" name="CODIGO" value="<?= $codigoRet; ?>" />
 
@@ -119,8 +124,7 @@ endif;
 
             <div class="label_line botoes">
                 <input type="submit" class="btn blue" value="Salvar" name="SendPostForm" />
-                <input type="button" onclick="window.location.href = 'painel.php?exe=documentos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
-                <!--<div class="clear"></div>-->
+                <input type="button" onclick="window.location.href = 'painel.php?exe=docjuridicos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
             </div>
 
         </form>

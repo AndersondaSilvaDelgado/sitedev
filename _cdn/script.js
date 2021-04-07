@@ -189,16 +189,16 @@ $(function () {
 
     $('.secao').click(function () {
         if (event.target.className === 'titulo1') {
-            $(this).children('.relatorio_secao1').slideToggle();
-            $(this).children('.subsecao1').slideToggle();
+            $(this).children('.relacao_secao1').slideToggle();
+            $(this).children('.relacao_subsecao1').slideToggle();
         } else if (event.target.className === 'titulo2') {
             objeto = '#' + event.target.id.substring(7);
-            $(objeto).children('.relatorio_secao2').slideToggle();
-            $(objeto).children('.subsecao2').slideToggle();
+            $(objeto).children('.relacao_secao2').slideToggle();
+            $(objeto).children('.relacao_subsecao2').slideToggle();
         } else if (event.target.className === 'titulo3') {
             objeto = '#' + event.target.id.substring(7);
-            $(objeto).children('.relatorio_secao3').slideToggle();
-            $(objeto).children('.subsecao3').slideToggle();
+            $(objeto).children('.relacao_secao3').slideToggle();
+            $(objeto).children('.relacao_subsecao3').slideToggle();
         }
 
     });

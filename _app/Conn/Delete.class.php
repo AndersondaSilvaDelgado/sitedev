@@ -27,6 +27,38 @@ class Delete extends Conn {
         $this->getSyntax();
         $this->Execute();
     }
+        
+    public function ExeDeleteColaborador($Tabela, $codColaborador) {
+
+        $Conn = parent::getConn();
+
+        $sql = "DELETE " . $Tabela . " WHERE CODIGO  = " . $codColaborador;
+        
+        $stmt = $Conn->prepare($sql);
+        $stmt->execute();
+        $Conn->commit();
+        
+        $stmt = $Conn->prepare("DELETE FROM SITE_R_COLABORADOR_NIVEL WHERE COD_TERCEIRO = " . $codColaborador);
+        $stmt->execute();
+        $Conn->commit();
+        
+    }
+    
+    public function ExeDeleteTerceiro($Tabela, $codTerceiro) {
+
+        $Conn = parent::getConn();
+
+        $sql = "DELETE " . $Tabela . " WHERE CODIGO  = " . $codTerceiro;
+        
+        $stmt = $Conn->prepare($sql);
+        $stmt->execute();
+        $Conn->commit();
+        
+        $stmt = $Conn->prepare("DELETE FROM SITE_R_TERCEIRO_NIVEL WHERE COD_TERCEIRO = " . $codTerceiro);
+        $stmt->execute();
+        $Conn->commit();
+        
+    }
 
     public function getResult() {
         return $this->Result;

@@ -11,9 +11,7 @@
  *
  * @author anderson
  */
-class AdminCategoria {
-
-    //put your code here
+class AdminCatJuridico {
 
     private $dado;
     private $idCategoria;
@@ -21,8 +19,8 @@ class AdminCategoria {
     private $error;
     public $result;
 
-    const Entity = 'SITE_CATEGORIA_RELATORIO';
-    const SegEntity = 'SITE_RELATORIO';
+    const Entity = 'SITE_CATEGORIA_DOC_JURIDICO';
+    const SegEntity = 'SITE_DOC_JURIDICO';
 
     public function ExeCreate(array $dado) {
         $this->dado = $dado;
@@ -31,7 +29,7 @@ class AdminCategoria {
             $this->dado['NIVEL'] = 1;
         else:
             $read = new Read;
-            $read->ExeReadMod("SELECT * FROM SITE_CATEGORIA_RELATORIO WHERE CODIGO =  {$this->dado['CODPARENTE']}");
+            $read->ExeReadMod("SELECT * FROM SITE_CATEGORIA_DOC_JURIDICO WHERE CODIGO =  {$this->dado['CODPARENTE']}");
             foreach ($read->getResult() as $categ):
                 $this->dado['NIVEL'] = $categ['NIVEL'] + 1;
             endforeach;
@@ -51,14 +49,14 @@ class AdminCategoria {
         $this->Delete();
         $this->DelDoc($this->idCategoria);
         $readSubNivel = new Read;
-        $readSubNivel->ExeReadMod("SELECT * FROM SITE_CATEGORIA_RELATORIO WHERE CODPARENTE =  {$idCategoria}");
+        $readSubNivel->ExeReadMod("SELECT * FROM SITE_CATEGORIA_DOC_JURIDICO WHERE CODPARENTE =  {$idCategoria}");
         if ($readSubNivel->getResult()):
             foreach ($readSubNivel->getResult() as $categSubNivel):
                 $this->idCategoria = $categSubNivel['CODIGO'];
                 $this->Delete();
                 $this->DelDoc($this->idCategoria);
                 $readSubSubNivel = new Read;
-                $readSubSubNivel->ExeReadMod("SELECT * FROM SITE_CATEGORIA_RELATORIO WHERE CODPARENTE =  {$idCategoria}");
+                $readSubSubNivel->ExeReadMod("SELECT * FROM SITE_CATEGORIA_DOC_JURIDICO WHERE CODPARENTE =  {$idCategoria}");
                 if ($readSubSubNivel->getResult()):
                     foreach ($readSubSubNivel->getResult() as $categSubSubNivel):
                         $this->idCategoria = $categSubSubNivel['CODIGO'];
@@ -118,7 +116,7 @@ class AdminCategoria {
 
         foreach ($readDoc->getResult() as $dados):
             $readDocSecao = new Read;
-            $readDocSecao->ExeReadMod("SELECT * FROM SITE_CATEGORIA_RELATORIO WHERE CODPARENTE = {$dados['CODPARENTE']} AND NIVEL = {$dados['NIVEL']} ORDER BY POSICAO DESC");
+            $readDocSecao->ExeReadMod("SELECT * FROM SITE_CATEGORIA_DOC_JURIDICO WHERE CODPARENTE = {$dados['CODPARENTE']} AND NIVEL = {$dados['NIVEL']} ORDER BY POSICAO DESC");
             foreach ($readDocSecao->getResult() as $dadosSecao):
                 if ($dadosSecao['POSICAO'] < $dados['POSICAO']):
                     $d = array("POSICAO" => $dadosSecao['POSICAO']);
@@ -138,7 +136,7 @@ class AdminCategoria {
 
         foreach ($readDoc->getResult() as $dados):
             $readDocSecao = new Read;
-            $readDocSecao->ExeReadMod("SELECT * FROM SITE_CATEGORIA_RELATORIO WHERE CODPARENTE = {$dados['CODPARENTE']} AND NIVEL = {$dados['NIVEL']} ORDER BY POSICAO ASC");
+            $readDocSecao->ExeReadMod("SELECT * FROM SITE_CATEGORIA_DOC_JURIDICO WHERE CODPARENTE = {$dados['CODPARENTE']} AND NIVEL = {$dados['NIVEL']} ORDER BY POSICAO ASC");
             foreach ($readDocSecao->getResult() as $dadosSecao):
                 if ($dadosSecao['POSICAO'] > $dados['POSICAO']):
                     $d = array("POSICAO" => $dadosSecao['POSICAO']);

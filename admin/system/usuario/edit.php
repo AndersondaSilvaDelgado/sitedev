@@ -114,51 +114,7 @@ endif;
 
             <div class="label_line">
 
-                <label class="label_small">
-                    <span class="field">Nível:</span>
-                    <select name = "NIVEL" class="classe_form" required >
-                        <?php
-                        if ($user['NIVEL'] == 'ADMINISTRADOR') {
-                            ?>
-                            <option value="ADMINISTRADOR" <?= ($nivelRet == 'ADMINISTRADOR' ? 'selected="selected"' : '') ?>>ADMINISTRADOR</option>
-                            <option value="FINANCEIRO" <?= ($nivelRet == 'FINANCEIRO' ? 'selected="selected"' : '') ?>>FINANCEIRO</option>
-                            <option value="CONTRATAÇÃO" <?= ($nivelRet == 'CONTRATAÇÃO' ? 'selected="selected"' : '') ?>>CONTRATAÇÃO</option>
-                            <option value="NOTÍCIA" <?= ($nivelRet == 'NOTÍCIA' ? 'selected="selected"' : '') ?>>NOTÍCIA</option>
-                            <option value = "BANCÁRIO" <?= ($nivelRet == 'BANCÁRIO' ? 'selected="selected"' : '') ?>>BANCÁRIO</option>
-                            <option value="USU. PORTAL DE GOVERNANÇA" <?= ($nivelRet == 'USU. PORTAL DE GOVERNANÇA' ? 'selected="selected"' : '') ?>>USU. PORTAL DE GOVERNANÇA</option>
-                            <option value="ADM. GOVERNANÇA" <?= ($nivelRet == 'ADM. GOVERNANÇA' ? 'selected="selected"' : '') ?>>ADM. GOVERNANÇA</option>
-                            <option value="USU. POL. DE RH" <?= ($nivelRet == 'USU. POL. DE RH' ? 'selected="selected"' : '') ?>>USU. POL. DE RH</option>
-                            <option value="ADM. POL. DE RH" <?= ($nivelRet == 'ADM. POL. DE RH' ? 'selected="selected"' : '') ?>>ADM. POL. DE RH</option>
-                            <?php
-                        } elseif ($user['NIVEL'] == 'FINANCEIRO') {
-                            ?>
-                            <option value="FINANCEIRO" <?= ($nivelRet == 'FINANCEIRO' ? 'selected="selected"' : '') ?>>FINANCEIRO</option>
-                            <option value = "BANCÁRIO" <?= ($nivelRet == 'BANCÁRIO' ? 'selected="selected"' : '') ?>>BANCÁRIO</option>
-                            <?php
-                        } elseif ($user['NIVEL'] == 'CONTRATAÇÃO') {
-                            ?>
-                            <option value="CONTRATAÇÃO" <?= ($nivelRet == 'CONTRATAÇÃO' ? 'selected="selected"' : '') ?>>CONTRATAÇÃO</option>
-                            <?php
-                        } elseif ($user['NIVEL'] == 'NOTÍCIA') {
-                            ?>
-                            <option value="NOTÍCIA" <?= ($nivelRet == 'NOTÍCIA' ? 'selected="selected"' : '') ?>>NOTÍCIA</option>
-                            <?php
-                        } elseif ($user['NIVEL'] == 'ADM. POL. DE RH') {
-                            ?>
-                            <option value="USU. POL. DE RH" <?= ($nivelRet == 'USU. POL. DE RH' ? 'selected="selected"' : '') ?>>USU. POL. DE RH</option>
-                            <option value="ADM. POL. DE RH" <?= ($nivelRet == 'ADM. POL. DE RH' ? 'selected="selected"' : '') ?>>ADM. POL. DE RH</option>
-                            <?php
-                        } elseif ($user['NIVEL'] == 'ADM. GOVERNANÇA') {
-                            ?>
-                            <option value="USU. PORTAL DE GOVERNANÇA" <?= ($nivelRet == 'USU. PORTAL DE GOVERNANÇA' ? 'selected="selected"' : '') ?>>USU. PORTAL DE GOVERNANÇA</option>
-                            <option value="ADM. GOVERNANÇA" <?= ($nivelRet == 'ADM. GOVERNANÇA' ? 'selected="selected"' : '') ?>>ADM. GOVERNANÇA</option>
-                            <?php
-                        }
-                        ?>
-                    </select>
-                </label>
-
-                <label class="label_small">
+                <label class="label_medium">
                     <span class="field">Classe:</span>
                     <select name = "CLASSE" required >
                         <option value="USINA" <?= ($classeRet == 'USINA' ? 'selected="selected"' : '') ?>>USINA</option>
@@ -170,7 +126,7 @@ endif;
                     </select>
                 </label>
 
-                <label class="label_small">
+                <label class="label_medium">
                     <span class="field">Status:</span>
                     <select name = "STATUS" required >
                         <option value = "1" <?= ($statusRet == 1 ? 'selected="selected"' : '') ?>>ATIVO</option>
@@ -204,6 +160,94 @@ endif;
                         />
                 </label>
 
+            </div>
+            
+            <div class="label_line">
+                
+                <span class="field">Nível:</span>
+                
+                <?php
+                    if ($user['NIVEL'] == 'ADMINISTRADOR') {
+                ?>
+
+                <div class="div_small">
+                    <input type="checkbox" id="opcao1" name="opcao1" value="1">
+                    <label for="opcao1">ADMINISTRADOR</label><br>
+                    <input type="checkbox" id="opcao2" name="opcao2" value="2">
+                    <label for="opcao2">ADM. FINANCEIRO</label><br>
+                    <input type="checkbox" id="opcao3" name="opcao3" value="3">
+                    <label for="opcao3">USU. FINANCEIRO</label><br>
+                    <input type="checkbox" id="opcao4" name="opcao4" value="4">
+                    <label for="opcao4">ADM. CONTRATAÇÃO</label><br>
+                </div>
+                
+                <div class="div_small">
+                    <input type="checkbox" id="opcao5" name="opcao5" value="5">
+                    <label for="opcao5">USU. CONTRATAÇÃO</label><br>
+                    <input type="checkbox" id="opcao6" name="opcao6" value="6">
+                    <label for="opcao6">ADM. NOTÍCIA</label><br>
+                    <input type="checkbox" id="opcao7" name="opcao7" value="7">
+                    <label for="opcao7">USU. NOTÍCIA</label><br>
+                    <input type="checkbox" id="opcao8" name="opcao8" value="8">
+                    <label for="opcao8">ADM. GOVERNANÇA</label><br>
+                </div>
+                
+                <div class="div_small">
+                    <input type="checkbox" id="opcao9" name="opcao9" value="9">
+                    <label for="opcao9">USU. GOVERNANÇA</label><br>
+                    <input type="checkbox" id="opcao10" name="opcao10" value="10">
+                    <label for="opcao10">ADM. POLITICA DE RH</label><br>
+                    <input type="checkbox" id="opcao11" name="opcao11" value="11">
+                    <label for="opcao11">USU. POLITICA DE RH</label><br>
+                </div>
+                <?php
+                    } elseif ($user['NIVEL'] == 'FINANCEIRO') {
+                ?>
+                <div class="div_small">
+                    <input type="checkbox" id="opcao2" name="opcao2" value="2">
+                    <label for="opcao2">ADM. FINANCEIRO</label><br>
+                    <input type="checkbox" id="opcao3" name="opcao3" value="3">
+                    <label for="opcao3">USU. FINANCEIRO</label><br>
+                </div>
+                <?php
+                    } elseif ($user['NIVEL'] == 'CONTRATAÇÃO') {
+                ?>
+                <div class="div_small">
+                    <input type="checkbox" id="opcao4" name="opcao4" value="4">
+                    <label for="opcao4">ADM. CONTRATAÇÃO</label><br>
+                    <input type="checkbox" id="opcao5" name="opcao5" value="5">
+                    <label for="opcao5">USU. CONTRATAÇÃO</label><br>
+                </div>
+                <?php
+                    } elseif ($user['NIVEL'] == 'NOTÍCIA') {
+                ?>
+                <div class="div_small">
+                    <input type="checkbox" id="opcao6" name="opcao6" value="6">
+                    <label for="opcao6">ADM. NOTÍCIA</label><br>
+                    <input type="checkbox" id="opcao7" name="opcao7" value="7">
+                    <label for="opcao7">USU. NOTÍCIA</label><br>
+                </div>
+                <?php
+                    } elseif ($user['NIVEL'] == 'ADM. POL. DE RH') {
+                ?>
+                <div class="div_small">
+                    <input type="checkbox" id="opcao8" name="opcao8" value="8">
+                    <label for="opcao8">ADM. GOVERNANÇA</label><br>
+                    <input type="checkbox" id="opcao9" name="opcao9" value="9">
+                    <label for="opcao9">USU. GOVERNANÇA</label><br>
+                </div>
+                <?php
+                    } elseif ($user['NIVEL'] == 'ADM. GOVERNANÇA') {
+                ?>
+                <div class="div_small">
+                    <input type="checkbox" id="opcao10" name="opcao10" value="10">
+                    <label for="opcao10">ADM. POLITICA DE RH</label><br>
+                    <input type="checkbox" id="opcao11" name="opcao11" value="11">
+                    <label for="opcao11">USU. POLITICA DE RH</label><br>
+                </div>
+                <?php
+                    }
+                ?>
             </div>
 
             <div class="label_line botoes">

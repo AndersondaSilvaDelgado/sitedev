@@ -17,7 +17,6 @@ endif;
     <div class="container">
         <div class="content">
             <h1 class="titulo_relatorio_princ">Políticas e Procedimentos de RH</h1>
-            <p class="tagline usuario_relacao fontzero"><?= $_SESSION['userlogin']['CODIGO']; ?></p>
         </div>
     </div>
 

@@ -13,49 +13,85 @@
  */
 class AdminUsuario {
 
-    //put your code here
-
     private $data;
     private $idUsuario;
     private $error;
     private $result;
 
-    const Entity = 'SITE_USUARIO_NV';
-
-    public function ExeCreate(array $data) {
-
+    private $entity;
+    
+    public function ExeCreateColaborador(array $data) {
         $this->data = $data;
-        $this->Create();
+        $this->entity = 'SITE_USUARIO_COLABORADOR';
+        $this->CreateColaborador();
     }
-
-    public function ExeUpdate($idUsuario, array $data) {
-
+    
+    public function ExeCreateTerceiro(array $data) {
+        $this->data = $data;
+        $this->entity = 'SITE_USUARIO_TERCEIRO';
+        $this->CreateTerceiro();
+    }
+    
+    public function ExeUpdateColaborador($idUsuario, array $data) {
         $this->idUsuario = (int) $idUsuario;
         $this->data = $data;
-        $this->Update();
+        $this->entity = 'SITE_USUARIO_COLABORADOR';
+        $this->UpdateColaborador();
     }
-
-    public function ExeDelete($idUsuario) {
+    
+    public function ExeUpdateTerceiro($idUsuario, array $data) {
         $this->idUsuario = (int) $idUsuario;
-        $this->Delete();
+        $this->data = $data;
+        $this->entity = 'SITE_USUARIO_TERCEIRO';
+        $this->UpdateTerceiro();
     }
 
-    private function Create() {
+    public function ExeDeleteColaborador($idUsuario) {
+        $this->idUsuario = (int) $idUsuario;
+        $this->entity = 'SITE_USUARIO_COLABORADOR';
+        $this->DeleteColaborador();
+    }
+    
+    public function ExeDeleteTerceiro($idUsuario) {
+        $this->idUsuario = (int) $idUsuario;
+        $this->entity = 'SITE_USUARIO_TERCEIRO';
+        $this->DeleteTerceiro();
+    }
+
+    private function CreateColaborador() {
         $cadastra = new Create;
-        $cadastra->ExeCreate(self::Entity, $this->data);
+        $cadastra->ExeCreateColaborador($this->entity, $this->data);
         if ($cadastra->getResult()):
             $this->result = $cadastra->getResult();
         endif;
     }
-
-    private function Update() {
+    
+    private function CreateTerceiro() {
+        $cadastra = new Create;
+        $cadastra->ExeCreateTerceiro($this->entity, $this->data);
+        if ($cadastra->getResult()):
+            $this->result = $cadastra->getResult();
+        endif;
+    }
+    
+    private function UpdateColaborador() {
         $Update = new Update;
-        $Update->ExeUpdate(self::Entity, $this->data, "WHERE CODIGO = :CODIGO", "CODIGO={$this->idUsuario}");
+        $Update->ExeUpdateColaborador($this->entity, $this->data, $this->idUsuario);
     }
-
-    private function Delete() {
+    
+    private function UpdateTerceiro() {
+        $Update = new Update;
+        $Update->ExeUpdateTerceiro($this->entity, $this->data, $this->idUsuario);
+    }
+    
+    private function DeleteColaborador() {
         $Delete = new Delete;
-        $Delete->ExeDelete(self::Entity, "WHERE CODIGO = :CODIGO", "CODIGO={$this->idUsuario}");
+        $Delete->ExeDeleteColaborador($this->entity, $this->idUsuario);
     }
-
+    
+    private function DeleteTerceiro() {
+        $Delete = new Delete;
+        $Delete->ExeDeleteTerceiro($this->entity, $this->idUsuario);
+    }
+    
 }

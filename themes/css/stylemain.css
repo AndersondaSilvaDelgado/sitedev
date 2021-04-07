@@ -349,38 +349,58 @@
     color: #008CBB;
 }
 
-.subsecao1{
+.relacao_subsecao1{
     display: none;
 }
 
-.subsecao2{
+.relacao_subsecao2{
     display: none;
 }
 
-.subsecao3{
+.relacao_subsecao3{
     display: none;
 }
 
-.relatorio_secao1{
+.relacao_secao1{
     display: none;
     font-size: 1.2em;
     cursor: pointer;
 }
 
-.relatorio_secao2{
+.relacao_secao2{
     display: none;
     font-size: 1.2em;
     cursor: pointer;
 }
 
-.relatorio_secao3{
+.relacao_secao3{
     display: none;
     font-size: 1.2em;
     cursor: pointer;
 }
 
-.relatorio_secao4{
+.relacao_secao4{
     display: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.doc_juridico_secao1{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.doc_juridico_secao2{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.doc_juridico_secao3{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.doc_juridico_secao4{
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -407,6 +427,22 @@
 .relacao_pagina h4{
     color: #000000;
     cursor: pointer;
+}
+
+.doc_juridico h1{
+    color: #000000;
+}
+
+.doc_juridico h2{
+    color: #402570;
+}
+
+.doc_juridico h3{
+    color: #00A8CC;
+}
+
+.doc_juridico h4{
+    color: #000000;
 }
 
 .acesso_relatorio{
@@ -989,7 +1025,6 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
