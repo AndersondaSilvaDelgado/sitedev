@@ -34,7 +34,8 @@ abstract class Conn {
                           )";
             
             self::$Connect = new PDO("oci:dbname=" . $tns . ';charset=utf8', 'INTERFACE', 'FGBNY946');
-
+            //self::$Connect = new PDO("oci:dbname=" . $tns . ';charset=utf8', 'USINAS', 'STAODA2016');
+//            self::$Connect =  new PDOOCI\PDO($tns, 'INTERFACE', 'FGBNY946');
             endif;
         } catch (PDOException $e) {
             PHPErro($e->getCode(), $e->getMessage(), $e->getFile(), $e->getLine());

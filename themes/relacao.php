@@ -69,7 +69,7 @@ endif;
                     . ' SITE_RELATORIO '
                     . ' ORDER BY '
                     . ' POSICAO '
-                    . ' ASC ');
+                    . ' DESC ');
             $listDoc = null;
             if ($readDoc->getResult()) {
                 $listDoc = $readDoc->getResult();

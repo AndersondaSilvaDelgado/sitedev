@@ -1,0 +1,863 @@
+/*----------------------------------DEFAULT-------------------------------*/
+
+.titulo_padrao{
+    padding: 30px 0;
+    font-size: 2.2em;
+}
+
+.imagem_direita{
+    margin: 0 0 20px 40px;
+}
+
+.imagem_esquerda{
+    margin: 0 40px 20px 0;
+}
+
+.imagem_centro{
+    margin: 0 0 30px 0;
+}
+
+.imagem_padrao{
+    width: 45%;
+    padding: 20px;
+}
+
+.imagem_menor{
+    width: 30%;
+    padding: 20px;
+}
+
+.imagem_padrao h1{
+    margin-top: 20px;
+}
+
+.padrao p{
+    padding-bottom: 30px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.padrao ul li{
+    padding-bottom: 30px;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-indent: 3em;
+}
+
+.padrao ul li ul li{
+    padding-bottom: 0px !important;
+    word-spacing: 2px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 3em;
+    text-indent: 3em;
+}
+
+.espacamento_cabecalho{
+    padding: 52px 0;
+}
+
+.espacamento_relacao{
+    padding: 10px 0;
+}
+
+/*------------------------------------------------------------------------*/   
+
+/*-----------------------------INDEX PRINCIPAL----------------------------*/
+
+.content{
+    float: left;
+    width: 80%;
+    margin: 0 10%;
+    padding: 5px 0;
+}
+
+.area_logo{
+    float: left;
+    text-align: center;
+    padding: 10px 10px 10px 0;
+}
+
+.area_logo img{
+    height: 42px;
+    cursor: pointer;
+}
+
+.area_logo h1{
+    margin-top: 7px;
+    font-size: 1.2em;
+}
+
+.translate{
+    top: 2px;
+    left: 87%;
+}
+
+.translate img{
+    width: 40px;
+    height: 25px;
+}
+
+.menu{
+    margin-left: -4%;
+    margin-right: -4%;
+    font-size: 1.3em;
+    margin-top: 32px;
+}
+
+.menu li a{
+    padding: 10px 69px 10px 7px;
+}
+
+.sub_item_menu{
+    top: 81px;
+    padding: 5px;
+}
+
+.sub_item_menu_somos{
+    width: 199px;
+}
+
+.sub_item_menu_sustenta{
+    width: 230px;
+}
+
+.sub_item_menu_contatos{
+    width: 159px;
+}
+
+.sub_item_menu_restrita{
+    width: 197px;
+}
+
+.sub_item_menu_noticia{
+    width: 151px;
+}
+
+.rede_social{
+    top: 39%;
+    width: 0;
+}
+
+.rede_social ul{
+    margin-left: 0;
+}
+
+.social{
+    width: 50px;
+    height: 50px;
+}
+
+.social:hover{
+    width: 60px;
+}
+
+.rodape{
+    margin-top: 30px;
+    margin-bottom: -19px; 
+    padding: 10px 0;
+}
+
+.rodape_direto{
+    font-size: 0.75em;
+    letter-spacing: 1px;
+}
+
+.rodape li{
+    margin: 10px;
+}
+
+.rodape_facebook{
+    padding: 50px 0 50px 30px;
+    background-size: 25px 25px;
+}
+
+.rodape_linkedin{
+    padding: 50px 0 50px 30px;
+    background-size: 25px 25px;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------------INDEX------------------------------------*/
+
+.slide{
+    margin-bottom: 40px;
+}
+
+.slide_controll{
+    top: 45%;
+    width: 80%;
+    font-size: 4em;
+    margin: 0 10%;
+}
+
+.slide_item img{
+    height: 870px;
+}
+
+.stop_controll{
+    top: 86%;
+    width: 80%;
+    margin: 0 10%; 
+}
+
+.stop{
+    font-size: 3em;
+}
+
+.bullet_controll{
+    top: 92%;
+    width: 80%;
+    margin: 0 10%; 
+}
+
+.bullet{
+    width: 25px;
+    height: 25px;
+    margin: 0 3px;
+}
+
+.item_index{
+    margin: 10px 18px 30px 18px;
+    width: 22%;
+    height: 220px;
+    padding: 14px;
+}
+
+.item_index h1{
+    font-size: 1.2em;
+}
+
+.item_index .tagline{
+    font-size: 7em;
+}
+
+.item_index img{
+    height: 140px;
+    margin: 15px 0 20px 0;
+}
+
+.msg_principal{
+    width: 300px;
+    bottom: 0;
+    right: 10%;
+    padding: 5px 0;
+}
+
+.msg_principal img{
+    height: 30px;
+}
+
+.msg_formulario{
+    width: 300px;
+    height: 0;
+    bottom: 0;
+    right: 10%;
+}
+
+.msg_formulario form label span{
+    margin: 20px 10% 0 10%;
+}
+
+.msg_formulario form label input{
+    margin: 0 10% 10px 10%;
+    width: 80%;
+}
+
+.msg_formulario form label textarea{
+    margin: 0 10% 10px 10%;
+    width: 80%;
+}
+
+.msg_formulario form label select{
+    margin: 0 10% 10px 10%;
+    width: 80%;
+    padding: 5px 0;
+}
+
+.msg_formulario input{
+    margin: 20px 10% 10px 10%;
+    width: 80%;
+    padding: 5px 0;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------APLICATIVO-----------------------------------*/
+
+.item_aplicativo{
+    margin: 10px 30px 30px 30px;
+    width: 28%;
+    height: 250px;
+    padding: 20px;
+}
+
+.item_aplicativo h1{
+    font-size: 1.2em;
+}
+
+.item_aplicativo .tagline{
+    font-size: 8em;
+}
+
+.item_aplicativo img{
+    height: 140px;
+    margin: 10px 0 20px 0;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------------CONTATO----------------------------------*/
+
+.formulario_contato{
+    width: 38%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.formulario_contato h1{
+    margin-top: 20px;
+}
+
+.formulario_contato form label span{
+    margin: 20px 5% 0 5%;
+}   
+
+.formulario_contato form label input{
+    margin: 0 5% 10px 5%;
+}
+
+.formulario_contato form label textarea{
+    margin: 0 5% 10px 5%;
+}
+
+.formulario_contato form label select{
+    margin: 0 5% 10px 5%;
+}
+
+.formulario_contato table{
+    margin: 10px 5% 0 5%;
+}
+
+.formulario_contato .btn{
+    width: 60%;
+    margin: 20px 20% 20px 20%;
+    padding: 10px;
+    height: 40px;
+}
+
+.fale_conosco{
+    margin-left: 10%;
+}
+
+.trabalhe_conosco{
+    margin-right: 10%;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------------HISTORIA-------------------------------*/
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------------INFORMATIVO------------------------------*/
+
+.item_informativo{
+    margin: 5px 15px 30px 15px;
+    width: 28%;
+    padding: 20px;
+}
+
+.item_informativo .informativo{
+    height: 290px;
+}
+
+.item_informativo .tagline{
+    padding: 8px 0;
+    font-size: 1em !important;
+    text-align: center;
+}
+
+.informativo img{
+    width: 200px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------------LOCALIZACAO------------------------------*/
+
+.mapa{
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 600px;
+    margin-bottom: 150px;
+}
+
+.localizacao{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.localizacao h1{
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.localizacao p{
+    font-size: 1.2em;
+    margin: 0 5% 0 5%;
+}
+
+.localizacao label span{
+    margin: 20px 5% 0 5%;
+}   
+
+.localizacao label input{
+    margin: 0 5% 10px 5%;
+}
+
+.localizacao label textarea{
+    margin: 0 5% 10px 5%;
+}
+
+.localizacao table{
+    margin: 10px 5% 10px 5%;
+}
+
+.local{
+    width: 38%;
+    margin-left: 10%;
+    height: 23.5em;
+}
+
+.logistico{
+    width: 38%;
+    margin-right: 10%;
+    height: 23.5em;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*--------------------------------NOTICIA---------------------------------*/
+
+.noticia .titulo_padrao{
+    padding-bottom: 0 !important;
+}
+
+.noticia p{
+    padding-bottom: 30px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.noticia ul li{
+    padding-bottom: 30px;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-indent: 3em;
+}
+
+.noticia ul li ul li{
+    padding-bottom: 0px !important;
+    word-spacing: 2px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 3em;
+    text-indent: 3em;
+}
+
+.galeria h2{
+    padding-bottom: 15px !important;
+}
+
+.galeria li{ 
+    margin: 0 20px 20px 0;
+}
+
+.galeria .thumb_small{
+    width: 200px; 
+    height: 150px;
+    background-size: 70%;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------------NOTICIAS-------------------------------*/
+
+.item_noticia{
+    margin: 5px 15px 30px 15px;
+    width: 28%;
+    height: 290px;
+    padding: 20px;
+}
+
+.item_noticia h1{
+    font-size: 1.2em;
+}
+
+.item_noticia .tagline{
+    font-size: 8em;
+}
+
+.item_noticia img{
+    width: 290px;
+    height: 200px;
+    margin: 10px 0 10px 0;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------------PRINCIPIOS-------------------------------*/
+
+.principios h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.principios p{
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.principios ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-indent: 3em;
+}
+
+.principios ul li ul li{
+    padding-bottom: 0px !important;
+    word-spacing: 2px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 3em;
+    text-indent: 3em;
+}
+
+.principios article{
+    margin-bottom: 30px;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------------PRODUTO----------------------------------*/
+
+.produto p{
+    padding-bottom: 10px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.produto a{
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.produto article{
+    margin-bottom: 30px;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-------------------------------RELACAO----------------------------------*/
+
+.titulo_relatorio_princ{
+    padding: 30px 0 0 0;
+    font-size: 2.2em;
+}
+
+.relacao_pagina h1{
+    font-size: 1.7em;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+}
+
+.relacao_pagina h2{
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0 0 10px 30px;
+}
+
+.relacao_pagina h3{
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 0 0 10px 60px;
+}
+
+.relacao_pagina h4{
+    font-size: 1.2em;
+    font-weight: 700;
+    font-style: italic;
+    padding: 0 0 10px 90px;
+}
+
+.relacao_secao1{
+    padding-left: 30px;
+}
+
+.relacao_secao2{
+    padding-left: 60px;
+}
+
+.relacao_secao3{
+    padding-left: 90px;
+}
+
+.relacao_secao4{
+    padding-left: 120px;
+}
+
+.relacao_secao2:last-of-type{
+    padding-bottom: 15px;
+}
+
+.relacao_secao3:last-of-type{
+    padding-bottom: 15px;
+}
+
+.relacao_secao4:last-of-type{
+    padding-bottom: 15px;
+}
+
+.espaco_relacao{
+    padding: 18px 0;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------RESPONSABILIDADE AMBIENTAL-------------------------*/
+
+.texto_princ{
+    padding-bottom: 30px !important;
+}
+
+.texto_seg{
+    padding-bottom: 15px !important;
+}
+
+.texto_terc{
+    padding-bottom: 15px !important;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-----------------------RESPONSABILIDADE SOCIAL--------------------------*/
+
+/*------------------------------------------------------------------------*/
+
+/*---------------------------RECURSOS HUMANOS-----------------------------*/
+
+/*------------------------------------------------------------------------*/
+
+/*--------------------------TELAS DE ACESSO-------------------------------*/
+
+.acesso_relatorio{
+    padding: 28px 0;
+}
+
+.form_acesso_relatorio{
+    width: 500px;
+    margin: 6.9% 33%;
+    padding: 35px 50px;
+}
+
+.form_acesso_relatorio form label span{
+    font-weight: 500;
+}
+
+.form_acesso_relatorio form label input{
+    margin: 5px 0 30px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.form_acesso_relatorio h1{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.acesso_token{
+    width: 100%;
+}
+
+.botao_relatorio{
+    margin-top: 10px;
+}
+
+.botao_relatorio .btn{
+    width: 35%;
+    margin: 20px 20% 20px 20%;
+    padding: 10px;
+    height: 40px;
+}
+
+.msg_acesso_relatorio{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+/*--------------PORTAL GOVERNANCA----------------*/
+
+.form_acesso_portal_gov{
+    width: 750px;
+    margin: 3% 20%;
+    padding: 35px 50px;
+}
+
+.form_acesso_portal_gov h1{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.form_acesso_portal_gov form label span{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.form_acesso_portal_gov form label input{
+    margin: 5px 0 15px 0;
+    width: 640px;
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+.msg_acesso_portal_gov{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*--------------------------PORTAL GOVERNANÇA-----------------------------*/
+
+.titulo_portal_governanca{
+    padding: 30px 0 0 0;
+    font-size: 2.2em;
+}
+
+.portal_governanca h1{
+    font-size: 1.7em;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+}
+
+.portal_governanca h2{
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0 0 10px 30px;
+}
+
+.portal_governanca h3{
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 0 0 10px 60px;
+}
+
+.portal_governanca h4{
+    font-size: 1.2em;
+    font-weight: 700;
+    font-style: italic;
+    padding: 0 0 10px 90px;
+}
+
+.portal_governanca_secao_1{
+    padding-left: 30px;
+}
+
+.portal_governanca_secao_2{
+    padding-left: 60px;
+}
+
+.portal_governanca_secao_3{
+    padding-left: 90px;
+}
+
+.portal_governanca_secao_4{
+    padding-left: 120px;
+}
+
+.portal_governanca_secao_1:last-of-type{
+    padding-bottom: 15px;
+}
+
+.portal_governanca_secao_2:last-of-type{
+    padding-bottom: 15px;
+}
+
+.portal_governanca_secao_3:last-of-type{
+    padding-bottom: 15px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*------------------------------POLITICAS RH---------------------------------*/
+
+.politicas{
+    font-size: 1.4em;
+    margin-bottom: 0.3em;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*-----------------------------DOC JURIDICOS---------------------------------*/
+
+.doc_juridico h1{
+    font-size: 1.7em;
+    font-weight: 700;
+    padding: 0 0 10px 0;
+}
+
+.doc_juridico h2{
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0 0 10px 30px;
+}
+
+.doc_juridico h3{
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 0 0 10px 60px;
+}
+
+.doc_juridico h4{
+    font-size: 1.2em;
+    font-weight: 700;
+    font-style: italic;
+    padding: 0 0 10px 90px;
+}
+
+.doc_juridico_secao1{
+    padding-left: 30px;
+}
+
+.doc_juridico_secao2{
+    padding-left: 60px;
+}
+
+.doc_juridico_secao3{
+    padding-left: 90px;
+}
+
+.doc_juridico_secao4{
+    padding-left: 120px;
+}
+
+.doc_juridico_secao2:last-of-type{
+    padding-bottom: 15px;
+}
+
+.doc_juridico_secao3:last-of-type{
+    padding-bottom: 15px;
+}
+
+.doc_juridico_secao4:last-of-type{
+    padding-bottom: 15px;
+}
+
+/*---------------------------------------------------------------------------*/

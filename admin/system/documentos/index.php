@@ -78,18 +78,18 @@ endif;
 
         <?php
         $readDoc = new Read;
-        $readDoc->ExeReadMod(" SELECT "
-                                . " CODIGO "
-                                . " , DESCRICAO "
-                                . " , DOCUMENTO "
-                                . " , SECAO "
-                                . " , DATA "
-                                . " , POSICAO "
-                            . " FROM "
-                                . " SITE_RELATORIO "
-                            . " ORDER BY "
-                                . " POSICAO "
-                            . " DESC ");
+        $readDoc->ExeReadMod(' SELECT '
+                . ' CODIGO '
+                . ' , DESCRICAO '
+                . ' , DOCUMENTO '
+                . ' , SECAO '
+                . ' , DATA '
+                . ' , POSICAO '
+                . ' FROM '
+                . ' SITE_RELATORIO '
+                . ' ORDER BY '
+                . ' POSICAO '
+                . ' DESC ');
         $listDoc = null;
         if ($readDoc->getResult()) {
             $listDoc = $readDoc->getResult();
@@ -97,15 +97,13 @@ endif;
 
         $readSes = new Read;
         $readSes->ExeReadMod("SELECT "
-                                . " CAT.CODIGO "
-                                . " , CAT.DESCRICAO "
-                            . " FROM "
-                                . " SITE_CATEGORIA_RELATORIO CAT "
-                            . " WHERE "
-                                . " CAT.NIVEL = 1 "
-                            . " ORDER BY "
-                                . " CAT.POSICAO "
-                            . " DESC");
+                . " CAT.CODIGO "
+                . " , CAT.DESCRICAO "
+                . " FROM "
+                . " SITE_CATEGORIA_RELATORIO CAT "
+                . " WHERE "
+                . " CAT.NIVEL = 1 "
+                . " ORDER BY CAT.POSICAO DESC");
         ?>
         <article class="secao">
             <h1 class="titulo1">
