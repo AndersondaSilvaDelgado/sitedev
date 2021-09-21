@@ -23,8 +23,8 @@
         <p class="tagline">Fone: +55 16 3387 9900</p>
         <p class="tagline">Fax: +55 16 3387 1504</p>
         <p class="tagline"><?= ($idioma == 1) ? 'Site:' : 'Website:'; ?> www.usinasantafe.com.br</p>
-        <p class="tagline"><?= ($idioma == 1) ? 'E-mail:' : 'Email:'; ?> usinasantafe@usinasantafe.com.br</p>
         <p class="tagline"><?= ($idioma == 1) ? 'Sac:' : 'Contact center:'; ?> sac@usinasantafe.com.br</p>
+        <p class="tagline">Fale conosco (denúncias, críticas e sugestões) através do WhatsApp (16) 99961-7542</p>
     </section>
     <section class="localizacao logistico">
         <h1 ><?= ($idioma == 1) ? 'Detalhes Logísticos' : 'Logistics details'; ?></h1>

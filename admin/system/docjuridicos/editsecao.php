@@ -10,16 +10,24 @@ $codParenteRet = 0;
 $posicaoRet = 1;
 $dataRet = '';
 
-require_once '_models/AdminCategoria.class.php';
-$adminCategoria = new AdminCategoria();
+if ($status == 'updatesecao'):
 
-if ($status == 'updatesecao'){
+    $read = new Read;
+    $read->ExeReadMod("SELECT "
+                        . " CODIGO "
+                        . " , CODPARENTE "
+                        . " , DESCRICAO "
+                        . " , TO_CHAR(DATA, 'DD/MM/YYYY HH24:MI:SS') AS DATA "
+                        . " , POSICAO "
+                        . " , NIVEL "
+                    . " FROM "
+                        . " SITE_CATEG_JURIDICO "
+                    . " WHERE "
+                        . " CODIGO = " . $idCategoria);
 
-    $secaoList = $adminCategoria->ReadCod(1, $idCategoria);
+    if ($read->getResult()):
 
-    if ($secaoList){
-
-        foreach ($secaoList as $categoria){
+        foreach ($read->getResult() as $categoria):
             extract($categoria);
 
             $descricaoRet = $DESCRICAO;
@@ -28,18 +36,39 @@ if ($status == 'updatesecao'){
             $posicaoRet = $POSICAO;
             $dataRet = $DATA;
 
-        }
+        endforeach;
 
-    }
+    endif;
 
-}
-elseif ($status == 'createsecao'){
+elseif ($status == 'createsecao'):
 
     $codParenteRet = $codParente;
-    $codigoRet = $adminCategoria->Sequencia(1);
-    $posicaoRet = $adminCategoria->Posicao(1);
-    
-}
+
+    $readCod = new Read;
+    $readCod->ExeReadMod("SELECT "
+                            . " MAX(CODIGO) AS CODIGO "
+                        . " FROM "
+                            . " SITE_CATEG_JURIDICO ");
+
+    if ($readCod->getResult()):
+        foreach ($readCod->getResult() as $catCod):
+            $codigoRet = $catCod['CODIGO'] + 1;
+        endforeach;
+    endif;
+
+    $readPos = new Read;
+    $readPos->ExeReadMod("SELECT "
+                            . " MAX(POSICAO) AS POSICAO "
+                        . " FROM "
+                            . " SITE_CATEG_JURIDICO ");
+
+    if ($readPos->getResult()):
+        foreach ($readPos->getResult() as $catPos):
+            $posicaoRet = $catPos['POSICAO'] + 1;
+        endforeach;
+    endif;
+
+endif;
 ?>
 <div >
 
@@ -47,7 +76,7 @@ elseif ($status == 'createsecao'){
 
     <div class="content">
 
-        <form name="PostForm" action="painel.php?exe=documentos/index&status=<?= $status; ?><?= ($status == 'updatesecao' ? '&idcategoria=' . $idCategoria . '' : '') ?>" method="post" enctype="multipart/form-data">
+        <form name="PostForm" action="painel.php?exe=docjuridicos/index&status=<?= $status; ?><?= ($status == 'updatesecao' ? '&idcategoria=' . $idCategoria . '' : '') ?>" method="post" enctype="multipart/form-data">
 
             <input type="hidden" name="CODIGO" value="<?= $codigoRet; ?>" />
 
@@ -95,11 +124,10 @@ elseif ($status == 'createsecao'){
 
             <div class="label_line botoes">
                 <input type="submit" class="btn blue" value="Salvar" name="SendPostForm" />
-                <input type="button" onclick="window.location.href = 'painel.php?exe=documentos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
+                <input type="button" onclick="window.location.href = 'painel.php?exe=docjuridicos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
             </div>
 
         </form>
 
     </div>
-    
 </div>

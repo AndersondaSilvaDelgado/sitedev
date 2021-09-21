@@ -39,13 +39,13 @@
             if($contVazia > 0){
                 $readSes = new Read;
                 $readSes->ExeReadMod("SELECT "
-                        . " CAT.CODIGO "
-                        . " , CAT.DESCRICAO "
+                        . " CODIGO "
+                        . " , DESCRICAO "
                         . " FROM "
-                        . " SITE_CATEGORIA_DOC_JURIDICO CAT "
+                        . " SITE_CATEG_JURIDICO "
                         . " WHERE "
-                        . " CAT.NIVEL = 1 "
-                        . " ORDER BY CAT.POSICAO DESC");
+                        . " NIVEL = 1 "
+                        . " ORDER BY POSICAO DESC");
 
                 if ($readSes->getResult()) {
 
@@ -71,15 +71,15 @@
                             }
 
                             $sql1 = "SELECT "
-                                    . " CAT.CODIGO "
-                                    . " , CAT.DESCRICAO "
+                                    . " CODIGO "
+                                    . " , DESCRICAO "
                                     . " FROM "
-                                    . " SITE_CATEGORIA_DOC_JURIDICO CAT "
+                                    . " SITE_CATEG_JURIDICO "
                                     . " WHERE "
-                                    . " CAT.NIVEL = 2 "
+                                    . " NIVEL = 2 "
                                     . " AND "
-                                    . " CAT.CODPARENTE = " . $secao1['CODIGO']
-                                    . " ORDER BY CAT.POSICAO DESC ";
+                                    . " CODPARENTE = " . $secao1['CODIGO']
+                                    . " ORDER BY POSICAO DESC ";
 
 
                             $readSub2Ses = new Read;
@@ -109,15 +109,15 @@
                                         }
 
                                         $sql2 = "SELECT "
-                                                . " CAT.CODIGO "
-                                                . " , CAT.DESCRICAO "
+                                                . " CODIGO "
+                                                . " , DESCRICAO "
                                                 . " FROM "
-                                                . " SITE_CATEGORIA_DOC_JURIDICO CAT "
+                                                . " SITE_CATEG_JURIDICO "
                                                 . " WHERE "
-                                                . " CAT.NIVEL = 3 "
+                                                . " NIVEL = 3 "
                                                 . " AND "
-                                                . " CAT.CODPARENTE = " . $secao2['CODIGO']
-                                                . " ORDER BY CAT.POSICAO DESC ";
+                                                . " CODPARENTE = " . $secao2['CODIGO']
+                                                . " ORDER BY POSICAO DESC ";
 
                                         $readSub3Ses = new Read;
                                         $readSub3Ses->ExeReadMod($sql2);

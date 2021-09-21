@@ -10,16 +10,24 @@ $posicaoRet = 1;
 $documentoRet = '';
 $dataRet = '';
 
-require_once '_models/AdminDocumento.class.php';
-$adminDocumento = new AdminDocumento();
+if ($status == 'updatedoc'):
 
-if ($status == 'updatedoc'){
+    $read = new Read;
+    $read->ExeReadMod("SELECT "
+                        . " CODIGO "
+                        . " , DESCRICAO "
+                        . " , DOCUMENTO "
+                        . " , SECAO "
+                        . " , TO_CHAR(DATA, 'DD/MM/YYYY HH24:MI:SS') AS DATA "
+                        . " , POSICAO "
+                    . " FROM "
+                        . " SITE_DOC_JURIDICO "
+                    . " WHERE "
+                        . " CODIGO = " . $idDocumento);
 
-    $docList = $adminDocumento->Read(1, $idDocumento);
-    
-    if ($docList){
+    if ($read->getResult()):
 
-        foreach ($docList as $documento){
+        foreach ($read->getResult() as $documento):
 
             extract($documento);
             $descricaoRet = $DESCRICAO;
@@ -28,18 +36,39 @@ if ($status == 'updatedoc'){
             $documentoRet = '../upload/' . $DOCUMENTO;
             $dataRet = $DATA;
 
-        }
+        endforeach;
 
-    }
+    endif;
 
-}
-elseif ($status == 'createdoc'){
+elseif ($status == 'createdoc'):
 
     $codSecaoRet = $codParente;
-    $codigoRet = $adminDocumento->Sequencia(1);
-    $posicaoRet = $adminDocumento->Posicao(1);
 
-}
+    $readCod = new Read;
+    $readCod->ExeReadMod("SELECT"
+                            . " MAX(CODIGO) AS CODIGO "
+                        . " FROM "
+                            . " SITE_DOC_JURIDICO ");
+
+    if ($readCod->getResult()):
+        foreach ($readCod->getResult() as $catCod):
+            $codigoRet = $catCod['CODIGO'] + 1;
+        endforeach;
+    endif;
+
+    $readPos = new Read;
+    $readPos->ExeReadMod("SELECT"
+                            . " MAX(POSICAO) AS CODIGO "
+                        . " FROM "
+                            . " SITE_DOC_JURIDICO ");
+
+    if ($readPos->getResult()):
+        foreach ($readPos->getResult() as $catPos):
+            $posicaoRet = $catPos['CODIGO'] + 1;
+        endforeach;
+    endif;
+
+endif;
 ?>
 <div>
 
@@ -47,7 +76,7 @@ elseif ($status == 'createdoc'){
 
     <div class="content">
 
-        <form name="PostForm" action="painel.php?exe=documentos/index&status=<?= $status; ?><?= ($status == 'updatedoc' ? '&iddocumento=' . $idDocumento . '' : '') ?>" method="post" enctype="multipart/form-data">
+        <form name="PostForm" action="painel.php?exe=docjuridicos/index&status=<?= $status; ?><?= ($status == 'updatedoc' ? '&iddocumento=' . $idDocumento . '' : '') ?>" method="post" enctype="multipart/form-data">
 
             <input type="hidden" name="CODIGO" value="<?= $codigoRet; ?>" />
 
@@ -106,11 +135,12 @@ elseif ($status == 'createdoc'){
                         />
                 </label>
 
+                <!--<div class="clear"></div>-->
             </div>
 
             <div class="label_line botoes">
                 <input type="submit" class="btn blue" value="Salvar" name="SendPostForm" />
-                <input type="button" onclick="window.location.href = 'painel.php?exe=documentos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
+                <input type="button" onclick="window.location.href = 'painel.php?exe=docjuridicos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
             </div>
 
         </form>

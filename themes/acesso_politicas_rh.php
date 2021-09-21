@@ -10,42 +10,14 @@
 
         <?php
         $dataLogin = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-        if (!empty($dataLogin['LoginRelatorio'])){
+        if (!empty($dataLogin['LoginRelatorio'])):
 
             $usuario = (string) strip_tags(trim($dataLogin['user']));
             $senha = (string) strip_tags(trim($dataLogin['pass']));
 
-            $sql = " SELECT "
-                        . " COLAB.CD AS MATRICULA "
-                    . " FROM "
-                        . " STF_SPEC.STF_USUARIO@STAFE_PRD SU "
-                        . " , SITE_USUARIO_COLABORADOR SUC "
-                        . " , SITE_R_COLABORADOR_NIVEL SRCN "
-                        . " , COLAB COLAB "
-                        . " , CORR CORR "
-                        . " , REG_DEMIS DEM " 
-                    . " WHERE "
-                        . " UPPER(SU.LOGIN) LIKE UPPER('" . $usuario . "') "
-                        . " AND "
-                        . " SUC.STATUS = 1"
-                        . " AND "
-                        . " SRCN.COD_NIVEL IN (1, 6, 7, 10, 11) "
-                        . " AND "
-                        . " SUC.MATRICULA = COLAB.CD "
-                        . " AND "
-                        . " CORR.NOME LIKE UPPER(SU.NOME) "
-                        . " AND "
-                        . " COLAB.CORR_ID = CORR.CORR_ID "
-                        . " AND "
-                        . " DEM.COLAB_ID IS NULL " 
-                        . " AND "
-                        . " COLAB.COLAB_ID = DEM.COLAB_ID(+) "
-                        . " AND "
-                        . " SRCN.COD_COLABORADOR = SUC.CODIGO ";
-            
             $read = new Read;
-            $read->ExeReadMod($sql);
-            if (!$read->getResult()){
+            $read->ExeReadMod(" SELECT * FROM SITE_USUARIO_NV WHERE USUARIO LIKE '{$usuario}' AND NIVEL IN ('ADMINISTRADOR', 'ADM. POL. DE RH', 'USU. POL. DE RH', 'NOTÍCIA') ");
+            if (!$read->getResult()):
                 ?>
 
                 <div class="msg_acesso_relatorio">
@@ -54,16 +26,14 @@
                 </div>
 
                 <?php
-                
-            }else{
+            else:
 
-                foreach ($read->getResult() as $dados){
+                foreach ($read->getResult() as $dados):
 
                     $login = new Login();
                     $login->ExeLogin($dataLogin);
 
-                    if (!$login->getResult()){
-                        
+                    if (!$login->getResult()):
                         ?>
 
                         <div class="msg_acesso_relatorio">
@@ -72,23 +42,22 @@
                         </div>
 
                         <?php
-                        
-                    } else {
+                    else:
 
-                        if (!session_id()){
+                        if (!session_id()):
                             session_start();
-                        }
+                        endif;
 
                         $_SESSION['userlogin'] = $dados;
                         header('Location: index.php?exe=politicas_rh');
 
-                    }
+                    endif;
 
-                }
+                endforeach;
 
-            }
+            endif;
 
-        }
+        endif;
         ?>
 
         <form name="LoginRelatorioForm" action="" method="post">
@@ -113,6 +82,8 @@
         </form>
 
     </div>
+
+    <!--</div>-->
 
     <div class="clear"></div>
 

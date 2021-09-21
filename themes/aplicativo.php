@@ -7,13 +7,36 @@
     <section class="container relacao">
         <div class="content">
             <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Aplicativos' : 'Applications'; ?></h1>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=232" target="_blank">
+            <a href="#" onclick="document.getElementById('portalcotacaoaplic').style.display='block'">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Suppliers Portal'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Suppliers Portal'; ?></h1>
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal com dados dos Fornecedores de Matéria-Prima da Empresa.' : 'Raw Material Suppliers Data Portal.'; ?></p>
                 </article>
             </a>
+            <div id="portalcotacaoaplic" class="w3-modal">
+              <div class="w3-modal-content">
+                <header class="w3-container w3-blue"> 
+                  <b onclick="document.getElementById('portalcotacaoaplic').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</b>
+                  <h2>Portal Cotação</h2>
+                </header>
+                  <div class="w3-container">
+                    <p class="tagline texto_princ"></p>
+                    <p class="tagline texto_princ">Olá parceiro, tudo bem?</p>
+                    <p class="tagline texto_princ">Comunicamos que nosso departamento de Suprimentos, objetivando automatizar e 
+                        agilizar o processo de aquisição de bens, a partir de 10/05/2021 passa a utilizar a plataforma Comlink para o 
+                        processo de cotações de materiais e confirmação dos pedidos de compra.</p>
+                    <p class="tagline texto_princ">Assim, todas as cotações e pedidos da Usina Santa Fé estarão disponíveis na 
+                        plataforma Comlink, e serão negociadas preferencialmente por este canal.</p>
+                    <p class="tagline texto_princ">Dúvidas sobre a plataforma Comlink, entrar em contato através da Central de 
+                        Atendimento da Comlink, via site comlink.com.br, e-mail: fornecedor@comlink.com.br ou 
+                        telefone: 16 2101-4000.</p>
+                    <p class="tagline texto_princ">Atenciosamente,<br>
+                    <b>Área de Suprimentos</b></p>
+                  </div>
+              </div>
+            </div>
             <a href="index.php?exe=acesso_relacao">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?>">
                     <p class="tagline"><i class="fa fa-users" aria-hidden="true"></i></p>

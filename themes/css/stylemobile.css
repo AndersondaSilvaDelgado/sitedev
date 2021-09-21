@@ -225,6 +225,48 @@
     font-size: 2.2em;
 }
 
+.item_index{
+    float: left;
+    width: 92%;
+    margin: 3em 4% 0 4%;
+    padding: 2em;
+    color: #003082;
+    background: #EEEEEE;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item_index:hover{
+    background: #00759B;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+}
+
+.item_index h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 3em; 
+    font-weight: 400;
+}
+
+.item_index:hover h1{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.item_index .tagline{
+    font-size: 9em;
+}
+
+.item_index img{
+    height: 10em;
+    margin: 1em 0 2em 0;
+}
+
 .item_aplicativo{
     float: left;
     width: 92%;

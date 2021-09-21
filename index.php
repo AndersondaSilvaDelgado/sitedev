@@ -1,9 +1,6 @@
 <?php
 ob_start();
 require('_app/Config.inc.php');
-//$endereco = $_SERVER ['REQUEST_URI'];
-//$local = explode('/', $endereco);
-//$local = (!empty($local[3]) ? $local[3] : 'index.php');
 $url = filter_input(INPUT_GET, 'exe', FILTER_DEFAULT);
 $idioma = filter_input(INPUT_GET, 'idioma', FILTER_DEFAULT);
 
@@ -47,15 +44,10 @@ endif;
 
         <?php if ($verDisp): ?>
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
-            <link rel="stylesheet" href="themes/css/stylemobile.css?v=1"/>
+            <link rel="stylesheet" href="themes/css/stylemobile.css?v=6"/>
         <?php else: ?>
-            <link rel="stylesheet" href="themes/css/stylemain.css?v=2"/>
-            <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 1023px)" href="themes/css/style0_1023.css?v=1"/>
-            <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1279px)" href="themes/css/style1024_1279.css?v=1"/>
-            <link rel="stylesheet" media="screen and (min-width: 1280px) and (max-width: 1359px)" href="themes/css/style1280_1359.css?v=1"/>
-            <link rel="stylesheet" media="screen and (min-width: 1360px) and (max-width: 1599px)" href="themes/css/style1360_1599.css?v=3"/>
-            <link rel="stylesheet" media="screen and (min-width: 1600px) and (max-width: 1919px)" href="themes/css/style1600_1919.css?v=1"/>
-            <link rel="stylesheet" media="screen and (min-width: 1920px)" href="themes/css/style1920.css?v=1"/>
+            <link rel="stylesheet" href="themes/css/stylemain.css?v=35"/>
+            <link rel="stylesheet" href="themes/css/style.css?v=35"/>
             <link rel="stylesheet" href="themes/css/lightbox.min.css"/>
         <?php endif; ?>
 
@@ -73,6 +65,8 @@ endif;
                         <h1>Usina Santa Fé S.A.</h1>
                     </a>
                 </div>
+                <div class="botao_menu"></div>
+                <div class="limite_menu"></div>
                 <div class="translate">
                     <a href="index.php?exe=<?= $url; ?>&idioma=pt">
                         <img src="themes/img/flag_of_brazil.png" title="Português"/>
@@ -93,27 +87,11 @@ endif;
                                 <li ><a href="index.php?exe=localizacao&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Localização' : 'Location'; ?></a></li>
                             </ul>
                         </li>
-                        <li class="menu_item"><a href="#" title="Governança"><?= ($idioma == 1) ? 'Governança' : 'Governance'; ?></a>
+                        <li class="menu_item"><a href="#" title="Sustentabilidade"><?= ($idioma == 1) ? 'Sustentabilidade' : 'Sustainability'; ?></a>
                             <ul class="sub_item_menu sub_item_menu_sustenta">
-                                <li ><a href="index.php?exe=acesso_portal_governanca&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Portal de Governança</a></li>
-                                <li ><a href="index.php?exe=g_estrutura_societaria&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Estrutura Societária</a></li>
-                                <li ><a href="#">Diretrizes</a>
-                                    <ul class="sub_sub_item_menu">
-                                        <li ><a href="index.php?exe=g_estrutura_corporativa_acionaria&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Estrutura Corporativa e Acionária</a></li>
-                                        <li ><a href="index.php?exe=g_visao_missao_principios&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Visão, Missão e Princípios</a></li>
-                                        <li ><a href="index.php?exe=g_conselho_de_administracao&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Conselho de Administração</a></li>
-                                        <li ><a href="index.php?exe=g_diretoria_executiva&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Diretoria Executiva</a></li>
-                                        <li ><a href="index.php?exe=g_documento_de_governanca_corporativa&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Documentos de Governança Corporativa</a></li>
-                                        <li ><a href="index.php?exe=g_estrutura_de_governanca_corporativa&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Estrutura de Governança Corporativa</a></li>
-                                    </ul>
-                                </li>
-                                <li ><a href="#"><?= ($idioma == 1) ? 'Sustentabilidade' : 'Sustainability'; ?></a>
-                                    <ul class="sub_sub_item_menu">
-                                        <li ><a href="index.php?exe=rh&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Recursos Humanos' : 'Human Resources'; ?></a></li>
-                                        <li ><a href="index.php?exe=resp_social&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Responsabilidade Social' : 'Social Responsibility'; ?></a></li>
-                                        <li ><a href="index.php?exe=resp_ambiental&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Responsabilidade Ambiental' : 'Environmental Responsibility'; ?></a></li>
-                                    </ul>
-                                </li>
+                                <li ><a href="index.php?exe=rh&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Recursos Humanos' : 'Human Resources'; ?></a></li>
+                                <li ><a href="index.php?exe=resp_social&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Responsabilidade Social' : 'Social Responsibility'; ?></a></li>
+                                <li ><a href="index.php?exe=resp_ambiental&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Responsabilidade Ambiental' : 'Environmental Responsibility'; ?></a></li>
                             </ul>
                         </li>
                         <li class="menu_item"><a href="index.php?exe=noticias&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>" title="Notícias"><?= ($idioma == 1) ? 'Notícias' : 'News'; ?></a>
@@ -200,9 +178,9 @@ endif;
             </footer>
 
             <script src="_cdn/jquery.js"></script>
-            <script src="_cdn/script.js?v=1"></script>
+            <script src="_cdn/script.js?v=11"></script>
             <script src="_cdn/lightbox-plus-jquery.min.js"></script>
-			<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+            <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 
             <?php
             if ($verDisp) {

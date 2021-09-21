@@ -2,13 +2,16 @@
     <section class="container relacao">
         <div class="content">
 			<section class="localizacao senai">
-				<h1 class="tit_senai"><?= ($idioma == 1) ? 'Processo Seletivo – Aprendiz SENAR' : 'Processo Seletivo – Aprendiz SENAR'; ?></h1>
-				<p class="tagline">Aprendiz na Cultura de Cana de Açucar</p>
+				<h1 class="tit_senai"><?= ($idioma == 1) ? 'Processo Seletivo – Aprendiz SENAI 2021' : 'Processo Seletivo – Aprendiz SENAI 2021'; ?></h1>
+				<p class="tagline">Aprendiz Mecânico de Manutenção</p>
+				<p class="tagline">Maquinas Agrícolas e Veículos Pesados</p>
 				<p class="tagline">Requisitos</p>
 				<p class="tagline">Ensino Médio Completo ou Cursando</p>
-				<p class="tagline">Idade 18 a 23 anos</p>
+				<p class="tagline">Idade 15 a 17 anos</p>
 				<p class="tagline">Moradia Nova Europa</p>
-				<p class="tagline">Inscrições do dia 05/12/2020 a partir das  8:00  até dia 09/12/2020 ate as 8:00</p>
+				<p class="tagline">Inscrições nos dias 13 e 14/07/2021</p>
+				<p class="tagline"></p>
+				<p class="tagline">Obrigatório anexar o RG</p>
 				<a href="http://apex.usinasantafe.com.br:9080/apex/f?p=190" target="_blank">
 					<p class="tagline"><b>Clique aqui para realizar a inscrição.</b></p>
 				</a>

@@ -14,15 +14,15 @@ if ($status == 'updatesecao'):
 
     $read = new Read;
     $read->ExeReadMod("SELECT "
-            . " CAT.CODIGO "
-            . " , CAT.CODPARENTE "
-            . " , CAT.DESCRICAO "
-            . " , TO_CHAR(CAT.DATA, 'DD/MM/YYYY HH24:MI:SS') AS DATA "
-            . " , CAT.POSICAO "
-            . " , CAT.NIVEL "
+            . " CODIGO "
+            . " , CODPARENTE "
+            . " , DESCRICAO "
+            . " , TO_CHAR(DATA, 'DD/MM/YYYY HH24:MI:SS') AS DATA "
+            . " , POSICAO "
+            . " , NIVEL "
             . " FROM "
-            . " SITE_CATEGORIA_RELATORIO CAT "
-            . " WHERE CAT.CODIGO = " . $idCategoria);
+            . " SITE_CATEG_DEMO_FINANC "
+            . " WHERE CODIGO = " . $idCategoria);
 
     if ($read->getResult()):
 
@@ -44,8 +44,8 @@ elseif ($status == 'createsecao'):
     $codParenteRet = $codParente;
 
     $readCod = new Read;
-    $readCod->ExeReadMod("SELECT MAX(CAT.CODIGO) AS CODIGO "
-            . " FROM SITE_CATEGORIA_RELATORIO CAT");
+    $readCod->ExeReadMod("SELECT MAX(CODIGO) AS CODIGO "
+            . " FROM SITE_CATEG_DEMO_FINANC");
 
     if ($readCod->getResult()):
         foreach ($readCod->getResult() as $catCod):
@@ -54,8 +54,8 @@ elseif ($status == 'createsecao'):
     endif;
 
     $readPos = new Read;
-    $readPos->ExeReadMod("SELECT MAX(CAT.POSICAO) AS POSICAO "
-            . " FROM SITE_CATEGORIA_RELATORIO CAT");
+    $readPos->ExeReadMod("SELECT MAX(POSICAO) AS POSICAO "
+            . " FROM SITE_CATEG_DEMO_FINANC");
 
     if ($readPos->getResult()):
         foreach ($readPos->getResult() as $catPos):
@@ -120,7 +120,6 @@ endif;
             <div class="label_line botoes">
                 <input type="submit" class="btn blue" value="Salvar" name="SendPostForm" />
                 <input type="button" onclick="window.location.href = 'painel.php?exe=documentos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
-                <!--<div class="clear"></div>-->
             </div>
 
         </form>

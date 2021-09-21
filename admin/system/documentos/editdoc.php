@@ -21,7 +21,7 @@ if ($status == 'updatedoc'):
             . " , TO_CHAR(DATA, 'DD/MM/YYYY HH24:MI:SS') AS DATA "
             . " , POSICAO "
             . " FROM "
-            . " SITE_RELATORIO "
+            . " SITE_DOC_DEMO_FINANC "
             . " WHERE "
             . " CODIGO = " . $idDocumento);
 
@@ -46,7 +46,7 @@ elseif ($status == 'createdoc'):
 
     $readCod = new Read;
     $readCod->ExeReadMod("SELECT MAX(CODIGO) AS CODIGO "
-            . " FROM SITE_RELATORIO");
+            . " FROM SITE_DOC_DEMO_FINANC");
 
     if ($readCod->getResult()):
         foreach ($readCod->getResult() as $catCod):
@@ -56,7 +56,7 @@ elseif ($status == 'createdoc'):
 
     $readPos = new Read;
     $readPos->ExeReadMod("SELECT MAX(POSICAO) AS CODIGO "
-            . " FROM SITE_RELATORIO");
+            . " FROM SITE_DOC_DEMO_FINANC");
 
     if ($readPos->getResult()):
         foreach ($readPos->getResult() as $catPos):
@@ -131,17 +131,15 @@ endif;
                         />
                 </label>
 
-                <!--<div class="clear"></div>-->
             </div>
 
             <div class="label_line botoes">
                 <input type="submit" class="btn blue" value="Salvar" name="SendPostForm" />
                 <input type="button" onclick="window.location.href = 'painel.php?exe=documentos/index'; return false;" class="btn red" value="Cancelar" name="SendPostForm" />
-                <!--<div class="clear"></div>-->
             </div>
 
         </form>
 
     </div>
-    <!--<div class="clear"></div>-->
+	
 </div>

@@ -13,62 +13,21 @@
  */
 class AdminDocumento {
 
+    //put your code here
+
     private $dado;
     private $idDocumento;
     private $error;
     private $result;
-    
-    private function Tabela($tipo){
-        $bancoDoc = '';
-        if($tipo == 1){
-            $bancoDoc = 'SITE_DOC_DEMO_FINANC';
-        }
-        else if($tipo == 2){
-            $bancoDoc = 'SITE_DOC_GOVERNANCA';
-        }
-        else if($tipo == 3){
-            $bancoDoc = 'SITE_DOC_JURIDICO';
-        }
-        else if($tipo == 4){
-            $bancoDoc = 'SITE_DOC_PORTAL_GOV';
-        }
-        return $bancoDoc;
-    }
-    
-    private function Pasta($tipo){
-        $pasta = '';
-        if($tipo == 1){
-            $pasta = 'docdemofinanc';
-        }
-        else if($tipo == 2){
-            $pasta = 'docgovernanca';
-        }
-        else if($tipo == 3){
-            $pasta = 'docjuridico';
-        }
-        else if($tipo == 4){
-            $pasta = 'docportalgov';
-        }
-        return $pasta;
-    }
-    
 
-    public function Read($tipo, $codigo = null) {
-        
-        $read = new Read;
-        if (!empty($codigo)){
-            return $read->ExeRead($this->Tabela($tipo), "WHERE CODIGO = :CODIGO", "CODIGO={$codigo}");
-        }
-        else{
-            return $read->ExeRead($this->Tabela($tipo), "ORDER BY POSICAO DESC");
-        }
-        
-    }
-    
-    public function ExeCreate(array $dado, $tipo) {
+    const Entity = 'SITE_RELATORIO';
+
+    public function ExeCreate(array $dado) {
 
         $nomeDocumento = 'usf_doc_' . str_pad($dado['CODIGO'], 4, "0", STR_PAD_LEFT) . '_ano_' . date('Y') . '.pdf';
-        $pasta = $this->Pasta($tipo);
+        $pasta = 'documento';
+
+//        var_dump($dado['DOCUMENTO']);
 
         $upload = new Upload;
         $upload->File($dado['DOCUMENTO'], $nomeDocumento, $pasta);
@@ -76,197 +35,141 @@ class AdminDocumento {
         $dado['DOCUMENTO'] = $pasta . '/' . $nomeDocumento;
 
         $this->dado = $dado;
-        $this->Create($tipo);
-        
+        $this->Create();
     }
 
-    public function ExeUpdate($idDocumento, array $dado, $tipo) {
+    public function ExeUpdate($idDocumento, array $dado) {
 
-        if ($dado['DOCUMENTO'] != 'null'){
+        if ($dado['DOCUMENTO'] != 'null'):
 
             $readDoc = new Read;
-            $readDoc->ExeRead($this->Tabela($tipo), "WHERE CODIGO = :CODIGO", "CODIGO={$idDocumento}");
+            $readDoc->ExeRead(self::Entity, "WHERE CODIGO = :CODIGO", "CODIGO={$idDocumento}");
 
-            foreach ($readDoc->getResult() as $dados){
-                $localDoc = '../uploads/' . $dados['DOCUMENTO'];
-                if (file_exists($localDoc) && !is_dir($localDoc)){
+            foreach ($readDoc->getResult() as $dados):
+                extract($dados);
+                $localDoc = '../uploads/' . $DOCUMENTO;
+                if (file_exists($localDoc) && !is_dir($localDoc)):
                     unlink($localDoc);
-                }
-            }
+                endif;
+            endforeach;
 
             $nomeDocumento = 'usf_doc_' . str_pad($dado['CODIGO'], 4, "0", STR_PAD_LEFT) . '_ano_' . date('Y') . '.pdf';
-            $pasta = $this->Pasta($tipo);
+            $pasta = 'documento';
 
             $upload = new Upload;
             $upload->File($dado['DOCUMENTO'], $nomeDocumento, $pasta);
             $dado['DOCUMENTO'] = $pasta . '/' . $nomeDocumento;
-            
-        }
-        else{
+
+        else:
             unset($dado['DOCUMENTO']);
-        }
+        endif;
 
         $this->idDocumento = (int) $idDocumento;
         $this->dado = $dado;
-        $this->Update($tipo);
-        
+        $this->Update();
     }
 
-    public function ExeUpdatePos($idDocumento, array $dado, $tipo) {
+    public function ExeUpdatePos($idDocumento, array $dado) {
 
         $this->idDocumento = (int) $idDocumento;
         $this->dado = $dado;
-        $this->Update($tipo);
-        
+        $this->Update();
     }
 
-    public function ExeDelete($idCategoria, $tipo) {
+    public function ExeDelete($idCategoria) {
 
         $this->idDocumento = (int) $idCategoria;
 
         $readDoc = new Read;
-        $readDoc->ExeRead($this->Tabela($tipo), "WHERE CODIGO = :CODIGO", "CODIGO={$idCategoria}");
+        $readDoc->ExeRead(self::Entity, "WHERE CODIGO = :CODIGO", "CODIGO={$idNoticia}");
 
-        foreach ($readDoc->getResult() as $dados){
-            $localDoc = '../uploads/' . $dados['DOCUMENTO'];
-            if (file_exists($localDoc) && !is_dir($localDoc)){
+        foreach ($readDoc->getResult() as $dados):
+            extract($dados);
+            $localDoc = '../uploads/' . $DOCUMENTO;
+            if (file_exists($localDoc) && !is_dir($localDoc)):
                 unlink($localDoc);
-            }
-        }
+            endif;
+        endforeach;
 
-        $this->Delete($tipo);
-        
+        $this->Delete();
     }
 
-    private function Create($tipo) {
-        
-        $create = new Create;
-        $create->ExeCreate($this->Tabela($tipo), $this->dado);
-        
-        if ($create->getResult()){
-            $this->result = $create->getResult();
-        }
-        
+    private function Create() {
+        $cadastra = new Create;
+        $cadastra->ExeCreate(self::Entity, $this->dado);
+        if ($cadastra->getResult()):
+            $this->result = $cadastra->getResult();
+        endif;
     }
 
-    private function Update($tipo) {
+    private function Update() {
         $Update = new Update;
-        $Update->ExeUpdate($this->Tabela($tipo), $this->dado, "WHERE CODIGO = :CODIGO", "CODIGO={$this->idDocumento}");
+        $Update->ExeUpdate(self::Entity, $this->dado, "WHERE CODIGO = :CODIGO", "CODIGO={$this->idDocumento}");
     }
 
-    private function Delete($tipo) {
+    private function Delete() {
         $Delete = new Delete;
-        $Delete->ExeDelete($this->Tabela($tipo), "WHERE CODIGO = :CODIGO", "CODIGO={$this->idDocumento}");
+        $Delete->ExeDelete(self::Entity, "WHERE CODIGO = :CODIGO", "CODIGO={$this->idDocumento}");
     }
 
-    public function DeleteSecao($idCategoria, $tipo) {
+    public function DelSecao($idCategoria) {
 
-        $read = new Read;
-        $read->ExeRead($this->Tabela($tipo), "WHERE SECAO = :SECAO", "SECAO={$idCategoria}");
+        $readDoc = new Read;
+        $readDoc->ExeRead(self::Entity, "WHERE SECAO = :SECAO", "SECAO={$idCategoria}");
 
-        foreach ($read->getResult() as $dados){
-            $localDoc = '../uploads/' . $dados['DOCUMENTO'];
-            if (file_exists($localDoc) && !is_dir($localDoc)){
+        foreach ($readDoc->getResult() as $dados):
+            extract($dados);
+            $localDoc = '../uploads/' . $DOCUMENTO;
+            if (file_exists($localDoc) && !is_dir($localDoc)):
                 unlink($localDoc);
-            }
-            $this->idDocumento = $dados['CODIGO'];
-            $this->Delete($tipo);
-        }
-        
+            endif;
+            $this->idDocumento = $CODIGO;
+            $this->Delete();
+        endforeach;
     }
 
-    public function DownDoc($idDocumento, $tipo) {
+    public function DownDoc($idDocumento) {
 
         $this->idDocumento = (int) $idDocumento;
 
         $readDoc = new Read;
-        $readDoc->ExeRead($this->Tabela($tipo), "WHERE CODIGO = :CODIGO", "CODIGO={$idDocumento}");
+        $readDoc->ExeRead(self::Entity, "WHERE CODIGO = :CODIGO", "CODIGO={$idDocumento}");
 
-        foreach ($readDoc->getResult() as $dados){
-            
+        foreach ($readDoc->getResult() as $dados):
             $readDocSecao = new Read;
-            $readDocSecao->ExeRead($this->Tabela($tipo), "WHERE SECAO = :SECAO ORDER BY POSICAO DESC", "SECAO={$dados['SECAO']}");
-            
-            foreach ($readDocSecao->getResult() as $dadosSecao){
-                
-                if ($dadosSecao['POSICAO'] < $dados['POSICAO']){
-                    
-                    $d1 = array("POSICAO" => $dadosSecao['POSICAO']);
-                    $this->ExeUpdatePos($dados['CODIGO'], $d1);
-                    $d2 = array("POSICAO" => $dados['POSICAO']);
-                    $this->ExeUpdatePos($dadosSecao['CODIGO'], $d2);
+            $readDocSecao->ExeReadMod("SELECT * FROM SITE_RELATORIO WHERE SECAO = {$dados['SECAO']} ORDER BY POSICAO DESC");
+            foreach ($readDocSecao->getResult() as $dadosSecao):
+                if ($dadosSecao['POSICAO'] < $dados['POSICAO']):
+                    $d = array("POSICAO" => $dadosSecao['POSICAO']);
+                    $this->ExeUpdatePos($dados['CODIGO'], $d);
+                    $d = array("POSICAO" => $dados['POSICAO']);
+                    $this->ExeUpdatePos($dadosSecao['CODIGO'], $d);
                     break;
-                    
-                }
-                
-            }
-            
-        }
-        
+                endif;
+            endforeach;
+        endforeach;
     }
 
-    public function UpDoc($idDocumento, $tipo) {
+    public function UpDoc($idDocumento) {
 
         $this->idDocumento = (int) $idDocumento;
 
         $readDoc = new Read;
-        $readDoc->ExeRead($this->Tabela($tipo), "WHERE CODIGO = :CODIGO", "CODIGO={$idDocumento}");
+        $readDoc->ExeRead(self::Entity, "WHERE CODIGO = :CODIGO", "CODIGO={$idDocumento}");
 
-        foreach ($readDoc->getResult() as $dados){
-            
+        foreach ($readDoc->getResult() as $dados):
             $readDocSecao = new Read;
-            $readDocSecao->ExeRead($this->Tabela($tipo), " WHERE SECAO = :SECAO ORDER BY POSICAO ASC", "SECAO={$dados['SECAO']}");
-            
-            foreach ($readDocSecao->getResult() as $dadosSecao){
-                
-                if ($dadosSecao['POSICAO'] > $dados['POSICAO']){
-                    
-                    $d1 = array("POSICAO" => $dadosSecao['POSICAO']);
-                    $this->ExeUpdatePos($dados['CODIGO'], $d1);
-                    $d2 = array("POSICAO" => $dados['POSICAO']);
-                    $this->ExeUpdatePos($dadosSecao['CODIGO'], $d2);
+            $readDocSecao->ExeReadMod("SELECT * FROM SITE_RELATORIO WHERE SECAO = {$dados['SECAO']} ORDER BY POSICAO ASC");
+            foreach ($readDocSecao->getResult() as $dadosSecao):
+                if ($dadosSecao['POSICAO'] > $dados['POSICAO']):
+                    $d = array("POSICAO" => $dadosSecao['POSICAO']);
+                    $this->ExeUpdatePos($dados['CODIGO'], $d);
+                    $d = array("POSICAO" => $dados['POSICAO']);
+                    $this->ExeUpdatePos($dadosSecao['CODIGO'], $d);
                     break;
-                    
-                }
-                
-            }
-            
-        }
-        
+                endif;
+            endforeach;
+        endforeach;
     }
-    
-    public function Sequencia($tipo) {
-        
-        $read = new Read;
-        $read->ExeReadMod("SELECT MAX(CODIGO) AS CODIGO "
-                . " FROM {$this->Tabela($tipo)}");
 
-        if ($read->getResult()){
-            foreach ($read->getResult() as $doc){
-                return ($doc['CODIGO'] + 1);
-            }
-        }
-        else{
-            return 1;
-        }
-        
-    }
-    
-    public function Posicao($tipo) {
-        
-        $read = new Read;
-        $read->ExeReadMod("SELECT MAX(POSICAO) AS POSICAO "
-                . " FROM {$this->Tabela($tipo)}");
-
-        if ($read->getResult()){
-            foreach ($read->getResult() as $doc){
-                return ($doc['POSICAO'] + 1);
-            }
-        }
-        else{
-            return 1;
-        }
-        
-    }
-    
 }

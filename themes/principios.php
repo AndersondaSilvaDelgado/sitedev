@@ -104,7 +104,7 @@
 						</a>
                     </li>
 					<li class="tagline">
-						<a href="themes/arquivos/plano_covid.pdf?v=5" target="_blank" >
+						<a href="themes/arquivos/plano_covid.pdf?v=6" target="_blank" >
 							<span class="link">
 							<?= ($idioma == 1) ? "
 								Clique aqui para acessar o Plano de Contingência - COVID 19
