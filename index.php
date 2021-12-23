@@ -1,6 +1,9 @@
 <?php
 ob_start();
 require('_app/Config.inc.php');
+//$endereco = $_SERVER ['REQUEST_URI'];
+//$local = explode('/', $endereco);
+//$local = (!empty($local[3]) ? $local[3] : 'index.php');
 $url = filter_input(INPUT_GET, 'exe', FILTER_DEFAULT);
 $idioma = filter_input(INPUT_GET, 'idioma', FILTER_DEFAULT);
 
@@ -44,17 +47,22 @@ endif;
 
         <?php if ($verDisp): ?>
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
-            <link rel="stylesheet" href="themes/css/stylemobile.css?v=6"/>
+            <link rel="stylesheet" href="themes/css/stylemobile.css?v=5"/>
         <?php else: ?>
-            <link rel="stylesheet" href="themes/css/stylemain.css?v=35"/>
-            <link rel="stylesheet" href="themes/css/style.css?v=35"/>
+            <link rel="stylesheet" href="themes/css/stylemain.css?v=34"/>
+            <link rel="stylesheet" href="themes/css/style_0_1023.css"/>
+            <link rel="stylesheet" href="themes/css/style_1024_1279.css"/>
+            <link rel="stylesheet" href="themes/css/style_1280_1359.css"/>
+            <link rel="stylesheet" href="themes/css/style_1360_1599.css"/>
+            <link rel="stylesheet" href="themes/css/style_1600_1919.css"/>
+            <link rel="stylesheet" href="themes/css/style_1920.css"/>
             <link rel="stylesheet" href="themes/css/lightbox.min.css"/>
         <?php endif; ?>
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500,700,700italic,900' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="themes/img/icone.ico"/>
         <link rel="stylesheet" href="themes/css/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="themes/css/w3.css"/>
+	<link rel="stylesheet" href="themes/css/w3.css"/>
     </head>
     <body>
         <header class="cabecalho container">
@@ -121,9 +129,26 @@ endif;
         </header>
         <div class="rede_social">
             <ul>
-                <li><a href="https://www.facebook.com/usinasantafe/" target="_blank" ><div class="social rede_facebook"></div></a></li>
-                <li><a href="https://www.linkedin.com/company/1009452/" target="_blank" ><div class="social rede_linkedin"></div></a></li>
-                <li><a href="https://webmail.usinasantafe.com.br/owa/" target="_blank" ><div class="social rede_email"></div></a></li>
+                <li>
+                    <a href="https://www.facebook.com/usinasantafe/" target="_blank" >
+                        <div class="social rede_facebook"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/1009452/" target="_blank" >
+                        <div class="social rede_linkedin"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://webmail.usinasantafe.com.br/owa/" target="_blank" >
+                        <div class="social rede_email"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5516997954538" target="_blank" >
+                        <div class="social rede_whatsapp"></div>
+                    </a>
+                </li>
             </ul>
         </div>
         <?php
@@ -180,7 +205,7 @@ endif;
             <script src="_cdn/jquery.js"></script>
             <script src="_cdn/script.js?v=11"></script>
             <script src="_cdn/lightbox-plus-jquery.min.js"></script>
-            <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+			<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 
             <?php
             if ($verDisp) {

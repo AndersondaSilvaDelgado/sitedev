@@ -7,11 +7,25 @@
     <section class="container relacao">
         <div class="content">
             <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Aplicativos' : 'Applications'; ?></h1>
-            <a href="#" onclick="document.getElementById('portalcotacaoaplic').style.display='block'">
+            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=232" target="_blank">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Suppliers Portal'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Suppliers Portal'; ?></h1>
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal com dados dos Fornecedores de Matéria-Prima da Empresa.' : 'Raw Material Suppliers Data Portal.'; ?></p>
+                </article>
+            </a>
+            <a href="index.php?exe=acesso_relacao">
+                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?>">
+                    <p class="tagline"><i class="fa fa-users" aria-hidden="true"></i></p>
+                    <h1><?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?></h1>
+                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Relatórios com Informações Gerais relativo a Empresa.' : 'Reports providing general information about the company.'; ?></p>
+                </article>
+            </a>
+            <a href="#" onclick="document.getElementById('portalcotacaoaplic').style.display='block'">
+                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?>">
+                    <p class="tagline"><i class="fa fa-calendar" aria-hidden="true"></i></p>
+                    <h1><?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?></h1>
+                    <p class="tagline fontzero">O novo Portal de Compras do GRUPO SANTA FÉ - Nova Europa - SP - BR é ferramenta cujo objetivo é agilizar o processo de compras da empresa.</p>
                 </article>
             </a>
             <div id="portalcotacaoaplic" class="w3-modal">
@@ -37,20 +51,6 @@
                   </div>
               </div>
             </div>
-            <a href="index.php?exe=acesso_relacao">
-                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?>">
-                    <p class="tagline"><i class="fa fa-users" aria-hidden="true"></i></p>
-                    <h1><?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?></h1>
-                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Relatórios com Informações Gerais relativo a Empresa.' : 'Reports providing general information about the company.'; ?></p>
-                </article>
-            </a>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=139" target="_blank">
-                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?>">
-                    <p class="tagline"><i class="fa fa-calendar" aria-hidden="true"></i></p>
-                    <h1><?= ($idioma == 1) ? 'Portal de Cotação de Fornecedores' : 'Supplier Bidding Portal'; ?></h1>
-                    <p class="tagline fontzero">O novo Portal de Compras do GRUPO SANTA FÉ - Nova Europa - SP - BR é ferramenta cujo objetivo é agilizar o processo de compras da empresa.</p>
-                </article>
-            </a>
             <a href="https://webmail.usinasantafe.com.br/owa" target="_blank">
                 <article class="item_aplicativo" title="Outlook Web App">
                     <img src="themes/img/owa.jpg" alt="Outlook Web App" title="Outlook Web App"/>
@@ -93,7 +93,7 @@
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Painel de Acesso as Notas Fiscais Eletrônicas.' : 'Electronic Invoice Access Panel.'; ?></p>
                 </article>
             </a>
-            <a href="http://wntvmhelpdesk.usinasantafe.com.br/ords/f?p=100" target="_blank">
+            // <a href="http://wntvmhelpdesk.usinasantafe.com.br/ords/f?p=750" target="_blank">
                 <article class="item_aplicativo" title="V-Desk">
                     <img src="themes/img/vertech.png" alt="V-Desk" title="V-Desk"/>
                     <h1>V-Desk</h1>

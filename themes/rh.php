@@ -7,7 +7,7 @@
     <section class="container">
         <div class="content padrao">
             <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Recursos Humanos' : 'Human Resources'; ?></h1>
-            <p class="tagline"><?= ($idioma == 1) ? 'A' : 'The'; ?><span>Usina Santa Fé S.A.</span> 
+            <p class="tagline"><?= ($idioma == 1) ? 'A ' : 'The'; ?><span>Usina Santa Fé S.A.</span> 
                 <?= ($idioma == 1) ? "
                 estabelece suas estratégias de acordo com sua Missão, 
                 Visão e Valores, estruturando suas práticas de Recursos Humanos na valorização, desenvolvimento, 

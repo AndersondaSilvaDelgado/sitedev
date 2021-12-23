@@ -331,6 +331,11 @@
     background-image: url(../img/email.png);
 }
 
+.rede_whatsapp{
+    background-color: #2BB741;
+    background-image: url(../img/whatsapp.png);
+}
+
 .rede_social_rodape{
     display: none;
 }

@@ -17,14 +17,15 @@
 
     <section class="localizacao local">
         <h1 ><?= ($idioma == 1) ? 'Endereço' : 'Address'; ?></h1>
-        <p class="tagline">Estr. da Antiga Fazenda Itaquerê, s/n - Caixa Postal 11</p>
-        <p class="tagline">CEP: 14.920-0000</p>
-        <p class="tagline">Nova Europa - S.P</p>
+        <p class="tagline">Estrada da Antiga Fazenda Itaquerê, s/n - Caixa Postal 11</p>
+        <p class="tagline">CEP: 14.920-000</p>
+        <p class="tagline">Nova Europa - SP</p>
         <p class="tagline">Fone: +55 16 3387 9900</p>
         <p class="tagline">Fax: +55 16 3387 1504</p>
         <p class="tagline"><?= ($idioma == 1) ? 'Site:' : 'Website:'; ?> www.usinasantafe.com.br</p>
         <p class="tagline"><?= ($idioma == 1) ? 'Sac:' : 'Contact center:'; ?> sac@usinasantafe.com.br</p>
-        <p class="tagline">Fale conosco (denúncias, críticas e sugestões) através do WhatsApp (16) 99961-7542</p>
+        <p class="tagline">Fale conosco (críticas e sugestões) através do WhatsApp (16) 99961-7542</p>
+        <p class="tagline">Denúncias: WhatsApp (16) 99795-4538</p>
     </section>
     <section class="localizacao logistico">
         <h1 ><?= ($idioma == 1) ? 'Detalhes Logísticos' : 'Logistics details'; ?></h1>
