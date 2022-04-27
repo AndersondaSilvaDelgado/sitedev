@@ -44,7 +44,7 @@ endif;
 
         <?php if ($verDisp): ?>
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
-            <link rel="stylesheet" href="themes/css/stylemobile.css?v=5"/>
+            <link rel="stylesheet" href="themes/css/stylemobile.css?v=6"/>
         <?php else: ?>
             <link rel="stylesheet" href="themes/css/stylemain.css?v=35"/>
             <link rel="stylesheet" href="themes/css/style_0_1023.css?v=4"/>
