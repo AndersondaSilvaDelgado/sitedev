@@ -1,9 +1,6 @@
 <?php
 ob_start();
 require('_app/Config.inc.php');
-//$endereco = $_SERVER ['REQUEST_URI'];
-//$local = explode('/', $endereco);
-//$local = (!empty($local[3]) ? $local[3] : 'index.php');
 $url = filter_input(INPUT_GET, 'exe', FILTER_DEFAULT);
 $idioma = filter_input(INPUT_GET, 'idioma', FILTER_DEFAULT);
 
@@ -49,18 +46,18 @@ endif;
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
             <link rel="stylesheet" href="themes/css/stylemobile.css?v=5"/>
         <?php else: ?>
-            <link rel="stylesheet" href="themes/css/stylemain.css?v=34"/>
-            <link rel="stylesheet" href="themes/css/style_0_1023.css"/>
-            <link rel="stylesheet" href="themes/css/style_1024_1279.css"/>
-            <link rel="stylesheet" href="themes/css/style_1280_1359.css"/>
-            <link rel="stylesheet" href="themes/css/style_1360_1599.css"/>
-            <link rel="stylesheet" href="themes/css/style_1600_1919.css"/>
-            <link rel="stylesheet" href="themes/css/style_1920.css"/>
+            <link rel="stylesheet" href="themes/css/stylemain.css?v=35"/>
+            <link rel="stylesheet" href="themes/css/style_0_1023.css?v=4"/>
+            <link rel="stylesheet" href="themes/css/style_1024_1279.css?v=4"/>
+            <link rel="stylesheet" href="themes/css/style_1280_1359.css?v=4"/>
+            <link rel="stylesheet" href="themes/css/style_1360_1599.css?v=4"/>
+            <link rel="stylesheet" href="themes/css/style_1600_1919.css?v=4"/>
+            <link rel="stylesheet" href="themes/css/style_1920.css?v=4"/>
             <link rel="stylesheet" href="themes/css/lightbox.min.css"/>
         <?php endif; ?>
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500,700,700italic,900' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="themes/img/icone.ico"/>
+        <link rel="shortcut icon" href="themes/img/icone.ico?v=2"/>
         <link rel="stylesheet" href="themes/css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="themes/css/w3.css"/>
     </head>
@@ -69,7 +66,7 @@ endif;
             <div class="content">
                 <div class="area_logo">
                     <a href="index.php?exe=index&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>" >
-                        <img src="themes/img/logo.png" />
+                        <img src="themes/img/logo.png?v=1" />
                         <h1>Usina Santa Fé S.A.</h1>
                     </a>
                 </div>

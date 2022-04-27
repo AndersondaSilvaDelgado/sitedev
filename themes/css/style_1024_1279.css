@@ -10,17 +10,17 @@
     .area_logo{
         float: left;
         text-align: center;
-        padding: 0.5em 0.5em 0.5em 0;
+        padding: 0.5em 0.5em 0em 4em;
     }
 
     .area_logo img{
-        height: 3em;
+        height: 5em;
         cursor: pointer;
     }
 
     .area_logo h1{
         margin-top: 0.5em;
-        font-size: 1.05em;
+        font-size: 0em;
     }
 
     .translate{
