@@ -8,7 +8,47 @@
         <div class="content">
             <h1 class="titulo_padrao">Informativo Itaquerê</h1>
 
-	    <div id="informativo_30" class="item_informativo">   
+            <div id="informativo_32" class="item_informativo">   
+                <div class="informativo">
+                    <img src="themes/img/edicao32.jpg" onclick="document.getElementById('id32').style.display='block'"/>
+                </div>
+                <p class="tagline">32º Edição</p>
+            </div>
+            
+            <div id="id32" class="w3-modal">
+              <div class="w3-modal-content">
+                <header class="w3-container w3-blue"> 
+                  <span onclick="document.getElementById('id32').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>32º Edição</h2>
+                </header>
+                  <div class="w3-container">
+                      <iframe src="themes/arquivos/ed_32.pdf#toolbar=0&scrollbar=0&navpanes=1" width="100%" height="550px"></iframe>
+                  </div>
+              </div>
+            </div>
+            
+            <div id="informativo_31" class="item_informativo">   
+                <div class="informativo">
+                    <img src="themes/img/edicao31.jpg" onclick="document.getElementById('id31').style.display='block'"/>
+                </div>
+                <p class="tagline">31º Edição</p>
+            </div>
+            
+            <div id="id31" class="w3-modal">
+              <div class="w3-modal-content">
+                <header class="w3-container w3-blue"> 
+                  <span onclick="document.getElementById('id31').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>31º Edição</h2>
+                </header>
+                  <div class="w3-container">
+                      <iframe src="themes/arquivos/ed_31.pdf#toolbar=0&scrollbar=0&navpanes=1" width="100%" height="550px"></iframe>
+                  </div>
+              </div>
+            </div>
+
+            <div id="informativo_30" class="item_informativo">   
                 <div class="informativo">
                     <img src="themes/img/edicao30.jpg" onclick="document.getElementById('id30').style.display='block'"/>
                 </div>
@@ -28,7 +68,7 @@
               </div>
             </div>
             
-	    <div id="informativo_29" class="cs-widget cs-code-widget item_informativo">   
+            <div id="informativo_29" class="cs-widget cs-code-widget item_informativo">   
                 <div data-configid="1156484/53788063" class="issuuembed informativo"></div>
                 <p class="tagline">29º Edição</p>
             </div>
@@ -37,12 +77,6 @@
                 <div data-configid="1156484/40605898" class="issuuembed informativo"></div>
                 <p class="tagline">28º Edição</p>
             </div>
-
-            <div id="informativo_27" class="cs-widget cs-code-widget item_informativo">   
-                <div data-configid="1156484/40510578" class="issuuembed informativo"></div>
-                <p class="tagline">27º Edição</p>
-            </div>
-
             <div id="informativo_26" class="cs-widget cs-code-widget item_informativo">   
                 <div data-configid="1156484/38549658" class="issuuembed informativo"></div>
                 <p class="tagline">26º Edição</p>

@@ -79,7 +79,7 @@
                 ?>
     <!-- The Modal -->
             </table>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=233" target="_blank">
+            <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=233" target="_blank">
                 <div class="btn"><?= ($idioma == 1) ? 'Cadastro de Currículo' : 'Send Resume'; ?></div>
             </a>
         </form>

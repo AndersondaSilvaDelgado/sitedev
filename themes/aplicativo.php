@@ -7,7 +7,7 @@
     <section class="container relacao">
         <div class="content">
             <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Aplicativos' : 'Applications'; ?></h1>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=232" target="_blank">
+            <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=232" target="_blank">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Suppliers Portal'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Suppliers Portal'; ?></h1>
@@ -65,39 +65,11 @@
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Sistema BI com dados administrativos empresariais.' : 'BI system with business administrative data.'; ?></p>
                 </article>
             </a>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=199" target="_blank">
+            <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=199" target="_blank">
                 <article class="item_aplicativo" title="SGI WEB">
                     <p class="tagline"><i class="fa fa-cloud" aria-hidden="true"></i></p>
                     <h1>SGI WEB</h1>
                     <p class="tagline fontzero">Versão do SGI para Internet.</p>
-                </article>
-            </a>
-            <a href="http://logtracker-vm.cloudapp.net:8091" target="_blank">
-                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'LogTracker - Portal de Rastreamento Online' : 'LogTracker - Online Tracking Portal'; ?>">
-                    <img src="themes/img/logtrac.jpg" alt="LogTracker - Portal de Rastreamento Online" title="LogTracker - Portal de Rastreamento Online"/>
-                    <h1><?= ($idioma == 1) ? 'LogTracker - Portal de Rastreamento Online' : 'LogTracker - Online Tracking Portal'; ?></h1>
-                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Sistema de controle de rastreamento de equipamento agrícola online.' : 'Online agricultural equipment tracking system.'; ?></p>
-                </article>
-            </a>
-            <a href="http://logtracker-vm.cloudapp.net:8092/" target="_blank">
-                <article class="item_aplicativo" title="SGI WEB">
-                    <img src="themes/img/logtrac.jpg" alt="SGI WEB" title="SGI WEB"/>
-                    <h1>LogWEB</h1>
-                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Ferramenta com gráficos referente a atividades de equipamento agrícola online.' : 'Online tool with graphs on agricultural equipment activities.'; ?></p>
-                </article>
-            </a>
-            <a href="http://192.168.1.53:8080/complianceEnterpriseServer/" target="_blank">
-                <article class="item_aplicativo" title="SGI WEB">
-                    <img src="themes/img/compliance.jpg" alt="Compliance Enterprise Server 2.0" title="Compliance Enterprise Server 2.0"/>
-                    <h1>Compliance Enterprise Server 2.0</h1>
-                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Painel de Acesso as Notas Fiscais Eletrônicas.' : 'Electronic Invoice Access Panel.'; ?></p>
-                </article>
-            </a>
-            // <a href="http://wntvmhelpdesk.usinasantafe.com.br/ords/f?p=750" target="_blank">
-                <article class="item_aplicativo" title="V-Desk">
-                    <img src="themes/img/vertech.png" alt="V-Desk" title="V-Desk"/>
-                    <h1>V-Desk</h1>
-                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal de Chamado Interno para TI.' : 'IT Internal Help Desk Portal.'; ?></p>
                 </article>
             </a>
             <a href="http://wntvmit.usinasantafe.com.br/org/autenticar" target="_blank">
@@ -107,13 +79,6 @@
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal de Comunicação Interna da Empresa' : 'Company Internal Communication Portal'; ?></p>
                 </article>
             </a>
-            <a href="http://wntvmmoodle.usinasantafe.com.br/moodle/" target="_blank">
-                <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal EAD - Universidade Corporativa Santa Fé' : 'Distance Learning Portal - Santa Fé Corporate University'; ?>">
-                    <img src="themes/img/ead.png" alt="<?= ($idioma == 1) ? 'Portal EAD - Universidade Corporativa Santa Fé' : 'Distance Learning Portal - Santa Fé Corporate University'; ?>" title="Portal EAD - <?= ($idioma == 1) ? 'Portal EAD - Universidade Corporativa Santa Fé' : 'Distance Learning Portal - Santa Fé Corporate University'; ?>"/>
-                    <h1><?= ($idioma == 1) ? 'Portal EAD - Universidade Corporativa Santa Fé' : 'Distance Learning Portal - Santa Fé Corporate University'; ?></h1>
-                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal EAD - Universidade Corporativa Santa Fé' : 'Distance Learning Portal - Santa Fé Corporate University'; ?></p>
-                </article>
-            </a>
             <a href="https://wntvmsesuite.usinasantafe.com.br/softexpert/login" target="_blank">
                 <article class="item_aplicativo" title="GED - Gerenciamento Eletrônico de Documentos">
                     <img src="themes/img/sesuite.png" alt="GED - Gerenciamento Eletrônico de Documentos" title="GED - Gerenciamento Eletrônico de Documentos"/>
@@ -121,14 +86,14 @@
                     <p class="tagline fontzero">SoftExpert Excellence Suite</p>
                 </article>
             </a>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=200" target="_blank">
+            <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=200" target="_blank">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Portal de Carregamento' : 'Portal de Carregamento'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal de Carregamento' : 'Portal de Carregamento'; ?></h1>
                     <p class="tagline fontzero"><?= ($idioma == 1) ? 'Portal de Carregamento' : 'Portal de Carregamento'; ?></p>
                 </article>
             </a>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=CAR:POSICAO_TICKET" target="_blank">
+            <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=CAR:POSICAO_TICKET" target="_blank">
                 <article class="item_aplicativo" title="<?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?></h1>

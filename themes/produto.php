@@ -1,9 +1,5 @@
 <main>
 
-    <!--    <div class="espacamento_cabecalho">
-            <div class="clear"></div>
-        </div>-->
-
     <section class="slide container">
         <h1 class="fontzero">Produtos</h1>
 

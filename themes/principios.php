@@ -74,7 +74,6 @@
                     </li>
                 </ul>
             </article>
-            <!--<div class="clear"></div>-->
             <article>
                 <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Código de Ética e Conduta' : 'Código de Ética e Conduta'; ?></h1>
                 <ul><li class="tagline">
@@ -104,7 +103,7 @@
 						</a>
                     </li>
 					<li class="tagline">
-						<a href="themes/arquivos/plano_covid.pdf?v=7" target="_blank" >
+						<a href="themes/arquivos/plano_covid.pdf?v=9" target="_blank" >
 							<span class="link">
 							<?= ($idioma == 1) ? "
 								Clique aqui para acessar o Plano de Contingência - COVID 19

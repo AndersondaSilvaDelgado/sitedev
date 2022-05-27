@@ -1,6 +1,24 @@
 <main>
+    <section class="container relacao">
+        <div class="content">
+			<section class="localizacao senai">
+				<h1 class="tit_senai"><?= ($idioma == 1) ? 'Processo Seletivo – Aprendiz SENAR' : 'Processo Seletivo – Aprendiz SENAR'; ?></h1>
+				<p class="tagline">Aprendiz Agrícola</p>
+				<p class="tagline">Requisitos</p>
+				<p class="tagline">Ensino Médio Completo ou Cursando</p>
+				<p class="tagline">Idade 18 a 23 anos</p>
+				<p class="tagline">Moradia Nova Europa</p>
+				<p class="tagline">Inscrições  de 24/05/22 a 04/06/2022</p>
+				<a href="https://apex.usinasantafe.com.br:8443/apex/f?p=190" target="_blank">
+					<p class="tagline"><b>Clique aqui para realizar a inscrição.</b></p>
+				</a>
+			</section>
+			<div class="clear"></div>
+        </div>
+    </section>
 
     <section class="slide container">
+        <h1 class="fontzero">Imagens da Empresa</h1>
 
         <?php
         $form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -13,19 +31,19 @@
         if ($verDisp):
             ?>
 
-            <a href="themes/arquivos/plano_covid.pdf?v=1">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="themes/img/imagem01.jpg" /></div>
-                        <div class="swiper-slide"><img src="themes/img/imagem02.jpg" /></div>
-                        <div class="swiper-slide"><img src="themes/img/imagem03.jpg" /></div>
-                        <div class="swiper-slide"><img src="themes/img/imagem04.jpg" /></div>
-                        <div class="swiper-slide"><img src="themes/img/imagem05.jpg" /></div>
-                        <div class="swiper-slide"><img src="themes/img/imagem06.jpg" /></div>
-                        <div class="swiper-slide"><img src="themes/img/imagem07.jpg" /></div>
-                    </div>
-                </div>
-            </a>
+			<a href="themes/arquivos/plano_covid.pdf?v=1">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="themes/img/imagem01_bkp.jpg" /></div>
+						<div class="swiper-slide"><img src="themes/img/imagem02.jpg" /></div>
+						<div class="swiper-slide"><img src="themes/img/imagem03.jpg" /></div>
+						<div class="swiper-slide"><img src="themes/img/imagem04.jpg" /></div>
+						<div class="swiper-slide"><img src="themes/img/imagem05.jpg" /></div>
+						<div class="swiper-slide"><img src="themes/img/imagem06.jpg" /></div>
+						<div class="swiper-slide"><img src="themes/img/imagem07.jpg" /></div>
+					</div>
+				</div>
+			</a>
 
         <?php else: ?>
 
@@ -49,23 +67,11 @@
             </div>
 
             <article class="slide_item">
-                <a href="index.php?exe=principios&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">
-                    <img src="themes/img/imagem01.jpg?v=4" alt="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>" title="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>" />
-                </a>
+				<a href="index.php?exe=principios&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Princípios Empresariais' : 'Business Principles'; ?>
+					<img src="themes/img/imagem01.jpg?v=6" alt="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>" title="<?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?>" />
+					<h1 class="fontzero"><?= ($idioma == 1) ? 'Imagem Panorâmica da Usina Santa S.A.' : 'Panoramic view of the Usina Santa S.A.'; ?></h1>
+				</a>
             </article>
-
-            <div id="plano_covid" class="w3-modal">
-                <div class="w3-modal-content">
-                    <header class="w3-container w3-blue"> 
-                        <span onclick="document.getElementById('plano_covid').style.display='none'" 
-                        class="w3-button w3-display-topright">&times;</span>
-                        <h2>Plano de Contingência COVID 19</h2>
-                    </header>
-                    <div class="w3-container">
-                        <iframe src="themes/arquivos/plano_covid.pdf" width="100%" height="500px"></iframe>
-                    </div>
-                </div>
-            </div>
 
         <?php endif; ?>
 
@@ -74,7 +80,7 @@
     <section class="container relacao">
         <div class="content">
             <h1 class="fontzero">Area restrita</h1>
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=232" target="_blank">
+            <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=232" target="_blank">
                 <article class="item_index" title="<?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Supplier Portal'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Portal dos Fornecedores de Matéria-Prima' : 'Raw Material Supplier Portal'; ?></h1>
@@ -120,7 +126,7 @@
               </div>
             </div>
             
-            <a href="http://apex.usinasantafe.com.br:9080/apex/f?p=CAR:POSICAO_TICKET" target="_blank">
+            <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=CAR:POSICAO_TICKET" target="_blank">
                 <article class="item_index" title="<?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?>">
                     <p class="tagline"><i class="fa fa-truck" aria-hidden="true"></i></p>
                     <h1><?= ($idioma == 1) ? 'Consultar Posição no Carregamento' : 'Consultar Posição no Carregamento'; ?></h1>
@@ -169,5 +175,7 @@
     </div>
 
     <div class="clear"></div>
+
+
 
 </main>

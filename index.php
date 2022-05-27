@@ -66,7 +66,7 @@ endif;
             <div class="content">
                 <div class="area_logo">
                     <a href="index.php?exe=index&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>" >
-                        <img src="themes/img/logo.png?v=1" />
+                        <img src="themes/img/logo.png?v=2" />
                         <h1>Usina Santa Fé S.A.</h1>
                     </a>
                 </div>
@@ -109,6 +109,7 @@ endif;
                             <ul class="sub_item_menu sub_item_menu_restrita">
                                 <li ><a href="index.php?exe=doc_juridico&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">Informações Financeiras</a></li>
                                 <li ><a href="index.php?exe=aplicativo&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Aplicativos' : 'Applications'; ?></a></li>
+                                <li ><a href="index.php?exe=lgpd&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">LGPD</a></li>
                             </ul>
                         </li>
                         <li class="menu_item"><a href="#" title="Área restrita"><?= ($idioma == 1) ? 'Área Restrita' : 'Restricted Area'; ?></a>
@@ -177,6 +178,7 @@ endif;
                 || ($pagina === 'acesso_relacao.php')
                 || ($pagina === 'acesso_politicas_rh.php')
                 || ($pagina === 'politicas_rh.php')
+                || ($pagina === 'lgpd.php')
                 ) {
             ?>
             <footer class="espacamento_relacao">
