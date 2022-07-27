@@ -300,6 +300,39 @@
     font-size: 0.8em;
 }
 
+.plano_contigencia{
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(250, 250, 250, 0.9);
+    float: left;
+    color: #003082;
+    background: #EEEEEE; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+.plano_contigencia:hover{
+    background: #00759B;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+}
+
+.rede_social li{
+    display: inline;
+}
+
+.social{
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
 .rede_social{
     position: fixed;
     z-index: 99;

@@ -368,6 +368,16 @@
     background: #000000;
 }
 
+.plano_contigencia{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
 .rede_social{
     display: none;
     position: fixed;

@@ -130,17 +130,15 @@
                 <h1 class="titulo_padrao"><?= ($idioma == 1) ? 'Política de Gestão da Qualidade' : 'Quality Management Policy'; ?></h1>
                 <ul><li class="tagline">
                         <?= ($idioma == 1) ? "
-                        Produzir produtos a partir da cana-de-açúcar, atendendo as legislações estatutárias 
-                        e regulamentares.
+                        Produzir alimento e energias a partir da cana-de-açúcar, atendendo as legislações estatutárias e regulamentares;
                         " : "
                         To produce sugarcane-based products in compliance with legislation and regulations.
                         "; ?>
                     </li>
                     <li class="tagline">
                         <?= ($idioma == 1) ? "
-                        Buscar a melhoria contínua dos seus processos e produtos de modo a garantir  
-                        a qualidade, a segurança dos alimentos, a satisfação de seus clientes e retorno adequado aos 
-                        acionistas.
+                        Buscar a melhoria contínua dos seus processos e produtos de modo a garantir  a qualidade,
+						a segurança dos alimentos, a satisfação de seus clientes e retorno adequado aos acionistas;
                         " : "
                         To pursue continuous improvement in processes and products in order to ensure safe, 
                         high quality foods,  customer satisfaction and an adequate return for shareholders
@@ -148,15 +146,15 @@
                     </li>
                     <li class="tagline">
                         <?= ($idioma == 1) ? "
-                        Manter comunicação aberta e benéfica com clientes, fornecedores e autoridades.
+                        Manter comunicação aberta e benéfica com clientes, fornecedores e autoridades;
                         " : "
                         To maintain open and constructive communication with customers, suppliers and authorities.
                         "; ?>
                     </li>
                     <li class="tagline">
                         <?= ($idioma == 1) ? "
-                        Trabalhar a formação e motivação dos funcionários, buscando o aumento de competência, eficácia 
-                        dos processos e a sustentabilidade da empresa.
+                        Trabalhar a formação e motivação dos funcionários, buscando o aumento de competência, eficácia
+						dos processos e a sustentabilidade da empresa.
                         " : "
                         To promote the training and motivation of employees, driving increased competency, effective 
                         processes and the company's sustainability.

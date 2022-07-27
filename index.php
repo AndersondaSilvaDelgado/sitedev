@@ -40,25 +40,26 @@ endif;
     <head>
         <meta charset="UTF-8">
         <title>Usina Santa Fé S.A.</title>
-        <link rel="stylesheet" href="themes/css/boot.css?v=1"/>
+        <link rel="stylesheet" href="themes/css/boot.css?v=2"/>
 
         <?php if ($verDisp): ?>
             <link rel="stylesheet" href="themes/css/swiper.min.css"/>
             <link rel="stylesheet" href="themes/css/stylemobile.css?v=6"/>
         <?php else: ?>
-            <link rel="stylesheet" href="themes/css/stylemain.css?v=35"/>
-            <link rel="stylesheet" href="themes/css/style_0_1023.css?v=4"/>
-            <link rel="stylesheet" href="themes/css/style_1024_1279.css?v=4"/>
-            <link rel="stylesheet" href="themes/css/style_1280_1359.css?v=4"/>
-            <link rel="stylesheet" href="themes/css/style_1360_1599.css?v=4"/>
-            <link rel="stylesheet" href="themes/css/style_1600_1919.css?v=4"/>
-            <link rel="stylesheet" href="themes/css/style_1920.css?v=4"/>
+            <link rel="stylesheet" href="themes/css/stylemain.css?v=41"/>
+            <link rel="stylesheet" href="themes/css/style_0_1023.css?v=11"/>
+            <link rel="stylesheet" href="themes/css/style_1024_1279.css?v=11"/>
+            <link rel="stylesheet" href="themes/css/style_1280_1359.css?v=11"/>
+            <link rel="stylesheet" href="themes/css/style_1360_1599.css?v=11"/>
+            <link rel="stylesheet" href="themes/css/style_1600_1919.css?v=11"/>
+            <link rel="stylesheet" href="themes/css/style_1920.css?v=11"/>
             <link rel="stylesheet" href="themes/css/lightbox.min.css"/>
         <?php endif; ?>
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500,700,700italic,900' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="themes/img/icone.ico?v=2"/>
-        <link rel="stylesheet" href="themes/css/font-awesome/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="themes/css/font-awesome/css/fontawesome.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="themes/css/w3.css"/>
     </head>
     <body>
@@ -114,7 +115,7 @@ endif;
                         </li>
                         <li class="menu_item"><a href="#" title="Área restrita"><?= ($idioma == 1) ? 'Área Restrita' : 'Restricted Area'; ?></a>
                             <ul class="sub_item_menu sub_item_menu_restrita">
-				<li ><a href="http://www.usinasantafe.com.br/prestadordeservicos"  target="_blank"><?= ($idioma == 1) ? 'Prestador de serviços' : 'Prestador de serviços'; ?></a></li>
+				<li ><a href="https://apex.usinasantafe.com.br:8443/apex/f?p=PSE:LOGIN_DESKTOP"  target="_blank"><?= ($idioma == 1) ? 'Prestador de serviços' : 'Prestador de serviços'; ?></a></li>
                                 <li ><a href="index.php?exe=acesso_relacao&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Relação com Instituições Financeiras' : 'Relations with Financial Institutions'; ?></a></li>
                                 <li ><a href="index.php?exe=acesso_politicas_rh&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Políticas do RH' : 'HR Policies'; ?></a></li>
                                 <li ><a href="index.php?exe=acesso_dashboard&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>"><?= ($idioma == 1) ? 'Configuração' : 'Configuration'; ?></a></li>
@@ -125,6 +126,14 @@ endif;
                 <div class="clear"></div>
             </div>
         </header>
+        <a href="index.php?exe=principios&idioma=<?= ($idioma == 1) ? 'pt' : 'en'; ?>">
+            <div class="plano_contigencia">
+                <p class="tagline"><i class="fa fa-plus-square" aria-hidden="true"></i></p>
+                Plano de 
+                Contingência 
+                Covid
+            </div>
+        </a>
         <div class="rede_social">
             <ul>
                 <li>
@@ -202,9 +211,9 @@ endif;
             </footer>
 
             <script src="_cdn/jquery.js"></script>
-            <script src="_cdn/script.js?v=11"></script>
+            <script src="_cdn/script.js?v=13"></script>
             <script src="_cdn/lightbox-plus-jquery.min.js"></script>
-			<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+            <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 
             <?php
             if ($verDisp) {

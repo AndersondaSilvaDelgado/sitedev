@@ -62,12 +62,12 @@
                     "; ?>
                 </p>
 				<p class="tagline">
-					<a href="themes/arquivos/Especificacoes_Tecnica_do_Acucar_Cristal.pdf?v=2" target="_blank" >
+					<a href="themes/arquivos/Especificacoes_Tecnica_do_Acucar_Cristal.pdf?v=3" target="_blank" >
 						<span class="link"><?= ($idioma == 1) ? 'Especificação Técnica' : 'Technical Specification'; ?></span>
 					</a>
 				</p>
 				<p class="tagline">
-					<a href="themes/arquivos/fispq_acucar_cristal.pdf" target="_blank" >
+					<a href="themes/arquivos/fispq_acucar_cristal.pdf?v=1" target="_blank" >
 						<span class="link"><?= ($idioma == 1) ? 'FISPQ - Açúcar Cristal' : 'Technical Specification'; ?></span>
 					</a>
 				</p>
@@ -97,17 +97,17 @@
                     "; ?>
                 </p>
 				<p class="tagline">
-					<a href="themes/arquivos/Especificacoes_Tecnica_do_Etanol.pdf?v=2" target="_blank" >
+					<a href="themes/arquivos/Especificacoes_Tecnica_do_Etanol.pdf?v=3" target="_blank" >
 						<span class="link"><?= ($idioma == 1) ? 'Especificação Técnica' : 'Technical Specification'; ?></span>
 					</a>
 				</p>
 				<p class="tagline">
-					<a href="themes/arquivos/fispq_etanol_anidro.pdf" target="_blank" >
+					<a href="themes/arquivos/fispq_etanol_anidro.pdf?v=1" target="_blank" >
 						<span class="link"><?= ($idioma == 1) ? 'FISPQ - Etanol Anidro' : 'FISPQ - ETANOL ANIDRO'; ?></span>
 					</a>
 				</p>
 				<p class="tagline">
-					<a href="themes/arquivos/fispq_etanol_hidratado.pdf" target="_blank" >
+					<a href="themes/arquivos/fispq_etanol_hidratado.pdf?v=1" target="_blank" >
 						<span class="link"><?= ($idioma == 1) ? 'FISPQ - Etanol Hidratado' : 'FISPQ - ETANOL HIDRATADO'; ?></span>
 					</a>
 				</p>

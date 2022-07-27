@@ -231,6 +231,16 @@
         background-size: 25px 25px;
     }
 
+    .plano_contigencia{
+        top: 22%;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .plano_contigencia .tagline{
+        font-size: 2.5em;
+    }
+    
     .rede_social{
         top: 42%;
         width: 0;

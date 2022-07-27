@@ -58,13 +58,6 @@
                     <p class="tagline fontzero">Outlook Web App - Acesso ao e-mail dos colaboradores da empresa.</p>
                 </article>
             </a>
-            <a href="https://apex.vertech-it.com.br/apex/f?p=123" target="_blank">
-                <article class="item_aplicativo" title="BI - Vertech It Solutions">
-                    <img src="themes/img/vertech.png" alt="BI - Vertech It Solutions" title="BI - Vertech It Solutions"/>
-                    <h1>BI - Vertech It Solutions</h1>
-                    <p class="tagline fontzero"><?= ($idioma == 1) ? 'Sistema BI com dados administrativos empresariais.' : 'BI system with business administrative data.'; ?></p>
-                </article>
-            </a>
             <a href="https://apex.usinasantafe.com.br:8443/apex/f?p=199" target="_blank">
                 <article class="item_aplicativo" title="SGI WEB">
                     <p class="tagline"><i class="fa fa-cloud" aria-hidden="true"></i></p>

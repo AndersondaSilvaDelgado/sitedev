@@ -46,7 +46,6 @@ $(function () {
     });
 
     $('.go').click(function () {
-
         var x = document.getElementsByTagName("h1");
         var texto = x[1].innerHTML.toString();
         if (texto === "Imagens da Empresa") {
@@ -283,7 +282,7 @@ $(function () {
                 $('.img05').removeClass('bullet_atual');
                 $('.img06').removeClass('bullet_atual');
             } else if (imagem === '07') {
-                $("#imagem_principal").attr("src", "themes/img/imagem01.jpg");
+                $("#imagem_principal").attr("src", "themes/img/imagem01.jpg?v=1");
                 $('.img01').addClass('bullet_atual');
                 $('.img02').removeClass('bullet_atual');
                 $('.img03').removeClass('bullet_atual');
@@ -302,7 +301,7 @@ $(function () {
         $("#link_imagem").attr("href", "index.php?exe=principios");
         $("#imagem_principal").attr("title", "Imagem Panorâmica da Usina Santa S.A.");
         $("#imagem_principal").attr("alt", "Imagem Panorâmica da Usina Santa S.A.");
-        $("#imagem_principal").attr("src", "themes/img/imagem01.jpg");
+        $("#imagem_principal").attr("src", "themes/img/imagem01.jpg?v=1");
         $('.img01').addClass('bullet_atual');
         $('.img02').removeClass('bullet_atual');
         $('.img03').removeClass('bullet_atual');

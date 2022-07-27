@@ -34,7 +34,10 @@ span{font-family: 'Roboto', sans-serif;}
     clear: both;
 }
 
-.fontzero{font-size: 0em !important;}
+.fontzero{
+    font-size: 0em !important;
+    display: none;
+}
 
 
 
